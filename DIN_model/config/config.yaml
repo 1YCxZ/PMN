@@ -1,0 +1,12 @@
+configuration:
+  Name: DIN
+  work_space: works/movielens_dice
+  model:
+    hidden_units: 320
+    item_embedding_size: 256
+    plot_embedding_size: 64
+    fc1_size: 128
+    fc2_size: 64
+    fc1_attn_size: 128
+    fc2_attn_size: 64
+    learning_rate: 0.001
