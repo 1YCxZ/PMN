@@ -6,7 +6,7 @@
 
 
 #### DIN model
-原作者提供的[代码](https://github.com/zhougr1993/DeepInterestNetwork)并没有提供适用于movielens的代码，因此我按照自己的理解修改了适用于movielens数据集的DIN模型
+原作者提供的[github仓库](https://github.com/zhougr1993/DeepInterestNetwork)中并没有适用于movielens的代码，因此我按照自己的理解修改了部分数据IO代码
 
 ## 效果对比
 - 数据集：movielens-1m\
