@@ -2,7 +2,7 @@ CTR预估模型
 =======
 这个项目包含两个模型：
 - [阿里巴巴DIN模型](https://github.com/zhougr1993/DeepInterestNetwork)
-- 我使用transformer进行尝试的模型，目前该模型还不是最终版
+- 我使用Transformer进行尝试的模型，目前该模型还在改进阶段,暂不上传。
 
 
 #### DIN model
