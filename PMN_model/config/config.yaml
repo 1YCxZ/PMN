@@ -1,14 +1,13 @@
 configuration:
   Name: DIN
-  work_space: works/PMN-fix
+  work_space: works/PMN
   model:
     movie_embedding_size: 200
     genre_embedding_size: 64
     learning_rate: 0.001
     mlp_1_units: 256
     mlp_2_units: 128
-    l2: 0.001
   transformer:
     num_heads: 2
     dropout_rate: 0.5
-    num_blocks: 1
+    num_blocks: 2

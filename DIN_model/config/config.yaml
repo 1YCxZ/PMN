@@ -1,6 +1,6 @@
 configuration:
   Name: DIN
-  work_space: works/movielens_dice
+  work_space: works/DIN
   model:
     hidden_units: 320
     item_embedding_size: 256
