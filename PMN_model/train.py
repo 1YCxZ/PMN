@@ -30,7 +30,7 @@ for i in [work_space, model_dir]:
 
 batch_size = 64
 genre_embedding_size = model_config['model']['genre_embedding_size']
-best_AUC = 0.0
+
 
 
 with open('dataset-small.pkl', 'rb') as f:
@@ -78,11 +78,7 @@ def _eval(sess, model, model_dir, dataset):
     prec = tp / (tp + fp) if tp + fp != 0 else 0
     recall = tp / (tp + fn) if tp + fn != 0 else 0
     f1 = 2 * prec * recall / (prec + recall) if prec + recall != 0 else 0
-    # 记录效果最好的模型
-    global best_AUC
-    if best_AUC < AUC:
-        best_AUC = AUC
-        model.save(sess, '%s/model.ckpt' % model_dir)
+
     return AUC, acc, prec, recall, f1
 
 
@@ -148,5 +144,3 @@ with tf.Session(config=config) as sess:
                 sys.stdout.flush()
                 loss_sum = 0.0
 
-    print('best test_AUC:', best_AUC)
-    sys.stdout.flush()
