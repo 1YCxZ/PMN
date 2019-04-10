@@ -96,8 +96,8 @@ def get_random_batch(data, batch_size, genre_info, genre_embedding_size):
 def thread_get_batch(raw_batch_data, genre_info, genre_embedding_size):
     ts = raw_batch_data  # batch_size * [uid, watch_history, target, label]
     user, candidate, label, sl = [], [], [], []
-    c_genre = []
-    c_genre_len = np.zeros([len(ts), 3, genre_embedding_size], dtype=np.int32)
+    c_genre , c_genre_len = [], []
+
     for idx, t in enumerate(ts):
         user.append(t[0])  # user
         candidate.append(t[2])  # movie to predict 经过映射的ID
@@ -107,8 +107,7 @@ def thread_get_batch(raw_batch_data, genre_info, genre_embedding_size):
         genre = genre_info[t[2]]
         genre_len = len(genre)
         divide = 1.0 / genre_len if genre_len != 0 else 0.0
-        temp = divide * np.ones([3, genre_embedding_size], dtype=np.float32)
-        c_genre_len[idx] = temp
+        c_genre_len.append(divide)
         if genre_len < 3:
             padding = [0] * (3 - genre_len)  # 0 respresents 'unk'
             genre = genre + padding
@@ -118,8 +117,8 @@ def thread_get_batch(raw_batch_data, genre_info, genre_embedding_size):
     history_movie = np.zeros([len(ts), max_sl], np.int32)
     history_score = np.zeros([len(ts), max_sl, 1], np.float32)
     history_genre = np.zeros([len(ts), max_sl, 3], np.int32)
-    history_genre_len = np.zeros([len(ts), max_sl, 3, genre_embedding_size],
-                                 np.float32)  # [batch_size, max_length, 3, plot_embedding_size] 与模型一致
+    history_genre_len = np.zeros([len(ts), max_sl], np.float32)
+
     for idx, t in enumerate(ts):
         for l in range(len(t[1])):  # t[1] represents watch history
             mID = t[1][l][0]  # mID remap后的电影ID
@@ -134,8 +133,7 @@ def thread_get_batch(raw_batch_data, genre_info, genre_embedding_size):
                 genre = genre + padding
             history_genre[idx][l] = genre
             divide = 1.0 / plot_len if plot_len != 0 else 0.0
-            temp = divide * np.ones([3, genre_embedding_size], dtype=np.float32)
-            history_genre_len[idx][l] = temp  # k:batch, l:user_watch_idx,
+            history_genre_len[idx][l] = divide
 
     return (user, candidate, c_genre, c_genre_len, label, history_movie, history_genre, history_genre_len, sl)
 

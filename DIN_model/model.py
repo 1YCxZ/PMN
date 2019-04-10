@@ -53,7 +53,7 @@ class Model(object):
 
         #  历史观看记录 embedding
         h_genre_emb = tf.nn.embedding_lookup(self.genre_emb_w, self.hist_ip)  # [batch_size, max_l, 3, genre_emb]
-        h_genre_emb = tf.reduce_sum(h_genre_emb, axis=2)  # [batch_size, max_l, genre_emb]
+        h_genre_emb = tf.reduce_sum(h_genre_emb, axis=2)  # [batch_size, max_l, 3, genre_emb] -> [batch_size, max_l, genre_emb]
         hist_ip_len = tf.expand_dims(self.hist_ip_len, axis=-1)  # [batch_size, max_l, 1]
         hist_ip_len = tf.tile(hist_ip_len, [1, 1, self.genre_embedding_size])  # [batch_size, max_l, genre_emb]
 
