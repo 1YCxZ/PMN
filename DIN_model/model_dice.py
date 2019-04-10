@@ -3,61 +3,65 @@
 from __future__ import print_function
 
 import tensorflow as tf
-from Dice import dice
+from DIN_model.Dice import dice
 
 class Model(object):
 
-    def __init__(self, user_count, item_count, plot_count, plot_num, model_config):
+    def __init__(self, item_count, genre_count, model_config):
 
         self.u = tf.placeholder(tf.int32, [None, ])  # [B] user
         self.i = tf.placeholder(tf.int32, [None, ])  # [B] item
-        self.ip = tf.placeholder(tf.int32, [None, plot_num])  # 每部电影选取三个情节embedding
-        self.ip_len = tf.placeholder(tf.float32, [None, plot_num, None])  # 每部电影拥有的情节的个数
+        self.ip = tf.placeholder(tf.int32, [None, 3])  # 每部电影选取三个情节embedding
+        self.ip_len = tf.placeholder(tf.float32, [None, ])  # 每部电影拥有的情节的个数
         self.y = tf.placeholder(tf.float32, [None, ])  # [B] label
         self.hist_i = tf.placeholder(tf.int32, [None, None])  # [B, T] 用户历史观看记录
-        self.hist_ip = tf.placeholder(tf.int32, [None, None, plot_num])  # [B, T, 3] 每部电影三个情节embedding
-        self.hist_ip_len = tf.placeholder(tf.float32, [None, None, plot_num, None])  # [B, T, 3, item_embedding]
+        self.hist_ip = tf.placeholder(tf.int32, [None, None, 3])  # [B, T, 3] 每部电影三个情节embedding
+        self.hist_ip_len = tf.placeholder(tf.float32, [None, None])  # [B, T] 每个历史观看中的情节个数
         self.sl = tf.placeholder(tf.int32, [None, ])  # [B] 用户观看历史记录长度
         self.lr = tf.placeholder(tf.float64, [])
         # model_config
         self.hidden_units = model_config['model']['hidden_units']
         self.item_embedding_size = model_config['model']['item_embedding_size']
-        self.plot_embedding_size = model_config['model']['plot_embedding_size']
+        self.genre_embedding_size = model_config['model']['genre_embedding_size']
         self.fc1_size = model_config['model']['fc1_size']
         self.fc2_size = model_config['model']['fc2_size']
         self.fc1_attn_size = model_config['model']['fc1_attn_size']
         self.fc2_attn_size = model_config['model']['fc2_attn_size']
 
-        assert self.item_embedding_size + self.plot_embedding_size == self.hidden_units
+        assert self.item_embedding_size + self.genre_embedding_size == self.hidden_units
         initializer = tf.contrib.layers.xavier_initializer()
-        # 加入user_emb似乎会造成过拟合
-        # self.user_emb_w = tf.get_variable("user_emb_w",
-        #                              [user_count, self.item_embedding_size],
-        #                              initializer=initializer,
-        #                              dtype=tf.float32)
+
         self.item_emb_w = tf.get_variable("item_emb_w",
                                           [item_count, self.item_embedding_size],
                                           initializer=initializer,
                                           dtype=tf.float32)
         item_b = tf.get_variable("item_b", [item_count], initializer=tf.constant_initializer(0.0))
-        self.plot_emb_w = tf.get_variable("plot_emb_w",
-                                          [plot_count, self.plot_embedding_size],
-                                          initializer=initializer,
-                                          dtype=tf.float32)
+        self.genre_emb_w = tf.get_variable("genre_emb_w",
+                                           [genre_count, self.genre_embedding_size],
+                                           initializer=initializer,
+                                           dtype=tf.float32)
 
         #  候选物品 embedding
-        i_plot_emb = tf.nn.embedding_lookup(self.plot_emb_w, self.ip)  # 这里面会有不到3个情节的电影
+        i_genre_emb = tf.nn.embedding_lookup(self.genre_emb_w, self.ip)  # [batch_size, 3, genre_emb]
+        i_genre_emb = tf.reduce_sum(i_genre_emb, axis=1)  # [batch_size, 3, genre_emb] -> [batch_size, genre_emb]
+        ip_len = tf.expand_dims(self.ip_len, axis=-1)  # [batch_size] -> [batch_size, 1]
+        ip_len = tf.tile(ip_len, [1, self.genre_embedding_size])  # [batch_size, 1] -> [batch_size, genre_emb]
+
         i_emb = tf.concat(values=[
-            tf.nn.embedding_lookup(self.item_emb_w, self.i),  # [B, item_emb]
-            tf.reduce_sum(i_plot_emb * self.ip_len, axis=1)  # [B, 3, plot_emb] -> [B, plot_emb] 对3个情节取平均
+            tf.nn.embedding_lookup(self.item_emb_w, self.i),  # [batch_size, item_emb]
+            i_genre_emb * ip_len  # 对3个情节取平均
         ], axis=-1)
         i_b = tf.gather(item_b, self.i)
 
         #  历史观看记录 embedding
-        h_plot_emb = tf.nn.embedding_lookup(self.plot_emb_w, self.hist_ip)
+        h_genre_emb = tf.nn.embedding_lookup(self.genre_emb_w, self.hist_ip)  # [batch_size, max_l, 3, genre_emb]
+        h_genre_emb = tf.reduce_sum(h_genre_emb, axis=2)  # [batch_size, max_l, genre_emb]
+        hist_ip_len = tf.expand_dims(self.hist_ip_len, axis=-1)  # [batch_size, max_l, 1]
+        hist_ip_len = tf.tile(hist_ip_len, [1, 1, self.genre_embedding_size])  # [batch_size, max_l, genre_emb]
+
         h_emb = tf.concat(values=[
             tf.nn.embedding_lookup(self.item_emb_w, self.hist_i),  # [B, T, item_emb]
-            tf.reduce_sum(h_plot_emb * self.hist_ip_len, axis=2)  # [B, T, 3, plot_emb] -> [B, T, plot_emb] 对三个情节取平均
+            h_genre_emb * hist_ip_len  # 对三个情节取平均
         ], axis=-1)
 
         hist = self.attention(i_emb, h_emb, self.sl)  # [B, 1, H] queries, keys, keys_length
@@ -118,7 +122,7 @@ class Model(object):
                   self.prediction,
                   self.y,
                   self.item_emb_w,
-                  self.plot_emb_w,
+                  self.genre_emb_w,
                   self.train_op
                   ]
         res = sess.run(r_list, feed_dict={

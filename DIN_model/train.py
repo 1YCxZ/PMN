@@ -31,9 +31,9 @@ for i in [work_space, model_dir]:
 
 batch_size = 64
 
-genre_embedding_size = model_config['model']['plot_embedding_size']
+genre_embedding_size = model_config['model']['genre_embedding_size']
 
-with open('dataset-mobile.pkl', 'rb') as f:
+with open('dataset-small.pkl', 'rb') as f:
     train_set = pickle.load(f)
     test_set = pickle.load(f)
     genre_info, genre_count, movie_count = pickle.load(f)
@@ -48,7 +48,7 @@ def add_summary(summary_writer, global_step, tag, value):
     summary_writer.add_summary(summary, global_step)
 
 
-def _eval(sess, model, model_dir, data_set):
+def _eval(sess, model, data_set):
 
     epoch = int((len(data_set) + batch_size - 1) / batch_size)  # 向上取整
     label_list = []
@@ -98,7 +98,7 @@ with tf.Session(config=config) as sess:
           'Eval_ACC: %.4f\t '
           'Eval_PREC: %.4f\t '
           'Eval_RECALL: %.4f\t '
-          'Eval_F1: %.4f' % _eval(sess, model, model_dir, test_set))
+          'Eval_F1: %.4f' % _eval(sess, model, test_set))
 
     sys.stdout.flush()
     lr = model_config['model']['learning_rate']
@@ -118,8 +118,8 @@ with tf.Session(config=config) as sess:
             loss = model.train(sess, uij, lr)
             loss_sum += loss
             if model.global_step.eval() % 100 == 0 and model.global_step.eval() != 0:
-                test_auc, test_acc, test_prec, test_recall, test_f1 = _eval(sess, model, model_dir, test_set)
-                train_auc, train_acc, train_prec, train_recall, train_f1 = _eval(sess, model, model_dir, train_set)
+                test_auc, test_acc, test_prec, test_recall, test_f1 = _eval(sess, model, test_set)
+                train_auc, train_acc, train_prec, train_recall, train_f1 = _eval(sess, model, train_set)
                 loss_mean = loss_sum / 100
                 print('Global_step %d\t'
                       'Train_loss: %.4f\n'

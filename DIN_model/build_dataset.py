@@ -66,21 +66,3 @@ with open('dataset-small.pkl', 'wb') as f:
     pickle.dump(train_set, f, pickle.HIGHEST_PROTOCOL)
     pickle.dump(test_set, f, pickle.HIGHEST_PROTOCOL)
     pickle.dump((genre_info, genre_count, movie_count), f, pickle.HIGHEST_PROTOCOL)
-
-# 4
-# train set length:78846
-# train_pos:63796, train_neg:15050
-# test set length:19549
-# test_pos:15936, test_neg:3613
-
-# 5
-# train set length:78846
-# train_pos:48139, train_neg:30707
-# test set length:19549
-# test_pos:12064, test_neg:7485
-
-# 6
-# train set length:71500
-# train_pos:43491, train_neg:28009
-# test set length:17745
-# test_pos:10724, test_neg:7021
