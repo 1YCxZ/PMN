@@ -9,12 +9,6 @@
 原作者提供的[github仓库](https://github.com/zhougr1993/DeepInterestNetwork)中并没有适用于movielens的代码，因此我按照自己的理解修改了部分数据IO代码
 
 ## 效果对比
-- 数据集: movielens-small\
-train set length:78846\
-train_pos:48139, train_neg:30707\
-test set length:19549\
-test_pos:12064, test_neg:7485\
-![](./movielens-small.png)
 - 数据集: movielens-1m\
 train set length:780710\
 train_pos:449930, train_neg:330780\
@@ -31,6 +25,7 @@ test_pos:118287, test_neg:108095\
 ## 训练步骤
 1. movielens数据预处理
    ```
+   sh download.sh
    python movielens/1_remap_id.py
    python movielens/2_ratings.py
    ```
