@@ -9,6 +9,7 @@
 原作者提供的[github仓库](https://github.com/zhougr1993/DeepInterestNetwork)中并没有适用于movielens的代码，因此我按照自己的理解修改了部分数据IO代码
 
 ## 效果对比
+具体的训练log查看根目录下的DIN-movielens-1m.log以及PMN-movielens-1m.log
 - 数据集: movielens-1m\
 train set length:780710\
 train_pos:449930, train_neg:330780\
