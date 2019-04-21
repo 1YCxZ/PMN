@@ -14,19 +14,19 @@ train set length:78846\
 train_pos:48139, train_neg:30707\
 test set length:19549\
 test_pos:12064, test_neg:7485\
-![](./movielens-small.png)\
+![](./movielens-small.png)
 - 数据集: movielens-1m\
 train set length:780710\
 train_pos:449930, train_neg:330780\
 test set length:195339\
 test_pos:112376, test_neg:82963\
-![](./movielens-1m.png)\
+![](./movielens-1m.png)
 - 数据集: IPTV\
 train set length:905406\
 train_pos:472553, train_neg:432853\
 test set length:226382\
 test_pos:118287, test_neg:108095\
-![](./IPTV.png)\
+![](./IPTV.png)
 
 ## 训练步骤
 1. movielens数据预处理
