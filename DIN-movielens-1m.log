@@ -1,0 +1,2371 @@
+set up work space...
+2019-04-16 14:07:48.770665: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-04-16 14:07:48.861768: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-04-16 14:07:48.862322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 10.91GiB freeMemory: 7.63GiB
+2019-04-16 14:07:48.862335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-04-16 14:07:49.168814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-04-16 14:07:49.168842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-04-16 14:07:49.168847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-04-16 14:07:49.169013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6703 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Eval_AUC: 0.4981	 Eval_ACC: 0.5753	 Eval_PREC: 0.5753	 Eval_RECALL: 1.0000	 Eval_F1: 0.7304
+epoch:0
+Global_step 100	Train_loss: 0.6573
+Train_AUC: 0.6924	Train_ACC: 0.6524	Train_PREC: 0.6550	Train_RECALL: 0.8383	Train_F1: 0.7354
+Eval_AUC: 0.6908	Eval_ACC: 0.6499	Eval_PREC: 0.6527	Eval_RECALL: 0.8366	Eval_F1: 0.7333
+
+Global_step 200	Train_loss: 0.6232
+Train_AUC: 0.7066	Train_ACC: 0.6618	Train_PREC: 0.6595	Train_RECALL: 0.8541	Train_F1: 0.7443
+Eval_AUC: 0.7040	Eval_ACC: 0.6595	Eval_PREC: 0.6575	Eval_RECALL: 0.8516	Eval_F1: 0.7421
+
+Global_step 300	Train_loss: 0.6149
+Train_AUC: 0.7133	Train_ACC: 0.6687	Train_PREC: 0.6941	Train_RECALL: 0.7601	Train_F1: 0.7256
+Eval_AUC: 0.7101	Eval_ACC: 0.6650	Eval_PREC: 0.6910	Eval_RECALL: 0.7554	Eval_F1: 0.7218
+
+Global_step 400	Train_loss: 0.6108
+Train_AUC: 0.7176	Train_ACC: 0.6730	Train_PREC: 0.6855	Train_RECALL: 0.7995	Train_F1: 0.7381
+Eval_AUC: 0.7143	Eval_ACC: 0.6691	Eval_PREC: 0.6823	Eval_RECALL: 0.7951	Eval_F1: 0.7344
+
+Global_step 500	Train_loss: 0.6126
+Train_AUC: 0.7204	Train_ACC: 0.6740	Train_PREC: 0.6956	Train_RECALL: 0.7724	Train_F1: 0.7320
+Eval_AUC: 0.7168	Eval_ACC: 0.6710	Eval_PREC: 0.6931	Eval_RECALL: 0.7683	Eval_F1: 0.7288
+
+Global_step 600	Train_loss: 0.6021
+Train_AUC: 0.7236	Train_ACC: 0.6778	Train_PREC: 0.6883	Train_RECALL: 0.8059	Train_F1: 0.7425
+Eval_AUC: 0.7197	Eval_ACC: 0.6738	Eval_PREC: 0.6853	Eval_RECALL: 0.8007	Eval_F1: 0.7385
+
+Global_step 700	Train_loss: 0.6062
+Train_AUC: 0.7254	Train_ACC: 0.6794	Train_PREC: 0.6903	Train_RECALL: 0.8047	Train_F1: 0.7431
+Eval_AUC: 0.7210	Eval_ACC: 0.6745	Eval_PREC: 0.6862	Eval_RECALL: 0.8000	Eval_F1: 0.7387
+
+Global_step 800	Train_loss: 0.6043
+Train_AUC: 0.7277	Train_ACC: 0.6810	Train_PREC: 0.6959	Train_RECALL: 0.7933	Train_F1: 0.7414
+Eval_AUC: 0.7233	Eval_ACC: 0.6768	Eval_PREC: 0.6923	Eval_RECALL: 0.7888	Eval_F1: 0.7374
+
+Global_step 900	Train_loss: 0.6059
+Train_AUC: 0.7287	Train_ACC: 0.6819	Train_PREC: 0.6914	Train_RECALL: 0.8091	Train_F1: 0.7457
+Eval_AUC: 0.7247	Eval_ACC: 0.6781	Eval_PREC: 0.6882	Eval_RECALL: 0.8050	Eval_F1: 0.7421
+
+Global_step 1000	Train_loss: 0.6042
+Train_AUC: 0.7307	Train_ACC: 0.6784	Train_PREC: 0.7168	Train_RECALL: 0.7305	Train_F1: 0.7236
+Eval_AUC: 0.7264	Eval_ACC: 0.6740	Eval_PREC: 0.7131	Eval_RECALL: 0.7250	Eval_F1: 0.7190
+
+Global_step 1100	Train_loss: 0.6014
+Train_AUC: 0.7311	Train_ACC: 0.6835	Train_PREC: 0.6873	Train_RECALL: 0.8273	Train_F1: 0.7508
+Eval_AUC: 0.7268	Eval_ACC: 0.6804	Eval_PREC: 0.6848	Eval_RECALL: 0.8237	Eval_F1: 0.7478
+
+Global_step 1200	Train_loss: 0.6026
+Train_AUC: 0.7313	Train_ACC: 0.6829	Train_PREC: 0.6805	Train_RECALL: 0.8479	Train_F1: 0.7550
+Eval_AUC: 0.7265	Eval_ACC: 0.6785	Eval_PREC: 0.6771	Eval_RECALL: 0.8434	Eval_F1: 0.7512
+
+Global_step 1300	Train_loss: 0.6031
+Train_AUC: 0.7338	Train_ACC: 0.6857	Train_PREC: 0.6931	Train_RECALL: 0.8157	Train_F1: 0.7494
+Eval_AUC: 0.7282	Eval_ACC: 0.6810	Eval_PREC: 0.6896	Eval_RECALL: 0.8101	Eval_F1: 0.7450
+
+Global_step 1400	Train_loss: 0.5975
+Train_AUC: 0.7348	Train_ACC: 0.6854	Train_PREC: 0.6826	Train_RECALL: 0.8489	Train_F1: 0.7567
+Eval_AUC: 0.7291	Eval_ACC: 0.6811	Eval_PREC: 0.6793	Eval_RECALL: 0.8444	Eval_F1: 0.7529
+
+Global_step 1500	Train_loss: 0.6027
+Train_AUC: 0.7356	Train_ACC: 0.6855	Train_PREC: 0.6818	Train_RECALL: 0.8519	Train_F1: 0.7574
+Eval_AUC: 0.7298	Eval_ACC: 0.6818	Eval_PREC: 0.6790	Eval_RECALL: 0.8476	Eval_F1: 0.7540
+
+Global_step 1600	Train_loss: 0.6002
+Train_AUC: 0.7361	Train_ACC: 0.6852	Train_PREC: 0.6797	Train_RECALL: 0.8582	Train_F1: 0.7586
+Eval_AUC: 0.7299	Eval_ACC: 0.6804	Eval_PREC: 0.6763	Eval_RECALL: 0.8527	Eval_F1: 0.7543
+
+Global_step 1700	Train_loss: 0.5985
+Train_AUC: 0.7367	Train_ACC: 0.6878	Train_PREC: 0.6987	Train_RECALL: 0.8058	Train_F1: 0.7484
+Eval_AUC: 0.7303	Eval_ACC: 0.6822	Eval_PREC: 0.6941	Eval_RECALL: 0.8002	Eval_F1: 0.7434
+
+Global_step 1800	Train_loss: 0.5980
+Train_AUC: 0.7364	Train_ACC: 0.6860	Train_PREC: 0.7090	Train_RECALL: 0.7719	Train_F1: 0.7391
+Eval_AUC: 0.7300	Eval_ACC: 0.6813	Eval_PREC: 0.7052	Eval_RECALL: 0.7666	Eval_F1: 0.7346
+
+Global_step 1900	Train_loss: 0.6049
+Train_AUC: 0.7365	Train_ACC: 0.6879	Train_PREC: 0.6994	Train_RECALL: 0.8039	Train_F1: 0.7480
+Eval_AUC: 0.7299	Eval_ACC: 0.6823	Eval_PREC: 0.6950	Eval_RECALL: 0.7980	Eval_F1: 0.7429
+
+Global_step 2000	Train_loss: 0.5973
+Train_AUC: 0.7374	Train_ACC: 0.6873	Train_PREC: 0.7090	Train_RECALL: 0.7758	Train_F1: 0.7409
+Eval_AUC: 0.7308	Eval_ACC: 0.6816	Eval_PREC: 0.7044	Eval_RECALL: 0.7693	Eval_F1: 0.7354
+
+Global_step 2100	Train_loss: 0.5967
+Train_AUC: 0.7363	Train_ACC: 0.6874	Train_PREC: 0.6999	Train_RECALL: 0.8011	Train_F1: 0.7471
+Eval_AUC: 0.7305	Eval_ACC: 0.6822	Eval_PREC: 0.6958	Eval_RECALL: 0.7951	Eval_F1: 0.7422
+
+Global_step 2200	Train_loss: 0.5980
+Train_AUC: 0.7383	Train_ACC: 0.6887	Train_PREC: 0.6868	Train_RECALL: 0.8454	Train_F1: 0.7579
+Eval_AUC: 0.7317	Eval_ACC: 0.6831	Eval_PREC: 0.6826	Eval_RECALL: 0.8394	Eval_F1: 0.7529
+
+Global_step 2300	Train_loss: 0.5918
+Train_AUC: 0.7390	Train_ACC: 0.6896	Train_PREC: 0.7052	Train_RECALL: 0.7928	Train_F1: 0.7465
+Eval_AUC: 0.7326	Eval_ACC: 0.6846	Eval_PREC: 0.7011	Eval_RECALL: 0.7876	Eval_F1: 0.7418
+
+Global_step 2400	Train_loss: 0.5954
+Train_AUC: 0.7388	Train_ACC: 0.6894	Train_PREC: 0.6942	Train_RECALL: 0.8240	Train_F1: 0.7536
+Eval_AUC: 0.7324	Eval_ACC: 0.6845	Eval_PREC: 0.6903	Eval_RECALL: 0.8190	Eval_F1: 0.7492
+
+Global_step 2500	Train_loss: 0.5916
+Train_AUC: 0.7389	Train_ACC: 0.6900	Train_PREC: 0.7028	Train_RECALL: 0.8006	Train_F1: 0.7485
+Eval_AUC: 0.7321	Eval_ACC: 0.6843	Eval_PREC: 0.6982	Eval_RECALL: 0.7947	Eval_F1: 0.7433
+
+Global_step 2600	Train_loss: 0.5949
+Train_AUC: 0.7395	Train_ACC: 0.6905	Train_PREC: 0.6966	Train_RECALL: 0.8200	Train_F1: 0.7533
+Eval_AUC: 0.7328	Eval_ACC: 0.6850	Eval_PREC: 0.6924	Eval_RECALL: 0.8140	Eval_F1: 0.7483
+
+Global_step 2700	Train_loss: 0.5931
+Train_AUC: 0.7397	Train_ACC: 0.6869	Train_PREC: 0.6765	Train_RECALL: 0.8752	Train_F1: 0.7631
+Eval_AUC: 0.7326	Eval_ACC: 0.6811	Eval_PREC: 0.6723	Eval_RECALL: 0.8697	Eval_F1: 0.7583
+
+Global_step 2800	Train_loss: 0.5941
+Train_AUC: 0.7408	Train_ACC: 0.6892	Train_PREC: 0.7136	Train_RECALL: 0.7694	Train_F1: 0.7405
+Eval_AUC: 0.7335	Eval_ACC: 0.6830	Eval_PREC: 0.7086	Eval_RECALL: 0.7627	Eval_F1: 0.7346
+
+Global_step 2900	Train_loss: 0.5976
+Train_AUC: 0.7407	Train_ACC: 0.6913	Train_PREC: 0.6992	Train_RECALL: 0.8149	Train_F1: 0.7526
+Eval_AUC: 0.7333	Eval_ACC: 0.6847	Eval_PREC: 0.6942	Eval_RECALL: 0.8076	Eval_F1: 0.7466
+
+Global_step 3000	Train_loss: 0.5919
+Train_AUC: 0.7403	Train_ACC: 0.6907	Train_PREC: 0.6949	Train_RECALL: 0.8260	Train_F1: 0.7548
+Eval_AUC: 0.7330	Eval_ACC: 0.6842	Eval_PREC: 0.6900	Eval_RECALL: 0.8191	Eval_F1: 0.7490
+
+Global_step 3100	Train_loss: 0.5956
+Train_AUC: 0.7410	Train_ACC: 0.6913	Train_PREC: 0.6995	Train_RECALL: 0.8140	Train_F1: 0.7524
+Eval_AUC: 0.7336	Eval_ACC: 0.6844	Eval_PREC: 0.6942	Eval_RECALL: 0.8067	Eval_F1: 0.7462
+
+Global_step 3200	Train_loss: 0.5907
+Train_AUC: 0.7412	Train_ACC: 0.6904	Train_PREC: 0.7105	Train_RECALL: 0.7810	Train_F1: 0.7441
+Eval_AUC: 0.7341	Eval_ACC: 0.6841	Eval_PREC: 0.7055	Eval_RECALL: 0.7738	Eval_F1: 0.7381
+
+Global_step 3300	Train_loss: 0.5938
+Train_AUC: 0.7414	Train_ACC: 0.6913	Train_PREC: 0.7041	Train_RECALL: 0.8009	Train_F1: 0.7494
+Eval_AUC: 0.7345	Eval_ACC: 0.6855	Eval_PREC: 0.6993	Eval_RECALL: 0.7953	Eval_F1: 0.7442
+
+Global_step 3400	Train_loss: 0.5961
+Train_AUC: 0.7422	Train_ACC: 0.6913	Train_PREC: 0.7087	Train_RECALL: 0.7884	Train_F1: 0.7465
+Eval_AUC: 0.7350	Eval_ACC: 0.6849	Eval_PREC: 0.7036	Eval_RECALL: 0.7816	Eval_F1: 0.7406
+
+Global_step 3500	Train_loss: 0.5868
+Train_AUC: 0.7430	Train_ACC: 0.6916	Train_PREC: 0.6875	Train_RECALL: 0.8521	Train_F1: 0.7610
+Eval_AUC: 0.7356	Eval_ACC: 0.6856	Eval_PREC: 0.6830	Eval_RECALL: 0.8464	Eval_F1: 0.7560
+
+Global_step 3600	Train_loss: 0.5897
+Train_AUC: 0.7430	Train_ACC: 0.6923	Train_PREC: 0.6927	Train_RECALL: 0.8378	Train_F1: 0.7584
+Eval_AUC: 0.7356	Eval_ACC: 0.6866	Eval_PREC: 0.6885	Eval_RECALL: 0.8315	Eval_F1: 0.7533
+
+Global_step 3700	Train_loss: 0.5904
+Train_AUC: 0.7434	Train_ACC: 0.6927	Train_PREC: 0.6926	Train_RECALL: 0.8395	Train_F1: 0.7590
+Eval_AUC: 0.7360	Eval_ACC: 0.6867	Eval_PREC: 0.6879	Eval_RECALL: 0.8334	Eval_F1: 0.7537
+
+Global_step 3800	Train_loss: 0.5904
+Train_AUC: 0.7436	Train_ACC: 0.6882	Train_PREC: 0.7232	Train_RECALL: 0.7435	Train_F1: 0.7332
+Eval_AUC: 0.7356	Eval_ACC: 0.6817	Eval_PREC: 0.7175	Eval_RECALL: 0.7366	Eval_F1: 0.7270
+
+Global_step 3900	Train_loss: 0.5926
+Train_AUC: 0.7436	Train_ACC: 0.6923	Train_PREC: 0.7047	Train_RECALL: 0.8021	Train_F1: 0.7503
+Eval_AUC: 0.7362	Eval_ACC: 0.6856	Eval_PREC: 0.6993	Eval_RECALL: 0.7957	Eval_F1: 0.7444
+
+Global_step 4000	Train_loss: 0.5878
+Train_AUC: 0.7432	Train_ACC: 0.6918	Train_PREC: 0.6903	Train_RECALL: 0.8438	Train_F1: 0.7594
+Eval_AUC: 0.7360	Eval_ACC: 0.6867	Eval_PREC: 0.6865	Eval_RECALL: 0.8383	Eval_F1: 0.7548
+
+Global_step 4100	Train_loss: 0.5936
+Train_AUC: 0.7438	Train_ACC: 0.6930	Train_PREC: 0.7026	Train_RECALL: 0.8102	Train_F1: 0.7526
+Eval_AUC: 0.7367	Eval_ACC: 0.6869	Eval_PREC: 0.6981	Eval_RECALL: 0.8029	Eval_F1: 0.7469
+
+Global_step 4200	Train_loss: 0.5984
+Train_AUC: 0.7442	Train_ACC: 0.6925	Train_PREC: 0.7079	Train_RECALL: 0.7941	Train_F1: 0.7485
+Eval_AUC: 0.7364	Eval_ACC: 0.6862	Eval_PREC: 0.7030	Eval_RECALL: 0.7870	Eval_F1: 0.7426
+
+Global_step 4300	Train_loss: 0.5947
+Train_AUC: 0.7451	Train_ACC: 0.6940	Train_PREC: 0.7024	Train_RECALL: 0.8138	Train_F1: 0.7540
+Eval_AUC: 0.7372	Eval_ACC: 0.6874	Eval_PREC: 0.6972	Eval_RECALL: 0.8072	Eval_F1: 0.7482
+
+Global_step 4400	Train_loss: 0.5925
+Train_AUC: 0.7451	Train_ACC: 0.6906	Train_PREC: 0.6814	Train_RECALL: 0.8696	Train_F1: 0.7641
+Eval_AUC: 0.7376	Eval_ACC: 0.6856	Eval_PREC: 0.6779	Eval_RECALL: 0.8641	Eval_F1: 0.7597
+
+Global_step 4500	Train_loss: 0.5904
+Train_AUC: 0.7456	Train_ACC: 0.6886	Train_PREC: 0.7247	Train_RECALL: 0.7412	Train_F1: 0.7329
+Eval_AUC: 0.7377	Eval_ACC: 0.6821	Eval_PREC: 0.7195	Eval_RECALL: 0.7331	Eval_F1: 0.7262
+
+Global_step 4600	Train_loss: 0.5903
+Train_AUC: 0.7455	Train_ACC: 0.6941	Train_PREC: 0.7047	Train_RECALL: 0.8076	Train_F1: 0.7526
+Eval_AUC: 0.7377	Eval_ACC: 0.6867	Eval_PREC: 0.6993	Eval_RECALL: 0.7990	Eval_F1: 0.7458
+
+Global_step 4700	Train_loss: 0.5896
+Train_AUC: 0.7458	Train_ACC: 0.6942	Train_PREC: 0.7042	Train_RECALL: 0.8094	Train_F1: 0.7531
+Eval_AUC: 0.7377	Eval_ACC: 0.6871	Eval_PREC: 0.6989	Eval_RECALL: 0.8012	Eval_F1: 0.7466
+
+Global_step 4800	Train_loss: 0.5848
+Train_AUC: 0.7446	Train_ACC: 0.6930	Train_PREC: 0.6940	Train_RECALL: 0.8360	Train_F1: 0.7584
+Eval_AUC: 0.7369	Eval_ACC: 0.6868	Eval_PREC: 0.6894	Eval_RECALL: 0.8292	Eval_F1: 0.7529
+
+Global_step 4900	Train_loss: 0.5908
+Train_AUC: 0.7459	Train_ACC: 0.6939	Train_PREC: 0.7085	Train_RECALL: 0.7965	Train_F1: 0.7499
+Eval_AUC: 0.7379	Eval_ACC: 0.6876	Eval_PREC: 0.7037	Eval_RECALL: 0.7894	Eval_F1: 0.7441
+
+Global_step 5000	Train_loss: 0.5864
+Train_AUC: 0.7466	Train_ACC: 0.6928	Train_PREC: 0.7173	Train_RECALL: 0.7709	Train_F1: 0.7431
+Eval_AUC: 0.7383	Eval_ACC: 0.6862	Eval_PREC: 0.7119	Eval_RECALL: 0.7635	Eval_F1: 0.7368
+
+Global_step 5100	Train_loss: 0.5947
+Train_AUC: 0.7468	Train_ACC: 0.6953	Train_PREC: 0.7055	Train_RECALL: 0.8092	Train_F1: 0.7538
+Eval_AUC: 0.7391	Eval_ACC: 0.6889	Eval_PREC: 0.7003	Eval_RECALL: 0.8028	Eval_F1: 0.7481
+
+Global_step 5200	Train_loss: 0.5851
+Train_AUC: 0.7456	Train_ACC: 0.6941	Train_PREC: 0.6987	Train_RECALL: 0.8251	Train_F1: 0.7566
+Eval_AUC: 0.7385	Eval_ACC: 0.6887	Eval_PREC: 0.6944	Eval_RECALL: 0.8196	Eval_F1: 0.7518
+
+Global_step 5300	Train_loss: 0.5828
+Train_AUC: 0.7463	Train_ACC: 0.6943	Train_PREC: 0.6988	Train_RECALL: 0.8253	Train_F1: 0.7568
+Eval_AUC: 0.7391	Eval_ACC: 0.6885	Eval_PREC: 0.6945	Eval_RECALL: 0.8187	Eval_F1: 0.7515
+
+Global_step 5400	Train_loss: 0.5950
+Train_AUC: 0.7470	Train_ACC: 0.6954	Train_PREC: 0.7019	Train_RECALL: 0.8197	Train_F1: 0.7562
+Eval_AUC: 0.7391	Eval_ACC: 0.6892	Eval_PREC: 0.6971	Eval_RECALL: 0.8131	Eval_F1: 0.7506
+
+Global_step 5500	Train_loss: 0.5918
+Train_AUC: 0.7472	Train_ACC: 0.6955	Train_PREC: 0.7005	Train_RECALL: 0.8239	Train_F1: 0.7572
+Eval_AUC: 0.7396	Eval_ACC: 0.6890	Eval_PREC: 0.6958	Eval_RECALL: 0.8165	Eval_F1: 0.7513
+
+Global_step 5600	Train_loss: 0.5896
+Train_AUC: 0.7457	Train_ACC: 0.6934	Train_PREC: 0.6887	Train_RECALL: 0.8541	Train_F1: 0.7625
+Eval_AUC: 0.7385	Eval_ACC: 0.6876	Eval_PREC: 0.6844	Eval_RECALL: 0.8481	Eval_F1: 0.7575
+
+Global_step 5700	Train_loss: 0.5908
+Train_AUC: 0.7482	Train_ACC: 0.6943	Train_PREC: 0.7141	Train_RECALL: 0.7832	Train_F1: 0.7471
+Eval_AUC: 0.7403	Eval_ACC: 0.6884	Eval_PREC: 0.7095	Eval_RECALL: 0.7761	Eval_F1: 0.7413
+
+Global_step 5800	Train_loss: 0.5887
+Train_AUC: 0.7486	Train_ACC: 0.6964	Train_PREC: 0.7001	Train_RECALL: 0.8276	Train_F1: 0.7586
+Eval_AUC: 0.7407	Eval_ACC: 0.6899	Eval_PREC: 0.6952	Eval_RECALL: 0.8207	Eval_F1: 0.7528
+
+Global_step 5900	Train_loss: 0.5854
+Train_AUC: 0.7493	Train_ACC: 0.6941	Train_PREC: 0.6842	Train_RECALL: 0.8714	Train_F1: 0.7665
+Eval_AUC: 0.7409	Eval_ACC: 0.6875	Eval_PREC: 0.6794	Eval_RECALL: 0.8649	Eval_F1: 0.7610
+
+Global_step 6000	Train_loss: 0.5938
+Train_AUC: 0.7488	Train_ACC: 0.6939	Train_PREC: 0.7172	Train_RECALL: 0.7740	Train_F1: 0.7445
+Eval_AUC: 0.7403	Eval_ACC: 0.6883	Eval_PREC: 0.7124	Eval_RECALL: 0.7683	Eval_F1: 0.7393
+
+Global_step 6100	Train_loss: 0.5816
+Train_AUC: 0.7479	Train_ACC: 0.6944	Train_PREC: 0.6911	Train_RECALL: 0.8493	Train_F1: 0.7621
+Eval_AUC: 0.7402	Eval_ACC: 0.6888	Eval_PREC: 0.6870	Eval_RECALL: 0.8434	Eval_F1: 0.7572
+
+epoch:1
+Global_step 6200	Train_loss: 0.5826
+Train_AUC: 0.7489	Train_ACC: 0.6965	Train_PREC: 0.7096	Train_RECALL: 0.8012	Train_F1: 0.7526
+Eval_AUC: 0.7409	Eval_ACC: 0.6895	Eval_PREC: 0.7042	Eval_RECALL: 0.7935	Eval_F1: 0.7462
+
+Global_step 6300	Train_loss: 0.5790
+Train_AUC: 0.7494	Train_ACC: 0.6957	Train_PREC: 0.7151	Train_RECALL: 0.7846	Train_F1: 0.7482
+Eval_AUC: 0.7405	Eval_ACC: 0.6892	Eval_PREC: 0.7099	Eval_RECALL: 0.7773	Eval_F1: 0.7421
+
+Global_step 6400	Train_loss: 0.5788
+Train_AUC: 0.7494	Train_ACC: 0.6960	Train_PREC: 0.7116	Train_RECALL: 0.7947	Train_F1: 0.7508
+Eval_AUC: 0.7400	Eval_ACC: 0.6886	Eval_PREC: 0.7056	Eval_RECALL: 0.7874	Eval_F1: 0.7442
+
+Global_step 6500	Train_loss: 0.5793
+Train_AUC: 0.7493	Train_ACC: 0.6970	Train_PREC: 0.7051	Train_RECALL: 0.8153	Train_F1: 0.7562
+Eval_AUC: 0.7400	Eval_ACC: 0.6900	Eval_PREC: 0.6998	Eval_RECALL: 0.8076	Eval_F1: 0.7498
+
+Global_step 6600	Train_loss: 0.5875
+Train_AUC: 0.7499	Train_ACC: 0.6973	Train_PREC: 0.7027	Train_RECALL: 0.8228	Train_F1: 0.7581
+Eval_AUC: 0.7404	Eval_ACC: 0.6896	Eval_PREC: 0.6969	Eval_RECALL: 0.8147	Eval_F1: 0.7512
+
+Global_step 6700	Train_loss: 0.5814
+Train_AUC: 0.7501	Train_ACC: 0.6967	Train_PREC: 0.7114	Train_RECALL: 0.7972	Train_F1: 0.7518
+Eval_AUC: 0.7408	Eval_ACC: 0.6900	Eval_PREC: 0.7062	Eval_RECALL: 0.7896	Eval_F1: 0.7456
+
+Global_step 6800	Train_loss: 0.5815
+Train_AUC: 0.7505	Train_ACC: 0.6969	Train_PREC: 0.7138	Train_RECALL: 0.7914	Train_F1: 0.7506
+Eval_AUC: 0.7409	Eval_ACC: 0.6897	Eval_PREC: 0.7082	Eval_RECALL: 0.7833	Eval_F1: 0.7438
+
+Global_step 6900	Train_loss: 0.5820
+Train_AUC: 0.7509	Train_ACC: 0.6980	Train_PREC: 0.7059	Train_RECALL: 0.8159	Train_F1: 0.7569
+Eval_AUC: 0.7412	Eval_ACC: 0.6907	Eval_PREC: 0.7004	Eval_RECALL: 0.8080	Eval_F1: 0.7504
+
+Global_step 7000	Train_loss: 0.5847
+Train_AUC: 0.7498	Train_ACC: 0.6955	Train_PREC: 0.6875	Train_RECALL: 0.8644	Train_F1: 0.7659
+Eval_AUC: 0.7409	Eval_ACC: 0.6888	Eval_PREC: 0.6827	Eval_RECALL: 0.8577	Eval_F1: 0.7602
+
+Global_step 7100	Train_loss: 0.5791
+Train_AUC: 0.7506	Train_ACC: 0.6970	Train_PREC: 0.6981	Train_RECALL: 0.8357	Train_F1: 0.7607
+Eval_AUC: 0.7409	Eval_ACC: 0.6897	Eval_PREC: 0.6926	Eval_RECALL: 0.8281	Eval_F1: 0.7543
+
+Global_step 7200	Train_loss: 0.5772
+Train_AUC: 0.7511	Train_ACC: 0.6976	Train_PREC: 0.6974	Train_RECALL: 0.8398	Train_F1: 0.7620
+Eval_AUC: 0.7418	Eval_ACC: 0.6903	Eval_PREC: 0.6920	Eval_RECALL: 0.8320	Eval_F1: 0.7556
+
+Global_step 7300	Train_loss: 0.5833
+Train_AUC: 0.7506	Train_ACC: 0.6958	Train_PREC: 0.7148	Train_RECALL: 0.7856	Train_F1: 0.7485
+Eval_AUC: 0.7416	Eval_ACC: 0.6883	Eval_PREC: 0.7088	Eval_RECALL: 0.7777	Eval_F1: 0.7417
+
+Global_step 7400	Train_loss: 0.5836
+Train_AUC: 0.7502	Train_ACC: 0.6960	Train_PREC: 0.6922	Train_RECALL: 0.8508	Train_F1: 0.7634
+Eval_AUC: 0.7417	Eval_ACC: 0.6894	Eval_PREC: 0.6874	Eval_RECALL: 0.8437	Eval_F1: 0.7576
+
+Global_step 7500	Train_loss: 0.5821
+Train_AUC: 0.7515	Train_ACC: 0.6967	Train_PREC: 0.7165	Train_RECALL: 0.7839	Train_F1: 0.7487
+Eval_AUC: 0.7423	Eval_ACC: 0.6892	Eval_PREC: 0.7103	Eval_RECALL: 0.7764	Eval_F1: 0.7419
+
+Global_step 7600	Train_loss: 0.5807
+Train_AUC: 0.7520	Train_ACC: 0.6984	Train_PREC: 0.6986	Train_RECALL: 0.8384	Train_F1: 0.7621
+Eval_AUC: 0.7423	Eval_ACC: 0.6914	Eval_PREC: 0.6935	Eval_RECALL: 0.8307	Eval_F1: 0.7559
+
+Global_step 7700	Train_loss: 0.5846
+Train_AUC: 0.7518	Train_ACC: 0.6981	Train_PREC: 0.7100	Train_RECALL: 0.8050	Train_F1: 0.7545
+Eval_AUC: 0.7428	Eval_ACC: 0.6906	Eval_PREC: 0.7040	Eval_RECALL: 0.7976	Eval_F1: 0.7479
+
+Global_step 7800	Train_loss: 0.5841
+Train_AUC: 0.7528	Train_ACC: 0.6986	Train_PREC: 0.7095	Train_RECALL: 0.8079	Train_F1: 0.7555
+Eval_AUC: 0.7429	Eval_ACC: 0.6912	Eval_PREC: 0.7036	Eval_RECALL: 0.8003	Eval_F1: 0.7489
+
+Global_step 7900	Train_loss: 0.5774
+Train_AUC: 0.7529	Train_ACC: 0.6996	Train_PREC: 0.6995	Train_RECALL: 0.8394	Train_F1: 0.7631
+Eval_AUC: 0.7424	Eval_ACC: 0.6905	Eval_PREC: 0.6926	Eval_RECALL: 0.8306	Eval_F1: 0.7553
+
+Global_step 8000	Train_loss: 0.5753
+Train_AUC: 0.7520	Train_ACC: 0.6978	Train_PREC: 0.6948	Train_RECALL: 0.8482	Train_F1: 0.7639
+Eval_AUC: 0.7425	Eval_ACC: 0.6898	Eval_PREC: 0.6888	Eval_RECALL: 0.8406	Eval_F1: 0.7572
+
+Global_step 8100	Train_loss: 0.5820
+Train_AUC: 0.7508	Train_ACC: 0.6975	Train_PREC: 0.7077	Train_RECALL: 0.8095	Train_F1: 0.7552
+Eval_AUC: 0.7405	Eval_ACC: 0.6902	Eval_PREC: 0.7020	Eval_RECALL: 0.8018	Eval_F1: 0.7486
+
+Global_step 8200	Train_loss: 0.5865
+Train_AUC: 0.7531	Train_ACC: 0.6932	Train_PREC: 0.6779	Train_RECALL: 0.8910	Train_F1: 0.7700
+Eval_AUC: 0.7429	Eval_ACC: 0.6853	Eval_PREC: 0.6724	Eval_RECALL: 0.8833	Eval_F1: 0.7635
+
+Global_step 8300	Train_loss: 0.5800
+Train_AUC: 0.7535	Train_ACC: 0.6995	Train_PREC: 0.7065	Train_RECALL: 0.8187	Train_F1: 0.7585
+Eval_AUC: 0.7430	Eval_ACC: 0.6910	Eval_PREC: 0.6999	Eval_RECALL: 0.8104	Eval_F1: 0.7511
+
+Global_step 8400	Train_loss: 0.5901
+Train_AUC: 0.7539	Train_ACC: 0.6998	Train_PREC: 0.7007	Train_RECALL: 0.8364	Train_F1: 0.7625
+Eval_AUC: 0.7435	Eval_ACC: 0.6909	Eval_PREC: 0.6940	Eval_RECALL: 0.8277	Eval_F1: 0.7550
+
+Global_step 8500	Train_loss: 0.5767
+Train_AUC: 0.7543	Train_ACC: 0.6975	Train_PREC: 0.6876	Train_RECALL: 0.8705	Train_F1: 0.7683
+Eval_AUC: 0.7431	Eval_ACC: 0.6887	Eval_PREC: 0.6813	Eval_RECALL: 0.8622	Eval_F1: 0.7612
+
+Global_step 8600	Train_loss: 0.5860
+Train_AUC: 0.7543	Train_ACC: 0.6997	Train_PREC: 0.7107	Train_RECALL: 0.8078	Train_F1: 0.7561
+Eval_AUC: 0.7434	Eval_ACC: 0.6920	Eval_PREC: 0.7047	Eval_RECALL: 0.7998	Eval_F1: 0.7492
+
+Global_step 8700	Train_loss: 0.5825
+Train_AUC: 0.7546	Train_ACC: 0.7001	Train_PREC: 0.7070	Train_RECALL: 0.8189	Train_F1: 0.7589
+Eval_AUC: 0.7439	Eval_ACC: 0.6928	Eval_PREC: 0.7015	Eval_RECALL: 0.8113	Eval_F1: 0.7524
+
+Global_step 8800	Train_loss: 0.5825
+Train_AUC: 0.7545	Train_ACC: 0.6981	Train_PREC: 0.6890	Train_RECALL: 0.8677	Train_F1: 0.7681
+Eval_AUC: 0.7436	Eval_ACC: 0.6895	Eval_PREC: 0.6828	Eval_RECALL: 0.8597	Eval_F1: 0.7611
+
+Global_step 8900	Train_loss: 0.5787
+Train_AUC: 0.7531	Train_ACC: 0.6987	Train_PREC: 0.6998	Train_RECALL: 0.8356	Train_F1: 0.7617
+Eval_AUC: 0.7432	Eval_ACC: 0.6916	Eval_PREC: 0.6945	Eval_RECALL: 0.8284	Eval_F1: 0.7555
+
+Global_step 9000	Train_loss: 0.5858
+Train_AUC: 0.7549	Train_ACC: 0.7001	Train_PREC: 0.7076	Train_RECALL: 0.8174	Train_F1: 0.7586
+Eval_AUC: 0.7441	Eval_ACC: 0.6917	Eval_PREC: 0.7013	Eval_RECALL: 0.8086	Eval_F1: 0.7511
+
+Global_step 9100	Train_loss: 0.5811
+Train_AUC: 0.7555	Train_ACC: 0.7011	Train_PREC: 0.7000	Train_RECALL: 0.8422	Train_F1: 0.7646
+Eval_AUC: 0.7441	Eval_ACC: 0.6924	Eval_PREC: 0.6935	Eval_RECALL: 0.8339	Eval_F1: 0.7572
+
+Global_step 9200	Train_loss: 0.5832
+Train_AUC: 0.7566	Train_ACC: 0.7015	Train_PREC: 0.7003	Train_RECALL: 0.8428	Train_F1: 0.7650
+Eval_AUC: 0.7450	Eval_ACC: 0.6924	Eval_PREC: 0.6935	Eval_RECALL: 0.8339	Eval_F1: 0.7573
+
+Global_step 9300	Train_loss: 0.5777
+Train_AUC: 0.7566	Train_ACC: 0.7012	Train_PREC: 0.6998	Train_RECALL: 0.8432	Train_F1: 0.7648
+Eval_AUC: 0.7450	Eval_ACC: 0.6924	Eval_PREC: 0.6931	Eval_RECALL: 0.8350	Eval_F1: 0.7574
+
+Global_step 9400	Train_loss: 0.5793
+Train_AUC: 0.7556	Train_ACC: 0.6990	Train_PREC: 0.7240	Train_RECALL: 0.7720	Train_F1: 0.7472
+Eval_AUC: 0.7451	Eval_ACC: 0.6905	Eval_PREC: 0.7172	Eval_RECALL: 0.7628	Eval_F1: 0.7393
+
+Global_step 9500	Train_loss: 0.5793
+Train_AUC: 0.7569	Train_ACC: 0.7023	Train_PREC: 0.7120	Train_RECALL: 0.8117	Train_F1: 0.7586
+Eval_AUC: 0.7450	Eval_ACC: 0.6930	Eval_PREC: 0.7049	Eval_RECALL: 0.8023	Eval_F1: 0.7504
+
+Global_step 9600	Train_loss: 0.5838
+Train_AUC: 0.7567	Train_ACC: 0.6972	Train_PREC: 0.7314	Train_RECALL: 0.7498	Train_F1: 0.7405
+Eval_AUC: 0.7453	Eval_ACC: 0.6882	Eval_PREC: 0.7240	Eval_RECALL: 0.7401	Eval_F1: 0.7320
+
+Global_step 9700	Train_loss: 0.5789
+Train_AUC: 0.7558	Train_ACC: 0.7019	Train_PREC: 0.7066	Train_RECALL: 0.8256	Train_F1: 0.7615
+Eval_AUC: 0.7440	Eval_ACC: 0.6925	Eval_PREC: 0.6997	Eval_RECALL: 0.8154	Eval_F1: 0.7531
+
+Global_step 9800	Train_loss: 0.5809
+Train_AUC: 0.7563	Train_ACC: 0.7019	Train_PREC: 0.7027	Train_RECALL: 0.8367	Train_F1: 0.7639
+Eval_AUC: 0.7457	Eval_ACC: 0.6938	Eval_PREC: 0.6965	Eval_RECALL: 0.8290	Eval_F1: 0.7570
+
+Global_step 9900	Train_loss: 0.5785
+Train_AUC: 0.7569	Train_ACC: 0.7025	Train_PREC: 0.7063	Train_RECALL: 0.8280	Train_F1: 0.7623
+Eval_AUC: 0.7459	Eval_ACC: 0.6938	Eval_PREC: 0.6997	Eval_RECALL: 0.8196	Eval_F1: 0.7549
+
+Global_step 10000	Train_loss: 0.5784
+Train_AUC: 0.7576	Train_ACC: 0.7023	Train_PREC: 0.7124	Train_RECALL: 0.8109	Train_F1: 0.7584
+Eval_AUC: 0.7453	Eval_ACC: 0.6929	Eval_PREC: 0.7050	Eval_RECALL: 0.8014	Eval_F1: 0.7501
+
+Global_step 10100	Train_loss: 0.5846
+Train_AUC: 0.7580	Train_ACC: 0.7029	Train_PREC: 0.7029	Train_RECALL: 0.8392	Train_F1: 0.7650
+Eval_AUC: 0.7458	Eval_ACC: 0.6938	Eval_PREC: 0.6962	Eval_RECALL: 0.8299	Eval_F1: 0.7572
+
+Global_step 10200	Train_loss: 0.5827
+Train_AUC: 0.7588	Train_ACC: 0.7021	Train_PREC: 0.6959	Train_RECALL: 0.8580	Train_F1: 0.7685
+Eval_AUC: 0.7463	Eval_ACC: 0.6927	Eval_PREC: 0.6893	Eval_RECALL: 0.8481	Eval_F1: 0.7605
+
+Global_step 10300	Train_loss: 0.5809
+Train_AUC: 0.7568	Train_ACC: 0.7006	Train_PREC: 0.7119	Train_RECALL: 0.8072	Train_F1: 0.7566
+Eval_AUC: 0.7455	Eval_ACC: 0.6920	Eval_PREC: 0.7053	Eval_RECALL: 0.7979	Eval_F1: 0.7488
+
+Global_step 10400	Train_loss: 0.5831
+Train_AUC: 0.7589	Train_ACC: 0.7025	Train_PREC: 0.6983	Train_RECALL: 0.8518	Train_F1: 0.7675
+Eval_AUC: 0.7462	Eval_ACC: 0.6936	Eval_PREC: 0.6920	Eval_RECALL: 0.8424	Eval_F1: 0.7598
+
+Global_step 10500	Train_loss: 0.5777
+Train_AUC: 0.7594	Train_ACC: 0.7032	Train_PREC: 0.7121	Train_RECALL: 0.8140	Train_F1: 0.7597
+Eval_AUC: 0.7474	Eval_ACC: 0.6941	Eval_PREC: 0.7051	Eval_RECALL: 0.8049	Eval_F1: 0.7517
+
+Global_step 10600	Train_loss: 0.5843
+Train_AUC: 0.7581	Train_ACC: 0.7014	Train_PREC: 0.7093	Train_RECALL: 0.8166	Train_F1: 0.7592
+Eval_AUC: 0.7469	Eval_ACC: 0.6934	Eval_PREC: 0.7031	Eval_RECALL: 0.8086	Eval_F1: 0.7522
+
+Global_step 10700	Train_loss: 0.5823
+Train_AUC: 0.7595	Train_ACC: 0.7028	Train_PREC: 0.7106	Train_RECALL: 0.8172	Train_F1: 0.7602
+Eval_AUC: 0.7474	Eval_ACC: 0.6936	Eval_PREC: 0.7035	Eval_RECALL: 0.8080	Eval_F1: 0.7521
+
+Global_step 10800	Train_loss: 0.5875
+Train_AUC: 0.7600	Train_ACC: 0.7012	Train_PREC: 0.7304	Train_RECALL: 0.7635	Train_F1: 0.7465
+Eval_AUC: 0.7476	Eval_ACC: 0.6917	Eval_PREC: 0.7226	Eval_RECALL: 0.7533	Eval_F1: 0.7376
+
+Global_step 10900	Train_loss: 0.5781
+Train_AUC: 0.7597	Train_ACC: 0.7002	Train_PREC: 0.7315	Train_RECALL: 0.7579	Train_F1: 0.7445
+Eval_AUC: 0.7474	Eval_ACC: 0.6910	Eval_PREC: 0.7237	Eval_RECALL: 0.7488	Eval_F1: 0.7360
+
+Global_step 11000	Train_loss: 0.5810
+Train_AUC: 0.7603	Train_ACC: 0.7027	Train_PREC: 0.6961	Train_RECALL: 0.8593	Train_F1: 0.7691
+Eval_AUC: 0.7475	Eval_ACC: 0.6938	Eval_PREC: 0.6896	Eval_RECALL: 0.8503	Eval_F1: 0.7616
+
+Global_step 11100	Train_loss: 0.5770
+Train_AUC: 0.7612	Train_ACC: 0.7044	Train_PREC: 0.7075	Train_RECALL: 0.8304	Train_F1: 0.7640
+Eval_AUC: 0.7484	Eval_ACC: 0.6957	Eval_PREC: 0.7008	Eval_RECALL: 0.8220	Eval_F1: 0.7566
+
+Global_step 11200	Train_loss: 0.5768
+Train_AUC: 0.7599	Train_ACC: 0.7018	Train_PREC: 0.7207	Train_RECALL: 0.7878	Train_F1: 0.7528
+Eval_AUC: 0.7479	Eval_ACC: 0.6931	Eval_PREC: 0.7136	Eval_RECALL: 0.7793	Eval_F1: 0.7450
+
+Global_step 11300	Train_loss: 0.5841
+Train_AUC: 0.7592	Train_ACC: 0.7029	Train_PREC: 0.7097	Train_RECALL: 0.8199	Train_F1: 0.7608
+Eval_AUC: 0.7468	Eval_ACC: 0.6938	Eval_PREC: 0.7026	Eval_RECALL: 0.8112	Eval_F1: 0.7530
+
+Global_step 11400	Train_loss: 0.5777
+Train_AUC: 0.7614	Train_ACC: 0.7033	Train_PREC: 0.6971	Train_RECALL: 0.8579	Train_F1: 0.7692
+Eval_AUC: 0.7486	Eval_ACC: 0.6945	Eval_PREC: 0.6907	Eval_RECALL: 0.8490	Eval_F1: 0.7617
+
+Global_step 11500	Train_loss: 0.5775
+Train_AUC: 0.7608	Train_ACC: 0.7028	Train_PREC: 0.7217	Train_RECALL: 0.7882	Train_F1: 0.7535
+Eval_AUC: 0.7483	Eval_ACC: 0.6935	Eval_PREC: 0.7140	Eval_RECALL: 0.7793	Eval_F1: 0.7452
+
+Global_step 11600	Train_loss: 0.5822
+Train_AUC: 0.7618	Train_ACC: 0.7046	Train_PREC: 0.7070	Train_RECALL: 0.8324	Train_F1: 0.7646
+Eval_AUC: 0.7487	Eval_ACC: 0.6958	Eval_PREC: 0.7003	Eval_RECALL: 0.8239	Eval_F1: 0.7571
+
+Global_step 11700	Train_loss: 0.5837
+Train_AUC: 0.7628	Train_ACC: 0.7038	Train_PREC: 0.6958	Train_RECALL: 0.8635	Train_F1: 0.7707
+Eval_AUC: 0.7488	Eval_ACC: 0.6947	Eval_PREC: 0.6891	Eval_RECALL: 0.8551	Eval_F1: 0.7632
+
+Global_step 11800	Train_loss: 0.5765
+Train_AUC: 0.7622	Train_ACC: 0.7052	Train_PREC: 0.7079	Train_RECALL: 0.8315	Train_F1: 0.7647
+Eval_AUC: 0.7493	Eval_ACC: 0.6961	Eval_PREC: 0.7011	Eval_RECALL: 0.8221	Eval_F1: 0.7568
+
+Global_step 11900	Train_loss: 0.5758
+Train_AUC: 0.7628	Train_ACC: 0.7059	Train_PREC: 0.7152	Train_RECALL: 0.8137	Train_F1: 0.7613
+Eval_AUC: 0.7490	Eval_ACC: 0.6966	Eval_PREC: 0.7078	Eval_RECALL: 0.8048	Eval_F1: 0.7532
+
+Global_step 12000	Train_loss: 0.5752
+Train_AUC: 0.7617	Train_ACC: 0.7049	Train_PREC: 0.7060	Train_RECALL: 0.8361	Train_F1: 0.7655
+Eval_AUC: 0.7491	Eval_ACC: 0.6960	Eval_PREC: 0.6995	Eval_RECALL: 0.8268	Eval_F1: 0.7578
+
+Global_step 12100	Train_loss: 0.5812
+Train_AUC: 0.7634	Train_ACC: 0.7045	Train_PREC: 0.6973	Train_RECALL: 0.8609	Train_F1: 0.7705
+Eval_AUC: 0.7488	Eval_ACC: 0.6947	Eval_PREC: 0.6902	Eval_RECALL: 0.8515	Eval_F1: 0.7624
+
+Global_step 12200	Train_loss: 0.5821
+Train_AUC: 0.7640	Train_ACC: 0.7064	Train_PREC: 0.7120	Train_RECALL: 0.8240	Train_F1: 0.7639
+Eval_AUC: 0.7497	Eval_ACC: 0.6966	Eval_PREC: 0.7046	Eval_RECALL: 0.8139	Eval_F1: 0.7553
+
+epoch:2
+Global_step 12300	Train_loss: 0.5734
+Train_AUC: 0.7647	Train_ACC: 0.7068	Train_PREC: 0.7103	Train_RECALL: 0.8298	Train_F1: 0.7654
+Eval_AUC: 0.7496	Eval_ACC: 0.6966	Eval_PREC: 0.7027	Eval_RECALL: 0.8191	Eval_F1: 0.7565
+
+Global_step 12400	Train_loss: 0.5662
+Train_AUC: 0.7646	Train_ACC: 0.7014	Train_PREC: 0.7385	Train_RECALL: 0.7460	Train_F1: 0.7423
+Eval_AUC: 0.7488	Eval_ACC: 0.6899	Eval_PREC: 0.7288	Eval_RECALL: 0.7342	Eval_F1: 0.7315
+
+Global_step 12500	Train_loss: 0.5595
+Train_AUC: 0.7648	Train_ACC: 0.7064	Train_PREC: 0.7210	Train_RECALL: 0.8001	Train_F1: 0.7585
+Eval_AUC: 0.7490	Eval_ACC: 0.6950	Eval_PREC: 0.7122	Eval_RECALL: 0.7886	Eval_F1: 0.7484
+
+Global_step 12600	Train_loss: 0.5707
+Train_AUC: 0.7643	Train_ACC: 0.7051	Train_PREC: 0.7263	Train_RECALL: 0.7834	Train_F1: 0.7538
+Eval_AUC: 0.7491	Eval_ACC: 0.6938	Eval_PREC: 0.7174	Eval_RECALL: 0.7717	Eval_F1: 0.7436
+
+Global_step 12700	Train_loss: 0.5714
+Train_AUC: 0.7646	Train_ACC: 0.7069	Train_PREC: 0.7088	Train_RECALL: 0.8341	Train_F1: 0.7663
+Eval_AUC: 0.7488	Eval_ACC: 0.6960	Eval_PREC: 0.7006	Eval_RECALL: 0.8234	Eval_F1: 0.7570
+
+Global_step 12800	Train_loss: 0.5653
+Train_AUC: 0.7641	Train_ACC: 0.7062	Train_PREC: 0.7076	Train_RECALL: 0.8352	Train_F1: 0.7662
+Eval_AUC: 0.7480	Eval_ACC: 0.6951	Eval_PREC: 0.6995	Eval_RECALL: 0.8239	Eval_F1: 0.7566
+
+Global_step 12900	Train_loss: 0.5703
+Train_AUC: 0.7643	Train_ACC: 0.7061	Train_PREC: 0.7078	Train_RECALL: 0.8343	Train_F1: 0.7659
+Eval_AUC: 0.7493	Eval_ACC: 0.6960	Eval_PREC: 0.7001	Eval_RECALL: 0.8249	Eval_F1: 0.7574
+
+Global_step 13000	Train_loss: 0.5761
+Train_AUC: 0.7651	Train_ACC: 0.7067	Train_PREC: 0.7156	Train_RECALL: 0.8151	Train_F1: 0.7621
+Eval_AUC: 0.7491	Eval_ACC: 0.6954	Eval_PREC: 0.7066	Eval_RECALL: 0.8046	Eval_F1: 0.7524
+
+Global_step 13100	Train_loss: 0.5687
+Train_AUC: 0.7660	Train_ACC: 0.7075	Train_PREC: 0.7217	Train_RECALL: 0.8017	Train_F1: 0.7596
+Eval_AUC: 0.7489	Eval_ACC: 0.6949	Eval_PREC: 0.7121	Eval_RECALL: 0.7886	Eval_F1: 0.7484
+
+Global_step 13200	Train_loss: 0.5714
+Train_AUC: 0.7649	Train_ACC: 0.7066	Train_PREC: 0.7154	Train_RECALL: 0.8153	Train_F1: 0.7621
+Eval_AUC: 0.7471	Eval_ACC: 0.6947	Eval_PREC: 0.7065	Eval_RECALL: 0.8030	Eval_F1: 0.7516
+
+Global_step 13300	Train_loss: 0.5695
+Train_AUC: 0.7654	Train_ACC: 0.7056	Train_PREC: 0.7260	Train_RECALL: 0.7858	Train_F1: 0.7547
+Eval_AUC: 0.7499	Eval_ACC: 0.6950	Eval_PREC: 0.7175	Eval_RECALL: 0.7747	Eval_F1: 0.7450
+
+Global_step 13400	Train_loss: 0.5705
+Train_AUC: 0.7662	Train_ACC: 0.7072	Train_PREC: 0.7209	Train_RECALL: 0.8029	Train_F1: 0.7597
+Eval_AUC: 0.7500	Eval_ACC: 0.6961	Eval_PREC: 0.7123	Eval_RECALL: 0.7914	Eval_F1: 0.7497
+
+Global_step 13500	Train_loss: 0.5669
+Train_AUC: 0.7660	Train_ACC: 0.7061	Train_PREC: 0.7257	Train_RECALL: 0.7878	Train_F1: 0.7554
+Eval_AUC: 0.7499	Eval_ACC: 0.6948	Eval_PREC: 0.7168	Eval_RECALL: 0.7763	Eval_F1: 0.7453
+
+Global_step 13600	Train_loss: 0.5693
+Train_AUC: 0.7667	Train_ACC: 0.7076	Train_PREC: 0.7055	Train_RECALL: 0.8456	Train_F1: 0.7692
+Eval_AUC: 0.7494	Eval_ACC: 0.6960	Eval_PREC: 0.6970	Eval_RECALL: 0.8345	Eval_F1: 0.7595
+
+Global_step 13700	Train_loss: 0.5663
+Train_AUC: 0.7654	Train_ACC: 0.7065	Train_PREC: 0.7221	Train_RECALL: 0.7975	Train_F1: 0.7580
+Eval_AUC: 0.7496	Eval_ACC: 0.6949	Eval_PREC: 0.7131	Eval_RECALL: 0.7859	Eval_F1: 0.7477
+
+Global_step 13800	Train_loss: 0.5685
+Train_AUC: 0.7674	Train_ACC: 0.7083	Train_PREC: 0.7093	Train_RECALL: 0.8368	Train_F1: 0.7678
+Eval_AUC: 0.7496	Eval_ACC: 0.6967	Eval_PREC: 0.7009	Eval_RECALL: 0.8246	Eval_F1: 0.7577
+
+Global_step 13900	Train_loss: 0.5650
+Train_AUC: 0.7669	Train_ACC: 0.7074	Train_PREC: 0.7087	Train_RECALL: 0.8359	Train_F1: 0.7671
+Eval_AUC: 0.7505	Eval_ACC: 0.6962	Eval_PREC: 0.7004	Eval_RECALL: 0.8246	Eval_F1: 0.7574
+
+Global_step 14000	Train_loss: 0.5732
+Train_AUC: 0.7667	Train_ACC: 0.7057	Train_PREC: 0.6981	Train_RECALL: 0.8623	Train_F1: 0.7715
+Eval_AUC: 0.7499	Eval_ACC: 0.6940	Eval_PREC: 0.6896	Eval_RECALL: 0.8513	Eval_F1: 0.7620
+
+Global_step 14100	Train_loss: 0.5731
+Train_AUC: 0.7669	Train_ACC: 0.7077	Train_PREC: 0.7090	Train_RECALL: 0.8359	Train_F1: 0.7672
+Eval_AUC: 0.7486	Eval_ACC: 0.6945	Eval_PREC: 0.6992	Eval_RECALL: 0.8231	Eval_F1: 0.7561
+
+Global_step 14200	Train_loss: 0.5759
+Train_AUC: 0.7677	Train_ACC: 0.7091	Train_PREC: 0.7170	Train_RECALL: 0.8181	Train_F1: 0.7642
+Eval_AUC: 0.7499	Eval_ACC: 0.6960	Eval_PREC: 0.7072	Eval_RECALL: 0.8050	Eval_F1: 0.7529
+
+Global_step 14300	Train_loss: 0.5731
+Train_AUC: 0.7682	Train_ACC: 0.7093	Train_PREC: 0.7099	Train_RECALL: 0.8380	Train_F1: 0.7687
+Eval_AUC: 0.7508	Eval_ACC: 0.6973	Eval_PREC: 0.7010	Eval_RECALL: 0.8264	Eval_F1: 0.7585
+
+Global_step 14400	Train_loss: 0.5669
+Train_AUC: 0.7683	Train_ACC: 0.7094	Train_PREC: 0.7206	Train_RECALL: 0.8097	Train_F1: 0.7626
+Eval_AUC: 0.7508	Eval_ACC: 0.6964	Eval_PREC: 0.7104	Eval_RECALL: 0.7972	Eval_F1: 0.7513
+
+Global_step 14500	Train_loss: 0.5736
+Train_AUC: 0.7671	Train_ACC: 0.7076	Train_PREC: 0.7244	Train_RECALL: 0.7950	Train_F1: 0.7581
+Eval_AUC: 0.7497	Eval_ACC: 0.6950	Eval_PREC: 0.7147	Eval_RECALL: 0.7818	Eval_F1: 0.7468
+
+Global_step 14600	Train_loss: 0.5678
+Train_AUC: 0.7694	Train_ACC: 0.7096	Train_PREC: 0.7067	Train_RECALL: 0.8482	Train_F1: 0.7710
+Eval_AUC: 0.7511	Eval_ACC: 0.6967	Eval_PREC: 0.6972	Eval_RECALL: 0.8357	Eval_F1: 0.7602
+
+Global_step 14700	Train_loss: 0.5690
+Train_AUC: 0.7680	Train_ACC: 0.7093	Train_PREC: 0.7160	Train_RECALL: 0.8212	Train_F1: 0.7650
+Eval_AUC: 0.7511	Eval_ACC: 0.6966	Eval_PREC: 0.7065	Eval_RECALL: 0.8084	Eval_F1: 0.7540
+
+Global_step 14800	Train_loss: 0.5726
+Train_AUC: 0.7697	Train_ACC: 0.7104	Train_PREC: 0.7201	Train_RECALL: 0.8138	Train_F1: 0.7641
+Eval_AUC: 0.7516	Eval_ACC: 0.6967	Eval_PREC: 0.7094	Eval_RECALL: 0.8006	Eval_F1: 0.7523
+
+Global_step 14900	Train_loss: 0.5762
+Train_AUC: 0.7696	Train_ACC: 0.7102	Train_PREC: 0.7231	Train_RECALL: 0.8058	Train_F1: 0.7622
+Eval_AUC: 0.7520	Eval_ACC: 0.6967	Eval_PREC: 0.7126	Eval_RECALL: 0.7925	Eval_F1: 0.7504
+
+Global_step 15000	Train_loss: 0.5735
+Train_AUC: 0.7697	Train_ACC: 0.7104	Train_PREC: 0.7229	Train_RECALL: 0.8066	Train_F1: 0.7625
+Eval_AUC: 0.7517	Eval_ACC: 0.6967	Eval_PREC: 0.7123	Eval_RECALL: 0.7932	Eval_F1: 0.7506
+
+Global_step 15100	Train_loss: 0.5656
+Train_AUC: 0.7699	Train_ACC: 0.7101	Train_PREC: 0.7055	Train_RECALL: 0.8532	Train_F1: 0.7723
+Eval_AUC: 0.7513	Eval_ACC: 0.6969	Eval_PREC: 0.6957	Eval_RECALL: 0.8408	Eval_F1: 0.7614
+
+Global_step 15200	Train_loss: 0.5723
+Train_AUC: 0.7706	Train_ACC: 0.7106	Train_PREC: 0.7083	Train_RECALL: 0.8466	Train_F1: 0.7713
+Eval_AUC: 0.7508	Eval_ACC: 0.6965	Eval_PREC: 0.6978	Eval_RECALL: 0.8332	Eval_F1: 0.7595
+
+Global_step 15300	Train_loss: 0.5716
+Train_AUC: 0.7695	Train_ACC: 0.7102	Train_PREC: 0.7127	Train_RECALL: 0.8327	Train_F1: 0.7681
+Eval_AUC: 0.7521	Eval_ACC: 0.6975	Eval_PREC: 0.7032	Eval_RECALL: 0.8204	Eval_F1: 0.7573
+
+Global_step 15400	Train_loss: 0.5721
+Train_AUC: 0.7703	Train_ACC: 0.7097	Train_PREC: 0.7282	Train_RECALL: 0.7917	Train_F1: 0.7586
+Eval_AUC: 0.7521	Eval_ACC: 0.6958	Eval_PREC: 0.7174	Eval_RECALL: 0.7774	Eval_F1: 0.7462
+
+Global_step 15500	Train_loss: 0.5704
+Train_AUC: 0.7708	Train_ACC: 0.7114	Train_PREC: 0.7191	Train_RECALL: 0.8191	Train_F1: 0.7659
+Eval_AUC: 0.7529	Eval_ACC: 0.6980	Eval_PREC: 0.7088	Eval_RECALL: 0.8062	Eval_F1: 0.7544
+
+Global_step 15600	Train_loss: 0.5688
+Train_AUC: 0.7711	Train_ACC: 0.7117	Train_PREC: 0.7197	Train_RECALL: 0.8186	Train_F1: 0.7660
+Eval_AUC: 0.7527	Eval_ACC: 0.6981	Eval_PREC: 0.7094	Eval_RECALL: 0.8051	Eval_F1: 0.7542
+
+Global_step 15700	Train_loss: 0.5680
+Train_AUC: 0.7698	Train_ACC: 0.7093	Train_PREC: 0.7279	Train_RECALL: 0.7913	Train_F1: 0.7583
+Eval_AUC: 0.7522	Eval_ACC: 0.6963	Eval_PREC: 0.7180	Eval_RECALL: 0.7776	Eval_F1: 0.7466
+
+Global_step 15800	Train_loss: 0.5755
+Train_AUC: 0.7719	Train_ACC: 0.7118	Train_PREC: 0.7144	Train_RECALL: 0.8329	Train_F1: 0.7691
+Eval_AUC: 0.7526	Eval_ACC: 0.6976	Eval_PREC: 0.7036	Eval_RECALL: 0.8197	Eval_F1: 0.7572
+
+Global_step 15900	Train_loss: 0.5706
+Train_AUC: 0.7710	Train_ACC: 0.7044	Train_PREC: 0.7472	Train_RECALL: 0.7362	Train_F1: 0.7417
+Eval_AUC: 0.7528	Eval_ACC: 0.6911	Eval_PREC: 0.7359	Eval_RECALL: 0.7223	Eval_F1: 0.7290
+
+Global_step 16000	Train_loss: 0.5619
+Train_AUC: 0.7715	Train_ACC: 0.7120	Train_PREC: 0.7195	Train_RECALL: 0.8200	Train_F1: 0.7665
+Eval_AUC: 0.7530	Eval_ACC: 0.6985	Eval_PREC: 0.7089	Eval_RECALL: 0.8074	Eval_F1: 0.7550
+
+Global_step 16100	Train_loss: 0.5745
+Train_AUC: 0.7724	Train_ACC: 0.7109	Train_PREC: 0.7040	Train_RECALL: 0.8597	Train_F1: 0.7741
+Eval_AUC: 0.7523	Eval_ACC: 0.6964	Eval_PREC: 0.6935	Eval_RECALL: 0.8464	Eval_F1: 0.7623
+
+Global_step 16200	Train_loss: 0.5657
+Train_AUC: 0.7726	Train_ACC: 0.7115	Train_PREC: 0.7061	Train_RECALL: 0.8552	Train_F1: 0.7736
+Eval_AUC: 0.7522	Eval_ACC: 0.6967	Eval_PREC: 0.6952	Eval_RECALL: 0.8420	Eval_F1: 0.7616
+
+Global_step 16300	Train_loss: 0.5655
+Train_AUC: 0.7725	Train_ACC: 0.7115	Train_PREC: 0.7091	Train_RECALL: 0.8468	Train_F1: 0.7718
+Eval_AUC: 0.7529	Eval_ACC: 0.6979	Eval_PREC: 0.6987	Eval_RECALL: 0.8348	Eval_F1: 0.7607
+
+Global_step 16400	Train_loss: 0.5713
+Train_AUC: 0.7726	Train_ACC: 0.7122	Train_PREC: 0.7205	Train_RECALL: 0.8179	Train_F1: 0.7661
+Eval_AUC: 0.7538	Eval_ACC: 0.6987	Eval_PREC: 0.7098	Eval_RECALL: 0.8054	Eval_F1: 0.7546
+
+Global_step 16500	Train_loss: 0.5679
+Train_AUC: 0.7721	Train_ACC: 0.7120	Train_PREC: 0.7234	Train_RECALL: 0.8100	Train_F1: 0.7642
+Eval_AUC: 0.7526	Eval_ACC: 0.6975	Eval_PREC: 0.7119	Eval_RECALL: 0.7966	Eval_F1: 0.7519
+
+Global_step 16600	Train_loss: 0.5656
+Train_AUC: 0.7712	Train_ACC: 0.7106	Train_PREC: 0.7177	Train_RECALL: 0.8208	Train_F1: 0.7658
+Eval_AUC: 0.7533	Eval_ACC: 0.6980	Eval_PREC: 0.7078	Eval_RECALL: 0.8090	Eval_F1: 0.7550
+
+Global_step 16700	Train_loss: 0.5686
+Train_AUC: 0.7728	Train_ACC: 0.7124	Train_PREC: 0.7143	Train_RECALL: 0.8348	Train_F1: 0.7699
+Eval_AUC: 0.7524	Eval_ACC: 0.6982	Eval_PREC: 0.7037	Eval_RECALL: 0.8212	Eval_F1: 0.7579
+
+Global_step 16800	Train_loss: 0.5735
+Train_AUC: 0.7728	Train_ACC: 0.7113	Train_PREC: 0.7321	Train_RECALL: 0.7871	Train_F1: 0.7586
+Eval_AUC: 0.7528	Eval_ACC: 0.6969	Eval_PREC: 0.7205	Eval_RECALL: 0.7729	Eval_F1: 0.7458
+
+Global_step 16900	Train_loss: 0.5754
+Train_AUC: 0.7737	Train_ACC: 0.7132	Train_PREC: 0.7143	Train_RECALL: 0.8374	Train_F1: 0.7709
+Eval_AUC: 0.7535	Eval_ACC: 0.6991	Eval_PREC: 0.7034	Eval_RECALL: 0.8250	Eval_F1: 0.7593
+
+Global_step 17000	Train_loss: 0.5702
+Train_AUC: 0.7738	Train_ACC: 0.7137	Train_PREC: 0.7171	Train_RECALL: 0.8311	Train_F1: 0.7699
+Eval_AUC: 0.7538	Eval_ACC: 0.6993	Eval_PREC: 0.7063	Eval_RECALL: 0.8172	Eval_F1: 0.7577
+
+Global_step 17100	Train_loss: 0.5667
+Train_AUC: 0.7721	Train_ACC: 0.7099	Train_PREC: 0.7328	Train_RECALL: 0.7817	Train_F1: 0.7564
+Eval_AUC: 0.7528	Eval_ACC: 0.6946	Eval_PREC: 0.7200	Eval_RECALL: 0.7676	Eval_F1: 0.7430
+
+Global_step 17200	Train_loss: 0.5664
+Train_AUC: 0.7721	Train_ACC: 0.7108	Train_PREC: 0.7035	Train_RECALL: 0.8614	Train_F1: 0.7744
+Eval_AUC: 0.7532	Eval_ACC: 0.6979	Eval_PREC: 0.6940	Eval_RECALL: 0.8494	Eval_F1: 0.7639
+
+Global_step 17300	Train_loss: 0.5694
+Train_AUC: 0.7745	Train_ACC: 0.7140	Train_PREC: 0.7170	Train_RECALL: 0.8320	Train_F1: 0.7703
+Eval_AUC: 0.7538	Eval_ACC: 0.6988	Eval_PREC: 0.7055	Eval_RECALL: 0.8179	Eval_F1: 0.7575
+
+Global_step 17400	Train_loss: 0.5702
+Train_AUC: 0.7735	Train_ACC: 0.7125	Train_PREC: 0.7101	Train_RECALL: 0.8470	Train_F1: 0.7725
+Eval_AUC: 0.7530	Eval_ACC: 0.6989	Eval_PREC: 0.7000	Eval_RECALL: 0.8342	Eval_F1: 0.7612
+
+Global_step 17500	Train_loss: 0.5625
+Train_AUC: 0.7741	Train_ACC: 0.7124	Train_PREC: 0.7080	Train_RECALL: 0.8527	Train_F1: 0.7736
+Eval_AUC: 0.7543	Eval_ACC: 0.6995	Eval_PREC: 0.6985	Eval_RECALL: 0.8404	Eval_F1: 0.7629
+
+Global_step 17600	Train_loss: 0.5718
+Train_AUC: 0.7740	Train_ACC: 0.7134	Train_PREC: 0.7148	Train_RECALL: 0.8363	Train_F1: 0.7708
+Eval_AUC: 0.7552	Eval_ACC: 0.6998	Eval_PREC: 0.7047	Eval_RECALL: 0.8232	Eval_F1: 0.7593
+
+Global_step 17700	Train_loss: 0.5676
+Train_AUC: 0.7750	Train_ACC: 0.7133	Train_PREC: 0.7100	Train_RECALL: 0.8494	Train_F1: 0.7735
+Eval_AUC: 0.7551	Eval_ACC: 0.6998	Eval_PREC: 0.6998	Eval_RECALL: 0.8373	Eval_F1: 0.7624
+
+Global_step 17800	Train_loss: 0.5694
+Train_AUC: 0.7749	Train_ACC: 0.7143	Train_PREC: 0.7232	Train_RECALL: 0.8168	Train_F1: 0.7672
+Eval_AUC: 0.7551	Eval_ACC: 0.7000	Eval_PREC: 0.7123	Eval_RECALL: 0.8029	Eval_F1: 0.7549
+
+Global_step 17900	Train_loss: 0.5739
+Train_AUC: 0.7750	Train_ACC: 0.7141	Train_PREC: 0.7160	Train_RECALL: 0.8353	Train_F1: 0.7711
+Eval_AUC: 0.7539	Eval_ACC: 0.6999	Eval_PREC: 0.7054	Eval_RECALL: 0.8214	Eval_F1: 0.7590
+
+Global_step 18000	Train_loss: 0.5700
+Train_AUC: 0.7753	Train_ACC: 0.7141	Train_PREC: 0.7138	Train_RECALL: 0.8410	Train_F1: 0.7722
+Eval_AUC: 0.7551	Eval_ACC: 0.7000	Eval_PREC: 0.7034	Eval_RECALL: 0.8276	Eval_F1: 0.7604
+
+Global_step 18100	Train_loss: 0.5750
+Train_AUC: 0.7741	Train_ACC: 0.7134	Train_PREC: 0.7187	Train_RECALL: 0.8257	Train_F1: 0.7685
+Eval_AUC: 0.7550	Eval_ACC: 0.6996	Eval_PREC: 0.7084	Eval_RECALL: 0.8122	Eval_F1: 0.7567
+
+Global_step 18200	Train_loss: 0.5665
+Train_AUC: 0.7748	Train_ACC: 0.7136	Train_PREC: 0.7132	Train_RECALL: 0.8416	Train_F1: 0.7721
+Eval_AUC: 0.7557	Eval_ACC: 0.7006	Eval_PREC: 0.7035	Eval_RECALL: 0.8290	Eval_F1: 0.7611
+
+Global_step 18300	Train_loss: 0.5634
+Train_AUC: 0.7760	Train_ACC: 0.7137	Train_PREC: 0.7083	Train_RECALL: 0.8556	Train_F1: 0.7750
+Eval_AUC: 0.7547	Eval_ACC: 0.6994	Eval_PREC: 0.6979	Eval_RECALL: 0.8417	Eval_F1: 0.7631
+
+epoch:3
+Global_step 18400	Train_loss: 0.5554
+Train_AUC: 0.7766	Train_ACC: 0.7149	Train_PREC: 0.7122	Train_RECALL: 0.8481	Train_F1: 0.7742
+Eval_AUC: 0.7546	Eval_ACC: 0.6995	Eval_PREC: 0.7008	Eval_RECALL: 0.8335	Eval_F1: 0.7614
+
+Global_step 18500	Train_loss: 0.5558
+Train_AUC: 0.7768	Train_ACC: 0.7157	Train_PREC: 0.7275	Train_RECALL: 0.8101	Train_F1: 0.7666
+Eval_AUC: 0.7542	Eval_ACC: 0.7000	Eval_PREC: 0.7152	Eval_RECALL: 0.7950	Eval_F1: 0.7530
+
+Global_step 18600	Train_loss: 0.5552
+Train_AUC: 0.7777	Train_ACC: 0.7164	Train_PREC: 0.7189	Train_RECALL: 0.8338	Train_F1: 0.7721
+Eval_AUC: 0.7540	Eval_ACC: 0.7003	Eval_PREC: 0.7068	Eval_RECALL: 0.8187	Eval_F1: 0.7586
+
+Global_step 18700	Train_loss: 0.5583
+Train_AUC: 0.7778	Train_ACC: 0.7153	Train_PREC: 0.7089	Train_RECALL: 0.8585	Train_F1: 0.7766
+Eval_AUC: 0.7548	Eval_ACC: 0.6992	Eval_PREC: 0.6969	Eval_RECALL: 0.8444	Eval_F1: 0.7636
+
+Global_step 18800	Train_loss: 0.5572
+Train_AUC: 0.7776	Train_ACC: 0.7158	Train_PREC: 0.7291	Train_RECALL: 0.8065	Train_F1: 0.7659
+Eval_AUC: 0.7549	Eval_ACC: 0.6995	Eval_PREC: 0.7163	Eval_RECALL: 0.7910	Eval_F1: 0.7518
+
+Global_step 18900	Train_loss: 0.5569
+Train_AUC: 0.7755	Train_ACC: 0.7125	Train_PREC: 0.7041	Train_RECALL: 0.8642	Train_F1: 0.7760
+Eval_AUC: 0.7520	Eval_ACC: 0.6962	Eval_PREC: 0.6922	Eval_RECALL: 0.8499	Eval_F1: 0.7630
+
+Global_step 19000	Train_loss: 0.5579
+Train_AUC: 0.7776	Train_ACC: 0.7162	Train_PREC: 0.7294	Train_RECALL: 0.8067	Train_F1: 0.7661
+Eval_AUC: 0.7551	Eval_ACC: 0.7003	Eval_PREC: 0.7166	Eval_RECALL: 0.7923	Eval_F1: 0.7526
+
+Global_step 19100	Train_loss: 0.5558
+Train_AUC: 0.7772	Train_ACC: 0.7165	Train_PREC: 0.7222	Train_RECALL: 0.8259	Train_F1: 0.7705
+Eval_AUC: 0.7530	Eval_ACC: 0.6996	Eval_PREC: 0.7091	Eval_RECALL: 0.8102	Eval_F1: 0.7563
+
+Global_step 19200	Train_loss: 0.5593
+Train_AUC: 0.7767	Train_ACC: 0.7152	Train_PREC: 0.7302	Train_RECALL: 0.8024	Train_F1: 0.7646
+Eval_AUC: 0.7550	Eval_ACC: 0.6989	Eval_PREC: 0.7170	Eval_RECALL: 0.7873	Eval_F1: 0.7505
+
+Global_step 19300	Train_loss: 0.5558
+Train_AUC: 0.7778	Train_ACC: 0.7173	Train_PREC: 0.7274	Train_RECALL: 0.8150	Train_F1: 0.7687
+Eval_AUC: 0.7542	Eval_ACC: 0.6994	Eval_PREC: 0.7132	Eval_RECALL: 0.7985	Eval_F1: 0.7534
+
+Global_step 19400	Train_loss: 0.5505
+Train_AUC: 0.7778	Train_ACC: 0.7162	Train_PREC: 0.7299	Train_RECALL: 0.8055	Train_F1: 0.7659
+Eval_AUC: 0.7544	Eval_ACC: 0.6993	Eval_PREC: 0.7166	Eval_RECALL: 0.7896	Eval_F1: 0.7513
+
+Global_step 19500	Train_loss: 0.5615
+Train_AUC: 0.7777	Train_ACC: 0.7161	Train_PREC: 0.7201	Train_RECALL: 0.8299	Train_F1: 0.7711
+Eval_AUC: 0.7553	Eval_ACC: 0.6997	Eval_PREC: 0.7076	Eval_RECALL: 0.8145	Eval_F1: 0.7573
+
+Global_step 19600	Train_loss: 0.5657
+Train_AUC: 0.7783	Train_ACC: 0.7164	Train_PREC: 0.7301	Train_RECALL: 0.8058	Train_F1: 0.7661
+Eval_AUC: 0.7539	Eval_ACC: 0.6987	Eval_PREC: 0.7162	Eval_RECALL: 0.7887	Eval_F1: 0.7507
+
+Global_step 19700	Train_loss: 0.5521
+Train_AUC: 0.7784	Train_ACC: 0.7162	Train_PREC: 0.7124	Train_RECALL: 0.8511	Train_F1: 0.7756
+Eval_AUC: 0.7545	Eval_ACC: 0.6990	Eval_PREC: 0.6998	Eval_RECALL: 0.8350	Eval_F1: 0.7615
+
+Global_step 19800	Train_loss: 0.5564
+Train_AUC: 0.7783	Train_ACC: 0.7151	Train_PREC: 0.7083	Train_RECALL: 0.8598	Train_F1: 0.7767
+Eval_AUC: 0.7537	Eval_ACC: 0.6986	Eval_PREC: 0.6963	Eval_RECALL: 0.8444	Eval_F1: 0.7632
+
+Global_step 19900	Train_loss: 0.5554
+Train_AUC: 0.7791	Train_ACC: 0.7174	Train_PREC: 0.7206	Train_RECALL: 0.8325	Train_F1: 0.7725
+Eval_AUC: 0.7546	Eval_ACC: 0.6995	Eval_PREC: 0.7069	Eval_RECALL: 0.8158	Eval_F1: 0.7575
+
+Global_step 20000	Train_loss: 0.5587
+Train_AUC: 0.7784	Train_ACC: 0.7161	Train_PREC: 0.7148	Train_RECALL: 0.8443	Train_F1: 0.7742
+Eval_AUC: 0.7536	Eval_ACC: 0.6981	Eval_PREC: 0.7012	Eval_RECALL: 0.8282	Eval_F1: 0.7594
+
+Global_step 20100	Train_loss: 0.5565
+Train_AUC: 0.7797	Train_ACC: 0.7179	Train_PREC: 0.7241	Train_RECALL: 0.8249	Train_F1: 0.7712
+Eval_AUC: 0.7554	Eval_ACC: 0.7001	Eval_PREC: 0.7103	Eval_RECALL: 0.8083	Eval_F1: 0.7562
+
+Global_step 20200	Train_loss: 0.5626
+Train_AUC: 0.7799	Train_ACC: 0.7179	Train_PREC: 0.7198	Train_RECALL: 0.8359	Train_F1: 0.7735
+Eval_AUC: 0.7554	Eval_ACC: 0.6996	Eval_PREC: 0.7060	Eval_RECALL: 0.8188	Eval_F1: 0.7582
+
+Global_step 20300	Train_loss: 0.5563
+Train_AUC: 0.7796	Train_ACC: 0.7180	Train_PREC: 0.7219	Train_RECALL: 0.8307	Train_F1: 0.7725
+Eval_AUC: 0.7548	Eval_ACC: 0.7004	Eval_PREC: 0.7085	Eval_RECALL: 0.8142	Eval_F1: 0.7577
+
+Global_step 20400	Train_loss: 0.5650
+Train_AUC: 0.7803	Train_ACC: 0.7166	Train_PREC: 0.7084	Train_RECALL: 0.8639	Train_F1: 0.7785
+Eval_AUC: 0.7557	Eval_ACC: 0.6996	Eval_PREC: 0.6960	Eval_RECALL: 0.8486	Eval_F1: 0.7647
+
+Global_step 20500	Train_loss: 0.5637
+Train_AUC: 0.7791	Train_ACC: 0.7166	Train_PREC: 0.7324	Train_RECALL: 0.8008	Train_F1: 0.7651
+Eval_AUC: 0.7561	Eval_ACC: 0.6995	Eval_PREC: 0.7189	Eval_RECALL: 0.7843	Eval_F1: 0.7502
+
+Global_step 20600	Train_loss: 0.5667
+Train_AUC: 0.7793	Train_ACC: 0.7179	Train_PREC: 0.7289	Train_RECALL: 0.8126	Train_F1: 0.7685
+Eval_AUC: 0.7556	Eval_ACC: 0.6996	Eval_PREC: 0.7150	Eval_RECALL: 0.7946	Eval_F1: 0.7527
+
+Global_step 20700	Train_loss: 0.5604
+Train_AUC: 0.7809	Train_ACC: 0.7147	Train_PREC: 0.7012	Train_RECALL: 0.8799	Train_F1: 0.7804
+Eval_AUC: 0.7556	Eval_ACC: 0.6975	Eval_PREC: 0.6889	Eval_RECALL: 0.8646	Eval_F1: 0.7668
+
+Global_step 20800	Train_loss: 0.5556
+Train_AUC: 0.7809	Train_ACC: 0.7174	Train_PREC: 0.7383	Train_RECALL: 0.7895	Train_F1: 0.7631
+Eval_AUC: 0.7552	Eval_ACC: 0.6975	Eval_PREC: 0.7222	Eval_RECALL: 0.7704	Eval_F1: 0.7455
+
+Global_step 20900	Train_loss: 0.5599
+Train_AUC: 0.7780	Train_ACC: 0.7165	Train_PREC: 0.7180	Train_RECALL: 0.8368	Train_F1: 0.7729
+Eval_AUC: 0.7523	Eval_ACC: 0.6981	Eval_PREC: 0.7043	Eval_RECALL: 0.8194	Eval_F1: 0.7575
+
+Global_step 21000	Train_loss: 0.5613
+Train_AUC: 0.7806	Train_ACC: 0.7188	Train_PREC: 0.7294	Train_RECALL: 0.8139	Train_F1: 0.7694
+Eval_AUC: 0.7559	Eval_ACC: 0.7003	Eval_PREC: 0.7151	Eval_RECALL: 0.7962	Eval_F1: 0.7535
+
+Global_step 21100	Train_loss: 0.5612
+Train_AUC: 0.7805	Train_ACC: 0.7173	Train_PREC: 0.7402	Train_RECALL: 0.7848	Train_F1: 0.7619
+Eval_AUC: 0.7557	Eval_ACC: 0.6985	Eval_PREC: 0.7249	Eval_RECALL: 0.7670	Eval_F1: 0.7454
+
+Global_step 21200	Train_loss: 0.5654
+Train_AUC: 0.7813	Train_ACC: 0.7182	Train_PREC: 0.7381	Train_RECALL: 0.7920	Train_F1: 0.7641
+Eval_AUC: 0.7562	Eval_ACC: 0.6987	Eval_PREC: 0.7224	Eval_RECALL: 0.7733	Eval_F1: 0.7470
+
+Global_step 21300	Train_loss: 0.5512
+Train_AUC: 0.7792	Train_ACC: 0.7176	Train_PREC: 0.7229	Train_RECALL: 0.8269	Train_F1: 0.7714
+Eval_AUC: 0.7556	Eval_ACC: 0.7006	Eval_PREC: 0.7099	Eval_RECALL: 0.8111	Eval_F1: 0.7571
+
+Global_step 21400	Train_loss: 0.5673
+Train_AUC: 0.7813	Train_ACC: 0.7191	Train_PREC: 0.7275	Train_RECALL: 0.8197	Train_F1: 0.7708
+Eval_AUC: 0.7569	Eval_ACC: 0.7010	Eval_PREC: 0.7135	Eval_RECALL: 0.8023	Eval_F1: 0.7553
+
+Global_step 21500	Train_loss: 0.5620
+Train_AUC: 0.7822	Train_ACC: 0.7191	Train_PREC: 0.7172	Train_RECALL: 0.8465	Train_F1: 0.7765
+Eval_AUC: 0.7576	Eval_ACC: 0.7015	Eval_PREC: 0.7041	Eval_RECALL: 0.8299	Eval_F1: 0.7618
+
+Global_step 21600	Train_loss: 0.5626
+Train_AUC: 0.7820	Train_ACC: 0.7176	Train_PREC: 0.7093	Train_RECALL: 0.8640	Train_F1: 0.7790
+Eval_AUC: 0.7567	Eval_ACC: 0.7007	Eval_PREC: 0.6971	Eval_RECALL: 0.8483	Eval_F1: 0.7653
+
+Global_step 21700	Train_loss: 0.5655
+Train_AUC: 0.7810	Train_ACC: 0.7187	Train_PREC: 0.7299	Train_RECALL: 0.8124	Train_F1: 0.7690
+Eval_AUC: 0.7572	Eval_ACC: 0.7013	Eval_PREC: 0.7167	Eval_RECALL: 0.7951	Eval_F1: 0.7539
+
+Global_step 21800	Train_loss: 0.5598
+Train_AUC: 0.7827	Train_ACC: 0.7198	Train_PREC: 0.7188	Train_RECALL: 0.8441	Train_F1: 0.7764
+Eval_AUC: 0.7573	Eval_ACC: 0.7017	Eval_PREC: 0.7052	Eval_RECALL: 0.8273	Eval_F1: 0.7614
+
+Global_step 21900	Train_loss: 0.5558
+Train_AUC: 0.7818	Train_ACC: 0.7195	Train_PREC: 0.7317	Train_RECALL: 0.8103	Train_F1: 0.7690
+Eval_AUC: 0.7577	Eval_ACC: 0.7012	Eval_PREC: 0.7178	Eval_RECALL: 0.7920	Eval_F1: 0.7531
+
+Global_step 22000	Train_loss: 0.5629
+Train_AUC: 0.7833	Train_ACC: 0.7204	Train_PREC: 0.7269	Train_RECALL: 0.8248	Train_F1: 0.7727
+Eval_AUC: 0.7578	Eval_ACC: 0.7025	Eval_PREC: 0.7132	Eval_RECALL: 0.8076	Eval_F1: 0.7575
+
+Global_step 22100	Train_loss: 0.5586
+Train_AUC: 0.7812	Train_ACC: 0.7193	Train_PREC: 0.7275	Train_RECALL: 0.8199	Train_F1: 0.7710
+Eval_AUC: 0.7574	Eval_ACC: 0.7019	Eval_PREC: 0.7138	Eval_RECALL: 0.8041	Eval_F1: 0.7563
+
+Global_step 22200	Train_loss: 0.5696
+Train_AUC: 0.7834	Train_ACC: 0.7206	Train_PREC: 0.7179	Train_RECALL: 0.8487	Train_F1: 0.7778
+Eval_AUC: 0.7581	Eval_ACC: 0.7023	Eval_PREC: 0.7043	Eval_RECALL: 0.8317	Eval_F1: 0.7627
+
+Global_step 22300	Train_loss: 0.5574
+Train_AUC: 0.7840	Train_ACC: 0.7212	Train_PREC: 0.7306	Train_RECALL: 0.8177	Train_F1: 0.7717
+Eval_AUC: 0.7583	Eval_ACC: 0.7018	Eval_PREC: 0.7156	Eval_RECALL: 0.7995	Eval_F1: 0.7552
+
+Global_step 22400	Train_loss: 0.5663
+Train_AUC: 0.7831	Train_ACC: 0.7206	Train_PREC: 0.7240	Train_RECALL: 0.8328	Train_F1: 0.7746
+Eval_AUC: 0.7583	Eval_ACC: 0.7019	Eval_PREC: 0.7097	Eval_RECALL: 0.8152	Eval_F1: 0.7588
+
+Global_step 22500	Train_loss: 0.5620
+Train_AUC: 0.7815	Train_ACC: 0.7195	Train_PREC: 0.7197	Train_RECALL: 0.8407	Train_F1: 0.7755
+Eval_AUC: 0.7581	Eval_ACC: 0.7017	Eval_PREC: 0.7062	Eval_RECALL: 0.8245	Eval_F1: 0.7608
+
+Global_step 22600	Train_loss: 0.5607
+Train_AUC: 0.7819	Train_ACC: 0.7198	Train_PREC: 0.7255	Train_RECALL: 0.8267	Train_F1: 0.7728
+Eval_AUC: 0.7578	Eval_ACC: 0.7017	Eval_PREC: 0.7117	Eval_RECALL: 0.8095	Eval_F1: 0.7575
+
+Global_step 22700	Train_loss: 0.5619
+Train_AUC: 0.7843	Train_ACC: 0.7205	Train_PREC: 0.7406	Train_RECALL: 0.7927	Train_F1: 0.7658
+Eval_AUC: 0.7589	Eval_ACC: 0.7013	Eval_PREC: 0.7250	Eval_RECALL: 0.7744	Eval_F1: 0.7489
+
+Global_step 22800	Train_loss: 0.5665
+Train_AUC: 0.7842	Train_ACC: 0.7194	Train_PREC: 0.7113	Train_RECALL: 0.8638	Train_F1: 0.7801
+Eval_AUC: 0.7583	Eval_ACC: 0.7013	Eval_PREC: 0.6979	Eval_RECALL: 0.8475	Eval_F1: 0.7655
+
+Global_step 22900	Train_loss: 0.5605
+Train_AUC: 0.7842	Train_ACC: 0.7215	Train_PREC: 0.7323	Train_RECALL: 0.8145	Train_F1: 0.7712
+Eval_AUC: 0.7585	Eval_ACC: 0.7028	Eval_PREC: 0.7175	Eval_RECALL: 0.7973	Eval_F1: 0.7553
+
+Global_step 23000	Train_loss: 0.5561
+Train_AUC: 0.7831	Train_ACC: 0.7194	Train_PREC: 0.7132	Train_RECALL: 0.8581	Train_F1: 0.7790
+Eval_AUC: 0.7576	Eval_ACC: 0.7013	Eval_PREC: 0.6999	Eval_RECALL: 0.8418	Eval_F1: 0.7643
+
+Global_step 23100	Train_loss: 0.5637
+Train_AUC: 0.7844	Train_ACC: 0.7204	Train_PREC: 0.7183	Train_RECALL: 0.8471	Train_F1: 0.7774
+Eval_AUC: 0.7577	Eval_ACC: 0.7017	Eval_PREC: 0.7042	Eval_RECALL: 0.8302	Eval_F1: 0.7621
+
+Global_step 23200	Train_loss: 0.5596
+Train_AUC: 0.7850	Train_ACC: 0.7217	Train_PREC: 0.7220	Train_RECALL: 0.8408	Train_F1: 0.7769
+Eval_AUC: 0.7579	Eval_ACC: 0.7022	Eval_PREC: 0.7075	Eval_RECALL: 0.8222	Eval_F1: 0.7606
+
+Global_step 23300	Train_loss: 0.5628
+Train_AUC: 0.7841	Train_ACC: 0.7188	Train_PREC: 0.7462	Train_RECALL: 0.7762	Train_F1: 0.7609
+Eval_AUC: 0.7590	Eval_ACC: 0.7000	Eval_PREC: 0.7307	Eval_RECALL: 0.7578	Eval_F1: 0.7440
+
+Global_step 23400	Train_loss: 0.5510
+Train_AUC: 0.7852	Train_ACC: 0.7218	Train_PREC: 0.7325	Train_RECALL: 0.8150	Train_F1: 0.7715
+Eval_AUC: 0.7584	Eval_ACC: 0.7033	Eval_PREC: 0.7180	Eval_RECALL: 0.7974	Eval_F1: 0.7556
+
+Global_step 23500	Train_loss: 0.5570
+Train_AUC: 0.7859	Train_ACC: 0.7224	Train_PREC: 0.7262	Train_RECALL: 0.8319	Train_F1: 0.7755
+Eval_AUC: 0.7584	Eval_ACC: 0.7025	Eval_PREC: 0.7109	Eval_RECALL: 0.8139	Eval_F1: 0.7589
+
+Global_step 23600	Train_loss: 0.5603
+Train_AUC: 0.7849	Train_ACC: 0.7193	Train_PREC: 0.7104	Train_RECALL: 0.8659	Train_F1: 0.7805
+Eval_AUC: 0.7584	Eval_ACC: 0.7009	Eval_PREC: 0.6970	Eval_RECALL: 0.8494	Eval_F1: 0.7657
+
+Global_step 23700	Train_loss: 0.5635
+Train_AUC: 0.7854	Train_ACC: 0.7220	Train_PREC: 0.7219	Train_RECALL: 0.8419	Train_F1: 0.7773
+Eval_AUC: 0.7583	Eval_ACC: 0.7027	Eval_PREC: 0.7073	Eval_RECALL: 0.8243	Eval_F1: 0.7613
+
+Global_step 23800	Train_loss: 0.5617
+Train_AUC: 0.7850	Train_ACC: 0.7211	Train_PREC: 0.7197	Train_RECALL: 0.8451	Train_F1: 0.7774
+Eval_AUC: 0.7589	Eval_ACC: 0.7024	Eval_PREC: 0.7057	Eval_RECALL: 0.8277	Eval_F1: 0.7619
+
+Global_step 23900	Train_loss: 0.5612
+Train_AUC: 0.7851	Train_ACC: 0.7216	Train_PREC: 0.7194	Train_RECALL: 0.8474	Train_F1: 0.7782
+Eval_AUC: 0.7578	Eval_ACC: 0.7027	Eval_PREC: 0.7052	Eval_RECALL: 0.8304	Eval_F1: 0.7627
+
+Global_step 24000	Train_loss: 0.5635
+Train_AUC: 0.7854	Train_ACC: 0.7201	Train_PREC: 0.7133	Train_RECALL: 0.8601	Train_F1: 0.7799
+Eval_AUC: 0.7591	Eval_ACC: 0.7024	Eval_PREC: 0.7003	Eval_RECALL: 0.8436	Eval_F1: 0.7653
+
+Global_step 24100	Train_loss: 0.5615
+Train_AUC: 0.7856	Train_ACC: 0.7225	Train_PREC: 0.7282	Train_RECALL: 0.8273	Train_F1: 0.7746
+Eval_AUC: 0.7592	Eval_ACC: 0.7031	Eval_PREC: 0.7133	Eval_RECALL: 0.8092	Eval_F1: 0.7582
+
+Global_step 24200	Train_loss: 0.5690
+Train_AUC: 0.7853	Train_ACC: 0.7221	Train_PREC: 0.7291	Train_RECALL: 0.8239	Train_F1: 0.7736
+Eval_AUC: 0.7595	Eval_ACC: 0.7031	Eval_PREC: 0.7143	Eval_RECALL: 0.8064	Eval_F1: 0.7576
+
+Global_step 24300	Train_loss: 0.5644
+Train_AUC: 0.7865	Train_ACC: 0.7221	Train_PREC: 0.7407	Train_RECALL: 0.7967	Train_F1: 0.7677
+Eval_AUC: 0.7595	Eval_ACC: 0.7016	Eval_PREC: 0.7246	Eval_RECALL: 0.7766	Eval_F1: 0.7497
+
+Global_step 24400	Train_loss: 0.5514
+Train_AUC: 0.7859	Train_ACC: 0.7208	Train_PREC: 0.7430	Train_RECALL: 0.7882	Train_F1: 0.7649
+Eval_AUC: 0.7597	Eval_ACC: 0.7020	Eval_PREC: 0.7278	Eval_RECALL: 0.7700	Eval_F1: 0.7483
+
+epoch:4
+Global_step 24500	Train_loss: 0.5445
+Train_AUC: 0.7877	Train_ACC: 0.7238	Train_PREC: 0.7246	Train_RECALL: 0.8398	Train_F1: 0.7780
+Eval_AUC: 0.7588	Eval_ACC: 0.7024	Eval_PREC: 0.7083	Eval_RECALL: 0.8206	Eval_F1: 0.7603
+
+Global_step 24600	Train_loss: 0.5451
+Train_AUC: 0.7863	Train_ACC: 0.7227	Train_PREC: 0.7223	Train_RECALL: 0.8430	Train_F1: 0.7780
+Eval_AUC: 0.7555	Eval_ACC: 0.7012	Eval_PREC: 0.7057	Eval_RECALL: 0.8244	Eval_F1: 0.7605
+
+Global_step 24700	Train_loss: 0.5447
+Train_AUC: 0.7877	Train_ACC: 0.7240	Train_PREC: 0.7301	Train_RECALL: 0.8267	Train_F1: 0.7754
+Eval_AUC: 0.7567	Eval_ACC: 0.7020	Eval_PREC: 0.7132	Eval_RECALL: 0.8062	Eval_F1: 0.7568
+
+Global_step 24800	Train_loss: 0.5452
+Train_AUC: 0.7875	Train_ACC: 0.7233	Train_PREC: 0.7375	Train_RECALL: 0.8072	Train_F1: 0.7708
+Eval_AUC: 0.7576	Eval_ACC: 0.7020	Eval_PREC: 0.7205	Eval_RECALL: 0.7873	Eval_F1: 0.7524
+
+Global_step 24900	Train_loss: 0.5503
+Train_AUC: 0.7880	Train_ACC: 0.7240	Train_PREC: 0.7347	Train_RECALL: 0.8157	Train_F1: 0.7731
+Eval_AUC: 0.7572	Eval_ACC: 0.7017	Eval_PREC: 0.7170	Eval_RECALL: 0.7954	Eval_F1: 0.7542
+
+Global_step 25000	Train_loss: 0.5411
+Train_AUC: 0.7875	Train_ACC: 0.7230	Train_PREC: 0.7203	Train_RECALL: 0.8489	Train_F1: 0.7794
+Eval_AUC: 0.7576	Eval_ACC: 0.7023	Eval_PREC: 0.7051	Eval_RECALL: 0.8297	Eval_F1: 0.7623
+
+Global_step 25100	Train_loss: 0.5539
+Train_AUC: 0.7879	Train_ACC: 0.7214	Train_PREC: 0.7117	Train_RECALL: 0.8684	Train_F1: 0.7822
+Eval_AUC: 0.7560	Eval_ACC: 0.6999	Eval_PREC: 0.6961	Eval_RECALL: 0.8487	Eval_F1: 0.7649
+
+Global_step 25200	Train_loss: 0.5488
+Train_AUC: 0.7877	Train_ACC: 0.7243	Train_PREC: 0.7340	Train_RECALL: 0.8182	Train_F1: 0.7738
+Eval_AUC: 0.7555	Eval_ACC: 0.7004	Eval_PREC: 0.7149	Eval_RECALL: 0.7970	Eval_F1: 0.7537
+
+Global_step 25300	Train_loss: 0.5480
+Train_AUC: 0.7880	Train_ACC: 0.7235	Train_PREC: 0.7401	Train_RECALL: 0.8017	Train_F1: 0.7697
+Eval_AUC: 0.7582	Eval_ACC: 0.7012	Eval_PREC: 0.7221	Eval_RECALL: 0.7812	Eval_F1: 0.7505
+
+Global_step 25400	Train_loss: 0.5507
+Train_AUC: 0.7886	Train_ACC: 0.7244	Train_PREC: 0.7338	Train_RECALL: 0.8190	Train_F1: 0.7740
+Eval_AUC: 0.7568	Eval_ACC: 0.7012	Eval_PREC: 0.7155	Eval_RECALL: 0.7977	Eval_F1: 0.7544
+
+Global_step 25500	Train_loss: 0.5447
+Train_AUC: 0.7873	Train_ACC: 0.7239	Train_PREC: 0.7250	Train_RECALL: 0.8391	Train_F1: 0.7779
+Eval_AUC: 0.7564	Eval_ACC: 0.7010	Eval_PREC: 0.7075	Eval_RECALL: 0.8186	Eval_F1: 0.7590
+
+Global_step 25600	Train_loss: 0.5494
+Train_AUC: 0.7893	Train_ACC: 0.7250	Train_PREC: 0.7318	Train_RECALL: 0.8252	Train_F1: 0.7757
+Eval_AUC: 0.7573	Eval_ACC: 0.7018	Eval_PREC: 0.7138	Eval_RECALL: 0.8041	Eval_F1: 0.7562
+
+Global_step 25700	Train_loss: 0.5533
+Train_AUC: 0.7880	Train_ACC: 0.7245	Train_PREC: 0.7319	Train_RECALL: 0.8237	Train_F1: 0.7751
+Eval_AUC: 0.7554	Eval_ACC: 0.7002	Eval_PREC: 0.7129	Eval_RECALL: 0.8018	Eval_F1: 0.7547
+
+Global_step 25800	Train_loss: 0.5505
+Train_AUC: 0.7883	Train_ACC: 0.7237	Train_PREC: 0.7205	Train_RECALL: 0.8507	Train_F1: 0.7802
+Eval_AUC: 0.7577	Eval_ACC: 0.7017	Eval_PREC: 0.7039	Eval_RECALL: 0.8310	Eval_F1: 0.7622
+
+Global_step 25900	Train_loss: 0.5467
+Train_AUC: 0.7883	Train_ACC: 0.7239	Train_PREC: 0.7317	Train_RECALL: 0.8226	Train_F1: 0.7745
+Eval_AUC: 0.7583	Eval_ACC: 0.7018	Eval_PREC: 0.7145	Eval_RECALL: 0.8023	Eval_F1: 0.7559
+
+Global_step 26000	Train_loss: 0.5503
+Train_AUC: 0.7893	Train_ACC: 0.7251	Train_PREC: 0.7285	Train_RECALL: 0.8335	Train_F1: 0.7775
+Eval_AUC: 0.7582	Eval_ACC: 0.7024	Eval_PREC: 0.7113	Eval_RECALL: 0.8125	Eval_F1: 0.7585
+
+Global_step 26100	Train_loss: 0.5472
+Train_AUC: 0.7897	Train_ACC: 0.7254	Train_PREC: 0.7323	Train_RECALL: 0.8252	Train_F1: 0.7760
+Eval_AUC: 0.7578	Eval_ACC: 0.7027	Eval_PREC: 0.7147	Eval_RECALL: 0.8041	Eval_F1: 0.7568
+
+Global_step 26200	Train_loss: 0.5476
+Train_AUC: 0.7879	Train_ACC: 0.7238	Train_PREC: 0.7246	Train_RECALL: 0.8400	Train_F1: 0.7781
+Eval_AUC: 0.7567	Eval_ACC: 0.7007	Eval_PREC: 0.7072	Eval_RECALL: 0.8187	Eval_F1: 0.7589
+
+Global_step 26300	Train_loss: 0.5474
+Train_AUC: 0.7900	Train_ACC: 0.7253	Train_PREC: 0.7235	Train_RECALL: 0.8470	Train_F1: 0.7804
+Eval_AUC: 0.7588	Eval_ACC: 0.7027	Eval_PREC: 0.7065	Eval_RECALL: 0.8265	Eval_F1: 0.7618
+
+Global_step 26400	Train_loss: 0.5487
+Train_AUC: 0.7895	Train_ACC: 0.7242	Train_PREC: 0.7422	Train_RECALL: 0.7989	Train_F1: 0.7695
+Eval_AUC: 0.7590	Eval_ACC: 0.7017	Eval_PREC: 0.7243	Eval_RECALL: 0.7773	Eval_F1: 0.7499
+
+Global_step 26500	Train_loss: 0.5558
+Train_AUC: 0.7890	Train_ACC: 0.7248	Train_PREC: 0.7319	Train_RECALL: 0.8244	Train_F1: 0.7754
+Eval_AUC: 0.7581	Eval_ACC: 0.7022	Eval_PREC: 0.7147	Eval_RECALL: 0.8029	Eval_F1: 0.7562
+
+Global_step 26600	Train_loss: 0.5479
+Train_AUC: 0.7896	Train_ACC: 0.7248	Train_PREC: 0.7415	Train_RECALL: 0.8021	Train_F1: 0.7706
+Eval_AUC: 0.7590	Eval_ACC: 0.7014	Eval_PREC: 0.7228	Eval_RECALL: 0.7801	Eval_F1: 0.7504
+
+Global_step 26700	Train_loss: 0.5460
+Train_AUC: 0.7895	Train_ACC: 0.7247	Train_PREC: 0.7250	Train_RECALL: 0.8414	Train_F1: 0.7789
+Eval_AUC: 0.7577	Eval_ACC: 0.7017	Eval_PREC: 0.7078	Eval_RECALL: 0.8199	Eval_F1: 0.7597
+
+Global_step 26800	Train_loss: 0.5512
+Train_AUC: 0.7905	Train_ACC: 0.7260	Train_PREC: 0.7375	Train_RECALL: 0.8144	Train_F1: 0.7740
+Eval_AUC: 0.7578	Eval_ACC: 0.7007	Eval_PREC: 0.7177	Eval_RECALL: 0.7909	Eval_F1: 0.7525
+
+Global_step 26900	Train_loss: 0.5501
+Train_AUC: 0.7886	Train_ACC: 0.7239	Train_PREC: 0.7437	Train_RECALL: 0.7948	Train_F1: 0.7684
+Eval_AUC: 0.7586	Eval_ACC: 0.7006	Eval_PREC: 0.7250	Eval_RECALL: 0.7728	Eval_F1: 0.7481
+
+Global_step 27000	Train_loss: 0.5569
+Train_AUC: 0.7909	Train_ACC: 0.7257	Train_PREC: 0.7256	Train_RECALL: 0.8429	Train_F1: 0.7798
+Eval_AUC: 0.7593	Eval_ACC: 0.7027	Eval_PREC: 0.7079	Eval_RECALL: 0.8225	Eval_F1: 0.7609
+
+Global_step 27100	Train_loss: 0.5526
+Train_AUC: 0.7900	Train_ACC: 0.7258	Train_PREC: 0.7352	Train_RECALL: 0.8193	Train_F1: 0.7750
+Eval_AUC: 0.7585	Eval_ACC: 0.7015	Eval_PREC: 0.7162	Eval_RECALL: 0.7968	Eval_F1: 0.7544
+
+Global_step 27200	Train_loss: 0.5511
+Train_AUC: 0.7917	Train_ACC: 0.7266	Train_PREC: 0.7269	Train_RECALL: 0.8421	Train_F1: 0.7802
+Eval_AUC: 0.7586	Eval_ACC: 0.7024	Eval_PREC: 0.7084	Eval_RECALL: 0.8202	Eval_F1: 0.7602
+
+Global_step 27300	Train_loss: 0.5458
+Train_AUC: 0.7913	Train_ACC: 0.7266	Train_PREC: 0.7269	Train_RECALL: 0.8419	Train_F1: 0.7802
+Eval_AUC: 0.7600	Eval_ACC: 0.7034	Eval_PREC: 0.7094	Eval_RECALL: 0.8207	Eval_F1: 0.7610
+
+Global_step 27400	Train_loss: 0.5514
+Train_AUC: 0.7912	Train_ACC: 0.7266	Train_PREC: 0.7337	Train_RECALL: 0.8251	Train_F1: 0.7767
+Eval_AUC: 0.7579	Eval_ACC: 0.7013	Eval_PREC: 0.7140	Eval_RECALL: 0.8020	Eval_F1: 0.7555
+
+Global_step 27500	Train_loss: 0.5556
+Train_AUC: 0.7913	Train_ACC: 0.7271	Train_PREC: 0.7309	Train_RECALL: 0.8332	Train_F1: 0.7787
+Eval_AUC: 0.7570	Eval_ACC: 0.7016	Eval_PREC: 0.7112	Eval_RECALL: 0.8104	Eval_F1: 0.7576
+
+Global_step 27600	Train_loss: 0.5512
+Train_AUC: 0.7910	Train_ACC: 0.7241	Train_PREC: 0.7159	Train_RECALL: 0.8643	Train_F1: 0.7831
+Eval_AUC: 0.7569	Eval_ACC: 0.7007	Eval_PREC: 0.6985	Eval_RECALL: 0.8442	Eval_F1: 0.7644
+
+Global_step 27700	Train_loss: 0.5526
+Train_AUC: 0.7924	Train_ACC: 0.7275	Train_PREC: 0.7297	Train_RECALL: 0.8374	Train_F1: 0.7799
+Eval_AUC: 0.7585	Eval_ACC: 0.7019	Eval_PREC: 0.7100	Eval_RECALL: 0.8146	Eval_F1: 0.7587
+
+Global_step 27800	Train_loss: 0.5573
+Train_AUC: 0.7925	Train_ACC: 0.7278	Train_PREC: 0.7394	Train_RECALL: 0.8147	Train_F1: 0.7752
+Eval_AUC: 0.7600	Eval_ACC: 0.7029	Eval_PREC: 0.7196	Eval_RECALL: 0.7922	Eval_F1: 0.7542
+
+Global_step 27900	Train_loss: 0.5571
+Train_AUC: 0.7920	Train_ACC: 0.7272	Train_PREC: 0.7329	Train_RECALL: 0.8288	Train_F1: 0.7779
+Eval_AUC: 0.7591	Eval_ACC: 0.7028	Eval_PREC: 0.7137	Eval_RECALL: 0.8071	Eval_F1: 0.7575
+
+Global_step 28000	Train_loss: 0.5492
+Train_AUC: 0.7927	Train_ACC: 0.7272	Train_PREC: 0.7278	Train_RECALL: 0.8412	Train_F1: 0.7804
+Eval_AUC: 0.7601	Eval_ACC: 0.7032	Eval_PREC: 0.7093	Eval_RECALL: 0.8201	Eval_F1: 0.7607
+
+Global_step 28100	Train_loss: 0.5568
+Train_AUC: 0.7908	Train_ACC: 0.7257	Train_PREC: 0.7231	Train_RECALL: 0.8493	Train_F1: 0.7811
+Eval_AUC: 0.7592	Eval_ACC: 0.7026	Eval_PREC: 0.7056	Eval_RECALL: 0.8288	Eval_F1: 0.7623
+
+Global_step 28200	Train_loss: 0.5541
+Train_AUC: 0.7909	Train_ACC: 0.7263	Train_PREC: 0.7326	Train_RECALL: 0.8267	Train_F1: 0.7768
+Eval_AUC: 0.7590	Eval_ACC: 0.7026	Eval_PREC: 0.7139	Eval_RECALL: 0.8060	Eval_F1: 0.7572
+
+Global_step 28300	Train_loss: 0.5531
+Train_AUC: 0.7931	Train_ACC: 0.7280	Train_PREC: 0.7309	Train_RECALL: 0.8356	Train_F1: 0.7798
+Eval_AUC: 0.7604	Eval_ACC: 0.7040	Eval_PREC: 0.7123	Eval_RECALL: 0.8143	Eval_F1: 0.7599
+
+Global_step 28400	Train_loss: 0.5541
+Train_AUC: 0.7919	Train_ACC: 0.7249	Train_PREC: 0.7160	Train_RECALL: 0.8662	Train_F1: 0.7840
+Eval_AUC: 0.7601	Eval_ACC: 0.7024	Eval_PREC: 0.6996	Eval_RECALL: 0.8460	Eval_F1: 0.7659
+
+Global_step 28500	Train_loss: 0.5504
+Train_AUC: 0.7917	Train_ACC: 0.7259	Train_PREC: 0.7427	Train_RECALL: 0.8024	Train_F1: 0.7714
+Eval_AUC: 0.7595	Eval_ACC: 0.7024	Eval_PREC: 0.7242	Eval_RECALL: 0.7798	Eval_F1: 0.7510
+
+Global_step 28600	Train_loss: 0.5469
+Train_AUC: 0.7910	Train_ACC: 0.7255	Train_PREC: 0.7257	Train_RECALL: 0.8418	Train_F1: 0.7794
+Eval_AUC: 0.7600	Eval_ACC: 0.7030	Eval_PREC: 0.7086	Eval_RECALL: 0.8216	Eval_F1: 0.7609
+
+Global_step 28700	Train_loss: 0.5560
+Train_AUC: 0.7931	Train_ACC: 0.7277	Train_PREC: 0.7403	Train_RECALL: 0.8125	Train_F1: 0.7747
+Eval_AUC: 0.7602	Eval_ACC: 0.7035	Eval_PREC: 0.7214	Eval_RECALL: 0.7896	Eval_F1: 0.7539
+
+Global_step 28800	Train_loss: 0.5477
+Train_AUC: 0.7942	Train_ACC: 0.7291	Train_PREC: 0.7344	Train_RECALL: 0.8301	Train_F1: 0.7793
+Eval_AUC: 0.7594	Eval_ACC: 0.7030	Eval_PREC: 0.7144	Eval_RECALL: 0.8059	Eval_F1: 0.7574
+
+Global_step 28900	Train_loss: 0.5570
+Train_AUC: 0.7934	Train_ACC: 0.7281	Train_PREC: 0.7375	Train_RECALL: 0.8200	Train_F1: 0.7766
+Eval_AUC: 0.7597	Eval_ACC: 0.7035	Eval_PREC: 0.7182	Eval_RECALL: 0.7976	Eval_F1: 0.7558
+
+Global_step 29000	Train_loss: 0.5510
+Train_AUC: 0.7936	Train_ACC: 0.7277	Train_PREC: 0.7428	Train_RECALL: 0.8069	Train_F1: 0.7736
+Eval_AUC: 0.7599	Eval_ACC: 0.7032	Eval_PREC: 0.7234	Eval_RECALL: 0.7839	Eval_F1: 0.7524
+
+Global_step 29100	Train_loss: 0.5526
+Train_AUC: 0.7932	Train_ACC: 0.7285	Train_PREC: 0.7364	Train_RECALL: 0.8239	Train_F1: 0.7777
+Eval_AUC: 0.7598	Eval_ACC: 0.7031	Eval_PREC: 0.7166	Eval_RECALL: 0.8005	Eval_F1: 0.7563
+
+Global_step 29200	Train_loss: 0.5547
+Train_AUC: 0.7934	Train_ACC: 0.7283	Train_PREC: 0.7397	Train_RECALL: 0.8154	Train_F1: 0.7757
+Eval_AUC: 0.7607	Eval_ACC: 0.7034	Eval_PREC: 0.7202	Eval_RECALL: 0.7922	Eval_F1: 0.7545
+
+Global_step 29300	Train_loss: 0.5536
+Train_AUC: 0.7923	Train_ACC: 0.7270	Train_PREC: 0.7303	Train_RECALL: 0.8344	Train_F1: 0.7789
+Eval_AUC: 0.7604	Eval_ACC: 0.7036	Eval_PREC: 0.7123	Eval_RECALL: 0.8132	Eval_F1: 0.7594
+
+Global_step 29400	Train_loss: 0.5571
+Train_AUC: 0.7938	Train_ACC: 0.7288	Train_PREC: 0.7420	Train_RECALL: 0.8115	Train_F1: 0.7752
+Eval_AUC: 0.7593	Eval_ACC: 0.7022	Eval_PREC: 0.7213	Eval_RECALL: 0.7861	Eval_F1: 0.7523
+
+Global_step 29500	Train_loss: 0.5525
+Train_AUC: 0.7945	Train_ACC: 0.7278	Train_PREC: 0.7224	Train_RECALL: 0.8568	Train_F1: 0.7839
+Eval_AUC: 0.7609	Eval_ACC: 0.7038	Eval_PREC: 0.7046	Eval_RECALL: 0.8354	Eval_F1: 0.7645
+
+Global_step 29600	Train_loss: 0.5572
+Train_AUC: 0.7942	Train_ACC: 0.7289	Train_PREC: 0.7330	Train_RECALL: 0.8331	Train_F1: 0.7799
+Eval_AUC: 0.7606	Eval_ACC: 0.7049	Eval_PREC: 0.7144	Eval_RECALL: 0.8115	Eval_F1: 0.7599
+
+Global_step 29700	Train_loss: 0.5526
+Train_AUC: 0.7945	Train_ACC: 0.7293	Train_PREC: 0.7377	Train_RECALL: 0.8229	Train_F1: 0.7780
+Eval_AUC: 0.7603	Eval_ACC: 0.7043	Eval_PREC: 0.7183	Eval_RECALL: 0.7996	Eval_F1: 0.7568
+
+Global_step 29800	Train_loss: 0.5491
+Train_AUC: 0.7941	Train_ACC: 0.7269	Train_PREC: 0.7534	Train_RECALL: 0.7822	Train_F1: 0.7675
+Eval_AUC: 0.7609	Eval_ACC: 0.7015	Eval_PREC: 0.7325	Eval_RECALL: 0.7581	Eval_F1: 0.7451
+
+Global_step 29900	Train_loss: 0.5460
+Train_AUC: 0.7934	Train_ACC: 0.7266	Train_PREC: 0.7203	Train_RECALL: 0.8595	Train_F1: 0.7837
+Eval_AUC: 0.7614	Eval_ACC: 0.7032	Eval_PREC: 0.7028	Eval_RECALL: 0.8389	Eval_F1: 0.7648
+
+Global_step 30000	Train_loss: 0.5541
+Train_AUC: 0.7934	Train_ACC: 0.7278	Train_PREC: 0.7413	Train_RECALL: 0.8106	Train_F1: 0.7744
+Eval_AUC: 0.7613	Eval_ACC: 0.7038	Eval_PREC: 0.7223	Eval_RECALL: 0.7882	Eval_F1: 0.7538
+
+Global_step 30100	Train_loss: 0.5497
+Train_AUC: 0.7948	Train_ACC: 0.7294	Train_PREC: 0.7359	Train_RECALL: 0.8273	Train_F1: 0.7789
+Eval_AUC: 0.7615	Eval_ACC: 0.7047	Eval_PREC: 0.7168	Eval_RECALL: 0.8046	Eval_F1: 0.7582
+
+Global_step 30200	Train_loss: 0.5551
+Train_AUC: 0.7950	Train_ACC: 0.7294	Train_PREC: 0.7416	Train_RECALL: 0.8143	Train_F1: 0.7762
+Eval_AUC: 0.7606	Eval_ACC: 0.7041	Eval_PREC: 0.7215	Eval_RECALL: 0.7909	Eval_F1: 0.7546
+
+Global_step 30300	Train_loss: 0.5576
+Train_AUC: 0.7958	Train_ACC: 0.7303	Train_PREC: 0.7372	Train_RECALL: 0.8267	Train_F1: 0.7794
+Eval_AUC: 0.7597	Eval_ACC: 0.7040	Eval_PREC: 0.7164	Eval_RECALL: 0.8035	Eval_F1: 0.7575
+
+Global_step 30400	Train_loss: 0.5582
+Train_AUC: 0.7935	Train_ACC: 0.7281	Train_PREC: 0.7338	Train_RECALL: 0.8288	Train_F1: 0.7784
+Eval_AUC: 0.7598	Eval_ACC: 0.7031	Eval_PREC: 0.7143	Eval_RECALL: 0.8066	Eval_F1: 0.7577
+
+Global_step 30500	Train_loss: 0.5501
+Train_AUC: 0.7957	Train_ACC: 0.7298	Train_PREC: 0.7337	Train_RECALL: 0.8337	Train_F1: 0.7805
+Eval_AUC: 0.7607	Eval_ACC: 0.7044	Eval_PREC: 0.7142	Eval_RECALL: 0.8103	Eval_F1: 0.7592
+
+epoch:5
+Global_step 30600	Train_loss: 0.5274
+Train_AUC: 0.7954	Train_ACC: 0.7295	Train_PREC: 0.7427	Train_RECALL: 0.8118	Train_F1: 0.7757
+Eval_AUC: 0.7571	Eval_ACC: 0.7012	Eval_PREC: 0.7201	Eval_RECALL: 0.7862	Eval_F1: 0.7517
+
+Global_step 30700	Train_loss: 0.5426
+Train_AUC: 0.7963	Train_ACC: 0.7303	Train_PREC: 0.7348	Train_RECALL: 0.8324	Train_F1: 0.7806
+Eval_AUC: 0.7578	Eval_ACC: 0.7015	Eval_PREC: 0.7123	Eval_RECALL: 0.8072	Eval_F1: 0.7568
+
+Global_step 30800	Train_loss: 0.5383
+Train_AUC: 0.7965	Train_ACC: 0.7306	Train_PREC: 0.7335	Train_RECALL: 0.8364	Train_F1: 0.7816
+Eval_AUC: 0.7580	Eval_ACC: 0.7017	Eval_PREC: 0.7112	Eval_RECALL: 0.8106	Eval_F1: 0.7577
+
+Global_step 30900	Train_loss: 0.5372
+Train_AUC: 0.7963	Train_ACC: 0.7304	Train_PREC: 0.7407	Train_RECALL: 0.8187	Train_F1: 0.7778
+Eval_AUC: 0.7582	Eval_ACC: 0.7033	Eval_PREC: 0.7192	Eval_RECALL: 0.7946	Eval_F1: 0.7550
+
+Global_step 31000	Train_loss: 0.5349
+Train_AUC: 0.7970	Train_ACC: 0.7312	Train_PREC: 0.7375	Train_RECALL: 0.8284	Train_F1: 0.7803
+Eval_AUC: 0.7597	Eval_ACC: 0.7030	Eval_PREC: 0.7156	Eval_RECALL: 0.8028	Eval_F1: 0.7567
+
+Global_step 31100	Train_loss: 0.5365
+Train_AUC: 0.7953	Train_ACC: 0.7288	Train_PREC: 0.7473	Train_RECALL: 0.7999	Train_F1: 0.7727
+Eval_AUC: 0.7558	Eval_ACC: 0.6977	Eval_PREC: 0.7217	Eval_RECALL: 0.7723	Eval_F1: 0.7461
+
+Global_step 31200	Train_loss: 0.5340
+Train_AUC: 0.7970	Train_ACC: 0.7308	Train_PREC: 0.7335	Train_RECALL: 0.8371	Train_F1: 0.7819
+Eval_AUC: 0.7597	Eval_ACC: 0.7024	Eval_PREC: 0.7116	Eval_RECALL: 0.8116	Eval_F1: 0.7583
+
+Global_step 31300	Train_loss: 0.5333
+Train_AUC: 0.7975	Train_ACC: 0.7309	Train_PREC: 0.7487	Train_RECALL: 0.8023	Train_F1: 0.7746
+Eval_AUC: 0.7581	Eval_ACC: 0.7006	Eval_PREC: 0.7241	Eval_RECALL: 0.7746	Eval_F1: 0.7485
+
+Global_step 31400	Train_loss: 0.5368
+Train_AUC: 0.7967	Train_ACC: 0.7292	Train_PREC: 0.7542	Train_RECALL: 0.7865	Train_F1: 0.7700
+Eval_AUC: 0.7574	Eval_ACC: 0.6989	Eval_PREC: 0.7289	Eval_RECALL: 0.7589	Eval_F1: 0.7436
+
+Global_step 31500	Train_loss: 0.5406
+Train_AUC: 0.7977	Train_ACC: 0.7311	Train_PREC: 0.7265	Train_RECALL: 0.8555	Train_F1: 0.7857
+Eval_AUC: 0.7566	Eval_ACC: 0.7007	Eval_PREC: 0.7035	Eval_RECALL: 0.8290	Eval_F1: 0.7611
+
+Global_step 31600	Train_loss: 0.5384
+Train_AUC: 0.7975	Train_ACC: 0.7307	Train_PREC: 0.7532	Train_RECALL: 0.7924	Train_F1: 0.7723
+Eval_AUC: 0.7597	Eval_ACC: 0.7008	Eval_PREC: 0.7283	Eval_RECALL: 0.7654	Eval_F1: 0.7464
+
+Global_step 31700	Train_loss: 0.5416
+Train_AUC: 0.7977	Train_ACC: 0.7317	Train_PREC: 0.7432	Train_RECALL: 0.8166	Train_F1: 0.7782
+Eval_AUC: 0.7571	Eval_ACC: 0.7004	Eval_PREC: 0.7184	Eval_RECALL: 0.7883	Eval_F1: 0.7517
+
+Global_step 31800	Train_loss: 0.5430
+Train_AUC: 0.7981	Train_ACC: 0.7321	Train_PREC: 0.7401	Train_RECALL: 0.8248	Train_F1: 0.7801
+Eval_AUC: 0.7592	Eval_ACC: 0.7030	Eval_PREC: 0.7173	Eval_RECALL: 0.7984	Eval_F1: 0.7557
+
+Global_step 31900	Train_loss: 0.5353
+Train_AUC: 0.7986	Train_ACC: 0.7296	Train_PREC: 0.7189	Train_RECALL: 0.8718	Train_F1: 0.7880
+Eval_AUC: 0.7581	Eval_ACC: 0.7001	Eval_PREC: 0.6969	Eval_RECALL: 0.8471	Eval_F1: 0.7647
+
+Global_step 32000	Train_loss: 0.5368
+Train_AUC: 0.7986	Train_ACC: 0.7327	Train_PREC: 0.7353	Train_RECALL: 0.8379	Train_F1: 0.7832
+Eval_AUC: 0.7595	Eval_ACC: 0.7037	Eval_PREC: 0.7129	Eval_RECALL: 0.8119	Eval_F1: 0.7592
+
+Global_step 32100	Train_loss: 0.5348
+Train_AUC: 0.7980	Train_ACC: 0.7311	Train_PREC: 0.7266	Train_RECALL: 0.8553	Train_F1: 0.7857
+Eval_AUC: 0.7592	Eval_ACC: 0.7030	Eval_PREC: 0.7054	Eval_RECALL: 0.8306	Eval_F1: 0.7629
+
+Global_step 32200	Train_loss: 0.5359
+Train_AUC: 0.7989	Train_ACC: 0.7328	Train_PREC: 0.7414	Train_RECALL: 0.8237	Train_F1: 0.7804
+Eval_AUC: 0.7577	Eval_ACC: 0.7013	Eval_PREC: 0.7165	Eval_RECALL: 0.7956	Eval_F1: 0.7540
+
+Global_step 32300	Train_loss: 0.5349
+Train_AUC: 0.7983	Train_ACC: 0.7321	Train_PREC: 0.7355	Train_RECALL: 0.8355	Train_F1: 0.7823
+Eval_AUC: 0.7596	Eval_ACC: 0.7035	Eval_PREC: 0.7134	Eval_RECALL: 0.8099	Eval_F1: 0.7586
+
+Global_step 32400	Train_loss: 0.5496
+Train_AUC: 0.7976	Train_ACC: 0.7322	Train_PREC: 0.7403	Train_RECALL: 0.8245	Train_F1: 0.7801
+Eval_AUC: 0.7589	Eval_ACC: 0.7028	Eval_PREC: 0.7173	Eval_RECALL: 0.7978	Eval_F1: 0.7554
+
+Global_step 32500	Train_loss: 0.5476
+Train_AUC: 0.7996	Train_ACC: 0.7335	Train_PREC: 0.7381	Train_RECALL: 0.8332	Train_F1: 0.7828
+Eval_AUC: 0.7591	Eval_ACC: 0.7031	Eval_PREC: 0.7145	Eval_RECALL: 0.8059	Eval_F1: 0.7574
+
+Global_step 32600	Train_loss: 0.5467
+Train_AUC: 0.7996	Train_ACC: 0.7330	Train_PREC: 0.7309	Train_RECALL: 0.8494	Train_F1: 0.7857
+Eval_AUC: 0.7584	Eval_ACC: 0.7026	Eval_PREC: 0.7075	Eval_RECALL: 0.8235	Eval_F1: 0.7611
+
+Global_step 32700	Train_loss: 0.5527
+Train_AUC: 0.7992	Train_ACC: 0.7326	Train_PREC: 0.7486	Train_RECALL: 0.8070	Train_F1: 0.7767
+Eval_AUC: 0.7605	Eval_ACC: 0.7027	Eval_PREC: 0.7246	Eval_RECALL: 0.7795	Eval_F1: 0.7510
+
+Global_step 32800	Train_loss: 0.5420
+Train_AUC: 0.7998	Train_ACC: 0.7333	Train_PREC: 0.7434	Train_RECALL: 0.8204	Train_F1: 0.7800
+Eval_AUC: 0.7604	Eval_ACC: 0.7031	Eval_PREC: 0.7196	Eval_RECALL: 0.7929	Eval_F1: 0.7545
+
+Global_step 32900	Train_loss: 0.5384
+Train_AUC: 0.7995	Train_ACC: 0.7330	Train_PREC: 0.7462	Train_RECALL: 0.8133	Train_F1: 0.7783
+Eval_AUC: 0.7591	Eval_ACC: 0.7020	Eval_PREC: 0.7217	Eval_RECALL: 0.7844	Eval_F1: 0.7517
+
+Global_step 33000	Train_loss: 0.5451
+Train_AUC: 0.8004	Train_ACC: 0.7328	Train_PREC: 0.7258	Train_RECALL: 0.8619	Train_F1: 0.7880
+Eval_AUC: 0.7606	Eval_ACC: 0.7035	Eval_PREC: 0.7040	Eval_RECALL: 0.8361	Eval_F1: 0.7644
+
+Global_step 33100	Train_loss: 0.5422
+Train_AUC: 0.7995	Train_ACC: 0.7324	Train_PREC: 0.7315	Train_RECALL: 0.8464	Train_F1: 0.7848
+Eval_AUC: 0.7593	Eval_ACC: 0.7035	Eval_PREC: 0.7095	Eval_RECALL: 0.8205	Eval_F1: 0.7610
+
+Global_step 33200	Train_loss: 0.5453
+Train_AUC: 0.8002	Train_ACC: 0.7334	Train_PREC: 0.7335	Train_RECALL: 0.8439	Train_F1: 0.7849
+Eval_AUC: 0.7596	Eval_ACC: 0.7036	Eval_PREC: 0.7107	Eval_RECALL: 0.8175	Eval_F1: 0.7604
+
+Global_step 33300	Train_loss: 0.5459
+Train_AUC: 0.8014	Train_ACC: 0.7351	Train_PREC: 0.7403	Train_RECALL: 0.8322	Train_F1: 0.7836
+Eval_AUC: 0.7597	Eval_ACC: 0.7028	Eval_PREC: 0.7153	Eval_RECALL: 0.8030	Eval_F1: 0.7566
+
+Global_step 33400	Train_loss: 0.5393
+Train_AUC: 0.8006	Train_ACC: 0.7345	Train_PREC: 0.7418	Train_RECALL: 0.8271	Train_F1: 0.7822
+Eval_AUC: 0.7609	Eval_ACC: 0.7039	Eval_PREC: 0.7178	Eval_RECALL: 0.7998	Eval_F1: 0.7565
+
+Global_step 33500	Train_loss: 0.5447
+Train_AUC: 0.8011	Train_ACC: 0.7338	Train_PREC: 0.7325	Train_RECALL: 0.8477	Train_F1: 0.7859
+Eval_AUC: 0.7597	Eval_ACC: 0.7029	Eval_PREC: 0.7087	Eval_RECALL: 0.8209	Eval_F1: 0.7607
+
+Global_step 33600	Train_loss: 0.5422
+Train_AUC: 0.8015	Train_ACC: 0.7346	Train_PREC: 0.7371	Train_RECALL: 0.8387	Train_F1: 0.7846
+Eval_AUC: 0.7593	Eval_ACC: 0.7026	Eval_PREC: 0.7123	Eval_RECALL: 0.8105	Eval_F1: 0.7582
+
+Global_step 33700	Train_loss: 0.5420
+Train_AUC: 0.8008	Train_ACC: 0.7350	Train_PREC: 0.7408	Train_RECALL: 0.8307	Train_F1: 0.7832
+Eval_AUC: 0.7590	Eval_ACC: 0.7032	Eval_PREC: 0.7159	Eval_RECALL: 0.8025	Eval_F1: 0.7567
+
+Global_step 33800	Train_loss: 0.5413
+Train_AUC: 0.7997	Train_ACC: 0.7330	Train_PREC: 0.7364	Train_RECALL: 0.8359	Train_F1: 0.7830
+Eval_AUC: 0.7608	Eval_ACC: 0.7042	Eval_PREC: 0.7142	Eval_RECALL: 0.8099	Eval_F1: 0.7590
+
+Global_step 33900	Train_loss: 0.5493
+Train_AUC: 0.8013	Train_ACC: 0.7339	Train_PREC: 0.7324	Train_RECALL: 0.8481	Train_F1: 0.7860
+Eval_AUC: 0.7585	Eval_ACC: 0.7037	Eval_PREC: 0.7092	Eval_RECALL: 0.8221	Eval_F1: 0.7615
+
+Global_step 34000	Train_loss: 0.5433
+Train_AUC: 0.8006	Train_ACC: 0.7332	Train_PREC: 0.7310	Train_RECALL: 0.8496	Train_F1: 0.7859
+Eval_AUC: 0.7601	Eval_ACC: 0.7036	Eval_PREC: 0.7084	Eval_RECALL: 0.8239	Eval_F1: 0.7618
+
+Global_step 34100	Train_loss: 0.5426
+Train_AUC: 0.8012	Train_ACC: 0.7344	Train_PREC: 0.7463	Train_RECALL: 0.8167	Train_F1: 0.7799
+Eval_AUC: 0.7602	Eval_ACC: 0.7027	Eval_PREC: 0.7215	Eval_RECALL: 0.7870	Eval_F1: 0.7529
+
+Global_step 34200	Train_loss: 0.5356
+Train_AUC: 0.8005	Train_ACC: 0.7335	Train_PREC: 0.7335	Train_RECALL: 0.8444	Train_F1: 0.7851
+Eval_AUC: 0.7596	Eval_ACC: 0.7032	Eval_PREC: 0.7103	Eval_RECALL: 0.8174	Eval_F1: 0.7601
+
+Global_step 34300	Train_loss: 0.5428
+Train_AUC: 0.7990	Train_ACC: 0.7330	Train_PREC: 0.7434	Train_RECALL: 0.8195	Train_F1: 0.7796
+Eval_AUC: 0.7598	Eval_ACC: 0.7038	Eval_PREC: 0.7203	Eval_RECALL: 0.7931	Eval_F1: 0.7549
+
+Global_step 34400	Train_loss: 0.5445
+Train_AUC: 0.8015	Train_ACC: 0.7345	Train_PREC: 0.7307	Train_RECALL: 0.8540	Train_F1: 0.7876
+Eval_AUC: 0.7600	Eval_ACC: 0.7037	Eval_PREC: 0.7078	Eval_RECALL: 0.8259	Eval_F1: 0.7623
+
+Global_step 34500	Train_loss: 0.5486
+Train_AUC: 0.8027	Train_ACC: 0.7357	Train_PREC: 0.7388	Train_RECALL: 0.8375	Train_F1: 0.7851
+Eval_AUC: 0.7601	Eval_ACC: 0.7038	Eval_PREC: 0.7143	Eval_RECALL: 0.8086	Eval_F1: 0.7585
+
+Global_step 34600	Train_loss: 0.5444
+Train_AUC: 0.8023	Train_ACC: 0.7354	Train_PREC: 0.7381	Train_RECALL: 0.8385	Train_F1: 0.7851
+Eval_AUC: 0.7596	Eval_ACC: 0.7028	Eval_PREC: 0.7129	Eval_RECALL: 0.8093	Eval_F1: 0.7581
+
+Global_step 34700	Train_loss: 0.5542
+Train_AUC: 0.8029	Train_ACC: 0.7360	Train_PREC: 0.7394	Train_RECALL: 0.8369	Train_F1: 0.7851
+Eval_AUC: 0.7601	Eval_ACC: 0.7036	Eval_PREC: 0.7146	Eval_RECALL: 0.8072	Eval_F1: 0.7581
+
+Global_step 34800	Train_loss: 0.5387
+Train_AUC: 0.8025	Train_ACC: 0.7354	Train_PREC: 0.7370	Train_RECALL: 0.8410	Train_F1: 0.7855
+Eval_AUC: 0.7592	Eval_ACC: 0.7034	Eval_PREC: 0.7125	Eval_RECALL: 0.8119	Eval_F1: 0.7590
+
+Global_step 34900	Train_loss: 0.5411
+Train_AUC: 0.8022	Train_ACC: 0.7355	Train_PREC: 0.7361	Train_RECALL: 0.8434	Train_F1: 0.7861
+Eval_AUC: 0.7612	Eval_ACC: 0.7044	Eval_PREC: 0.7123	Eval_RECALL: 0.8154	Eval_F1: 0.7604
+
+Global_step 35000	Train_loss: 0.5477
+Train_AUC: 0.8025	Train_ACC: 0.7355	Train_PREC: 0.7399	Train_RECALL: 0.8344	Train_F1: 0.7843
+Eval_AUC: 0.7616	Eval_ACC: 0.7049	Eval_PREC: 0.7164	Eval_RECALL: 0.8064	Eval_F1: 0.7587
+
+Global_step 35100	Train_loss: 0.5481
+Train_AUC: 0.8024	Train_ACC: 0.7354	Train_PREC: 0.7388	Train_RECALL: 0.8369	Train_F1: 0.7848
+Eval_AUC: 0.7614	Eval_ACC: 0.7048	Eval_PREC: 0.7152	Eval_RECALL: 0.8090	Eval_F1: 0.7592
+
+Global_step 35200	Train_loss: 0.5459
+Train_AUC: 0.8036	Train_ACC: 0.7351	Train_PREC: 0.7296	Train_RECALL: 0.8586	Train_F1: 0.7889
+Eval_AUC: 0.7611	Eval_ACC: 0.7045	Eval_PREC: 0.7068	Eval_RECALL: 0.8310	Eval_F1: 0.7639
+
+Global_step 35300	Train_loss: 0.5467
+Train_AUC: 0.8037	Train_ACC: 0.7366	Train_PREC: 0.7455	Train_RECALL: 0.8246	Train_F1: 0.7830
+Eval_AUC: 0.7611	Eval_ACC: 0.7040	Eval_PREC: 0.7199	Eval_RECALL: 0.7945	Eval_F1: 0.7554
+
+Global_step 35400	Train_loss: 0.5463
+Train_AUC: 0.8039	Train_ACC: 0.7370	Train_PREC: 0.7447	Train_RECALL: 0.8271	Train_F1: 0.7838
+Eval_AUC: 0.7590	Eval_ACC: 0.7023	Eval_PREC: 0.7177	Eval_RECALL: 0.7952	Eval_F1: 0.7545
+
+Global_step 35500	Train_loss: 0.5487
+Train_AUC: 0.8041	Train_ACC: 0.7375	Train_PREC: 0.7438	Train_RECALL: 0.8306	Train_F1: 0.7848
+Eval_AUC: 0.7595	Eval_ACC: 0.7025	Eval_PREC: 0.7168	Eval_RECALL: 0.7982	Eval_F1: 0.7553
+
+Global_step 35600	Train_loss: 0.5420
+Train_AUC: 0.8014	Train_ACC: 0.7344	Train_PREC: 0.7497	Train_RECALL: 0.8093	Train_F1: 0.7784
+Eval_AUC: 0.7607	Eval_ACC: 0.7024	Eval_PREC: 0.7239	Eval_RECALL: 0.7801	Eval_F1: 0.7510
+
+Global_step 35700	Train_loss: 0.5392
+Train_AUC: 0.8041	Train_ACC: 0.7364	Train_PREC: 0.7375	Train_RECALL: 0.8424	Train_F1: 0.7865
+Eval_AUC: 0.7606	Eval_ACC: 0.7036	Eval_PREC: 0.7125	Eval_RECALL: 0.8126	Eval_F1: 0.7593
+
+Global_step 35800	Train_loss: 0.5478
+Train_AUC: 0.8044	Train_ACC: 0.7368	Train_PREC: 0.7463	Train_RECALL: 0.8232	Train_F1: 0.7829
+Eval_AUC: 0.7619	Eval_ACC: 0.7048	Eval_PREC: 0.7212	Eval_RECALL: 0.7937	Eval_F1: 0.7557
+
+Global_step 35900	Train_loss: 0.5467
+Train_AUC: 0.8046	Train_ACC: 0.7370	Train_PREC: 0.7445	Train_RECALL: 0.8278	Train_F1: 0.7839
+Eval_AUC: 0.7615	Eval_ACC: 0.7048	Eval_PREC: 0.7193	Eval_RECALL: 0.7984	Eval_F1: 0.7568
+
+Global_step 36000	Train_loss: 0.5471
+Train_AUC: 0.8033	Train_ACC: 0.7355	Train_PREC: 0.7349	Train_RECALL: 0.8462	Train_F1: 0.7867
+Eval_AUC: 0.7620	Eval_ACC: 0.7050	Eval_PREC: 0.7120	Eval_RECALL: 0.8181	Eval_F1: 0.7614
+
+Global_step 36100	Train_loss: 0.5488
+Train_AUC: 0.8049	Train_ACC: 0.7350	Train_PREC: 0.7269	Train_RECALL: 0.8651	Train_F1: 0.7900
+Eval_AUC: 0.7612	Eval_ACC: 0.7038	Eval_PREC: 0.7038	Eval_RECALL: 0.8376	Eval_F1: 0.7649
+
+Global_step 36200	Train_loss: 0.5435
+Train_AUC: 0.8039	Train_ACC: 0.7357	Train_PREC: 0.7352	Train_RECALL: 0.8462	Train_F1: 0.7868
+Eval_AUC: 0.7628	Eval_ACC: 0.7060	Eval_PREC: 0.7127	Eval_RECALL: 0.8194	Eval_F1: 0.7623
+
+Global_step 36300	Train_loss: 0.5421
+Train_AUC: 0.8046	Train_ACC: 0.7369	Train_PREC: 0.7468	Train_RECALL: 0.8221	Train_F1: 0.7827
+Eval_AUC: 0.7626	Eval_ACC: 0.7049	Eval_PREC: 0.7216	Eval_RECALL: 0.7932	Eval_F1: 0.7557
+
+Global_step 36400	Train_loss: 0.5466
+Train_AUC: 0.8046	Train_ACC: 0.7369	Train_PREC: 0.7446	Train_RECALL: 0.8270	Train_F1: 0.7837
+Eval_AUC: 0.7616	Eval_ACC: 0.7042	Eval_PREC: 0.7192	Eval_RECALL: 0.7970	Eval_F1: 0.7561
+
+Global_step 36500	Train_loss: 0.5510
+Train_AUC: 0.8048	Train_ACC: 0.7373	Train_PREC: 0.7440	Train_RECALL: 0.8296	Train_F1: 0.7845
+Eval_AUC: 0.7616	Eval_ACC: 0.7049	Eval_PREC: 0.7190	Eval_RECALL: 0.7997	Eval_F1: 0.7572
+
+Global_step 36600	Train_loss: 0.5504
+Train_AUC: 0.8046	Train_ACC: 0.7371	Train_PREC: 0.7450	Train_RECALL: 0.8268	Train_F1: 0.7838
+Eval_AUC: 0.7629	Eval_ACC: 0.7059	Eval_PREC: 0.7204	Eval_RECALL: 0.7987	Eval_F1: 0.7575
+
+epoch:6
+Global_step 36700	Train_loss: 0.5329
+Train_AUC: 0.8061	Train_ACC: 0.7388	Train_PREC: 0.7476	Train_RECALL: 0.8254	Train_F1: 0.7846
+Eval_AUC: 0.7605	Eval_ACC: 0.7033	Eval_PREC: 0.7197	Eval_RECALL: 0.7933	Eval_F1: 0.7547
+
+Global_step 36800	Train_loss: 0.5257
+Train_AUC: 0.8063	Train_ACC: 0.7385	Train_PREC: 0.7381	Train_RECALL: 0.8467	Train_F1: 0.7887
+Eval_AUC: 0.7583	Eval_ACC: 0.7028	Eval_PREC: 0.7106	Eval_RECALL: 0.8154	Eval_F1: 0.7594
+
+Global_step 36900	Train_loss: 0.5252
+Train_AUC: 0.8056	Train_ACC: 0.7384	Train_PREC: 0.7456	Train_RECALL: 0.8290	Train_F1: 0.7851
+Eval_AUC: 0.7573	Eval_ACC: 0.7006	Eval_PREC: 0.7155	Eval_RECALL: 0.7960	Eval_F1: 0.7536
+
+Global_step 37000	Train_loss: 0.5275
+Train_AUC: 0.8073	Train_ACC: 0.7393	Train_PREC: 0.7503	Train_RECALL: 0.8210	Train_F1: 0.7840
+Eval_AUC: 0.7579	Eval_ACC: 0.7010	Eval_PREC: 0.7194	Eval_RECALL: 0.7873	Eval_F1: 0.7518
+
+Global_step 37100	Train_loss: 0.5293
+Train_AUC: 0.8076	Train_ACC: 0.7382	Train_PREC: 0.7318	Train_RECALL: 0.8615	Train_F1: 0.7914
+Eval_AUC: 0.7577	Eval_ACC: 0.7020	Eval_PREC: 0.7045	Eval_RECALL: 0.8302	Eval_F1: 0.7622
+
+Global_step 37200	Train_loss: 0.5264
+Train_AUC: 0.8076	Train_ACC: 0.7392	Train_PREC: 0.7459	Train_RECALL: 0.8304	Train_F1: 0.7859
+Eval_AUC: 0.7586	Eval_ACC: 0.7029	Eval_PREC: 0.7174	Eval_RECALL: 0.7980	Eval_F1: 0.7555
+
+Global_step 37300	Train_loss: 0.5279
+Train_AUC: 0.8072	Train_ACC: 0.7390	Train_PREC: 0.7411	Train_RECALL: 0.8409	Train_F1: 0.7879
+Eval_AUC: 0.7580	Eval_ACC: 0.7027	Eval_PREC: 0.7130	Eval_RECALL: 0.8088	Eval_F1: 0.7579
+
+Global_step 37400	Train_loss: 0.5344
+Train_AUC: 0.8076	Train_ACC: 0.7393	Train_PREC: 0.7425	Train_RECALL: 0.8384	Train_F1: 0.7875
+Eval_AUC: 0.7586	Eval_ACC: 0.7019	Eval_PREC: 0.7133	Eval_RECALL: 0.8056	Eval_F1: 0.7567
+
+Global_step 37500	Train_loss: 0.5281
+Train_AUC: 0.8072	Train_ACC: 0.7378	Train_PREC: 0.7292	Train_RECALL: 0.8671	Train_F1: 0.7922
+Eval_AUC: 0.7573	Eval_ACC: 0.7015	Eval_PREC: 0.7024	Eval_RECALL: 0.8350	Eval_F1: 0.7630
+
+Global_step 37600	Train_loss: 0.5303
+Train_AUC: 0.8068	Train_ACC: 0.7383	Train_PREC: 0.7375	Train_RECALL: 0.8477	Train_F1: 0.7888
+Eval_AUC: 0.7565	Eval_ACC: 0.7009	Eval_PREC: 0.7094	Eval_RECALL: 0.8131	Eval_F1: 0.7577
+
+Global_step 37700	Train_loss: 0.5327
+Train_AUC: 0.8081	Train_ACC: 0.7342	Train_PREC: 0.7746	Train_RECALL: 0.7598	Train_F1: 0.7671
+Eval_AUC: 0.7580	Eval_ACC: 0.6961	Eval_PREC: 0.7413	Eval_RECALL: 0.7245	Eval_F1: 0.7328
+
+Global_step 37800	Train_loss: 0.5321
+Train_AUC: 0.8075	Train_ACC: 0.7392	Train_PREC: 0.7513	Train_RECALL: 0.8184	Train_F1: 0.7834
+Eval_AUC: 0.7566	Eval_ACC: 0.7011	Eval_PREC: 0.7209	Eval_RECALL: 0.7841	Eval_F1: 0.7512
+
+Global_step 37900	Train_loss: 0.5234
+Train_AUC: 0.8055	Train_ACC: 0.7377	Train_PREC: 0.7482	Train_RECALL: 0.8214	Train_F1: 0.7831
+Eval_AUC: 0.7590	Eval_ACC: 0.7028	Eval_PREC: 0.7206	Eval_RECALL: 0.7897	Eval_F1: 0.7536
+
+Global_step 38000	Train_loss: 0.5300
+Train_AUC: 0.8080	Train_ACC: 0.7398	Train_PREC: 0.7447	Train_RECALL: 0.8347	Train_F1: 0.7872
+Eval_AUC: 0.7562	Eval_ACC: 0.7012	Eval_PREC: 0.7145	Eval_RECALL: 0.8004	Eval_F1: 0.7550
+
+Global_step 38100	Train_loss: 0.5355
+Train_AUC: 0.8072	Train_ACC: 0.7395	Train_PREC: 0.7427	Train_RECALL: 0.8384	Train_F1: 0.7877
+Eval_AUC: 0.7586	Eval_ACC: 0.7025	Eval_PREC: 0.7140	Eval_RECALL: 0.8055	Eval_F1: 0.7570
+
+Global_step 38200	Train_loss: 0.5306
+Train_AUC: 0.8083	Train_ACC: 0.7402	Train_PREC: 0.7429	Train_RECALL: 0.8398	Train_F1: 0.7884
+Eval_AUC: 0.7586	Eval_ACC: 0.7036	Eval_PREC: 0.7144	Eval_RECALL: 0.8075	Eval_F1: 0.7581
+
+Global_step 38300	Train_loss: 0.5319
+Train_AUC: 0.8083	Train_ACC: 0.7402	Train_PREC: 0.7507	Train_RECALL: 0.8222	Train_F1: 0.7848
+Eval_AUC: 0.7591	Eval_ACC: 0.7027	Eval_PREC: 0.7210	Eval_RECALL: 0.7884	Eval_F1: 0.7532
+
+Global_step 38400	Train_loss: 0.5378
+Train_AUC: 0.8085	Train_ACC: 0.7400	Train_PREC: 0.7535	Train_RECALL: 0.8156	Train_F1: 0.7833
+Eval_AUC: 0.7583	Eval_ACC: 0.7022	Eval_PREC: 0.7236	Eval_RECALL: 0.7805	Eval_F1: 0.7510
+
+Global_step 38500	Train_loss: 0.5284
+Train_AUC: 0.8091	Train_ACC: 0.7409	Train_PREC: 0.7427	Train_RECALL: 0.8422	Train_F1: 0.7893
+Eval_AUC: 0.7574	Eval_ACC: 0.7015	Eval_PREC: 0.7120	Eval_RECALL: 0.8078	Eval_F1: 0.7569
+
+Global_step 38600	Train_loss: 0.5321
+Train_AUC: 0.8091	Train_ACC: 0.7412	Train_PREC: 0.7478	Train_RECALL: 0.8315	Train_F1: 0.7874
+Eval_AUC: 0.7603	Eval_ACC: 0.7046	Eval_PREC: 0.7190	Eval_RECALL: 0.7985	Eval_F1: 0.7567
+
+Global_step 38700	Train_loss: 0.5340
+Train_AUC: 0.8087	Train_ACC: 0.7409	Train_PREC: 0.7493	Train_RECALL: 0.8274	Train_F1: 0.7864
+Eval_AUC: 0.7597	Eval_ACC: 0.7037	Eval_PREC: 0.7199	Eval_RECALL: 0.7937	Eval_F1: 0.7550
+
+Global_step 38800	Train_loss: 0.5288
+Train_AUC: 0.8094	Train_ACC: 0.7410	Train_PREC: 0.7448	Train_RECALL: 0.8377	Train_F1: 0.7885
+Eval_AUC: 0.7584	Eval_ACC: 0.7025	Eval_PREC: 0.7147	Eval_RECALL: 0.8036	Eval_F1: 0.7566
+
+Global_step 38900	Train_loss: 0.5339
+Train_AUC: 0.8102	Train_ACC: 0.7412	Train_PREC: 0.7389	Train_RECALL: 0.8519	Train_F1: 0.7914
+Eval_AUC: 0.7573	Eval_ACC: 0.7017	Eval_PREC: 0.7090	Eval_RECALL: 0.8165	Eval_F1: 0.7590
+
+Global_step 39000	Train_loss: 0.5296
+Train_AUC: 0.8101	Train_ACC: 0.7412	Train_PREC: 0.7394	Train_RECALL: 0.8508	Train_F1: 0.7912
+Eval_AUC: 0.7587	Eval_ACC: 0.7033	Eval_PREC: 0.7104	Eval_RECALL: 0.8176	Eval_F1: 0.7602
+
+Global_step 39100	Train_loss: 0.5357
+Train_AUC: 0.8099	Train_ACC: 0.7415	Train_PREC: 0.7460	Train_RECALL: 0.8362	Train_F1: 0.7885
+Eval_AUC: 0.7601	Eval_ACC: 0.7041	Eval_PREC: 0.7168	Eval_RECALL: 0.8028	Eval_F1: 0.7573
+
+Global_step 39200	Train_loss: 0.5341
+Train_AUC: 0.8103	Train_ACC: 0.7416	Train_PREC: 0.7459	Train_RECALL: 0.8368	Train_F1: 0.7887
+Eval_AUC: 0.7588	Eval_ACC: 0.7032	Eval_PREC: 0.7160	Eval_RECALL: 0.8022	Eval_F1: 0.7567
+
+Global_step 39300	Train_loss: 0.5390
+Train_AUC: 0.8115	Train_ACC: 0.7431	Train_PREC: 0.7484	Train_RECALL: 0.8349	Train_F1: 0.7893
+Eval_AUC: 0.7592	Eval_ACC: 0.7034	Eval_PREC: 0.7176	Eval_RECALL: 0.7988	Eval_F1: 0.7560
+
+Global_step 39400	Train_loss: 0.5284
+Train_AUC: 0.8110	Train_ACC: 0.7423	Train_PREC: 0.7459	Train_RECALL: 0.8386	Train_F1: 0.7895
+Eval_AUC: 0.7609	Eval_ACC: 0.7046	Eval_PREC: 0.7167	Eval_RECALL: 0.8047	Eval_F1: 0.7581
+
+Global_step 39500	Train_loss: 0.5335
+Train_AUC: 0.8107	Train_ACC: 0.7423	Train_PREC: 0.7505	Train_RECALL: 0.8281	Train_F1: 0.7874
+Eval_AUC: 0.7600	Eval_ACC: 0.7039	Eval_PREC: 0.7206	Eval_RECALL: 0.7925	Eval_F1: 0.7548
+
+Global_step 39600	Train_loss: 0.5325
+Train_AUC: 0.8117	Train_ACC: 0.7428	Train_PREC: 0.7428	Train_RECALL: 0.8470	Train_F1: 0.7915
+Eval_AUC: 0.7592	Eval_ACC: 0.7030	Eval_PREC: 0.7123	Eval_RECALL: 0.8116	Eval_F1: 0.7587
+
+Global_step 39700	Train_loss: 0.5336
+Train_AUC: 0.8120	Train_ACC: 0.7431	Train_PREC: 0.7425	Train_RECALL: 0.8485	Train_F1: 0.7919
+Eval_AUC: 0.7585	Eval_ACC: 0.7022	Eval_PREC: 0.7111	Eval_RECALL: 0.8125	Eval_F1: 0.7584
+
+Global_step 39800	Train_loss: 0.5302
+Train_AUC: 0.8116	Train_ACC: 0.7428	Train_PREC: 0.7438	Train_RECALL: 0.8447	Train_F1: 0.7911
+Eval_AUC: 0.7582	Eval_ACC: 0.7027	Eval_PREC: 0.7127	Eval_RECALL: 0.8097	Eval_F1: 0.7581
+
+Global_step 39900	Train_loss: 0.5329
+Train_AUC: 0.8128	Train_ACC: 0.7439	Train_PREC: 0.7560	Train_RECALL: 0.8204	Train_F1: 0.7868
+Eval_AUC: 0.7591	Eval_ACC: 0.7023	Eval_PREC: 0.7225	Eval_RECALL: 0.7834	Eval_F1: 0.7517
+
+Global_step 40000	Train_loss: 0.5295
+Train_AUC: 0.8125	Train_ACC: 0.7436	Train_PREC: 0.7445	Train_RECALL: 0.8451	Train_F1: 0.7916
+Eval_AUC: 0.7569	Eval_ACC: 0.7003	Eval_PREC: 0.7109	Eval_RECALL: 0.8074	Eval_F1: 0.7561
+
+Global_step 40100	Train_loss: 0.5378
+Train_AUC: 0.8098	Train_ACC: 0.7410	Train_PREC: 0.7513	Train_RECALL: 0.8231	Train_F1: 0.7856
+Eval_AUC: 0.7592	Eval_ACC: 0.7028	Eval_PREC: 0.7209	Eval_RECALL: 0.7888	Eval_F1: 0.7533
+
+Global_step 40200	Train_loss: 0.5322
+Train_AUC: 0.8133	Train_ACC: 0.7447	Train_PREC: 0.7512	Train_RECALL: 0.8327	Train_F1: 0.7899
+Eval_AUC: 0.7598	Eval_ACC: 0.7033	Eval_PREC: 0.7187	Eval_RECALL: 0.7956	Eval_F1: 0.7552
+
+Global_step 40300	Train_loss: 0.5270
+Train_AUC: 0.8131	Train_ACC: 0.7448	Train_PREC: 0.7489	Train_RECALL: 0.8382	Train_F1: 0.7910
+Eval_AUC: 0.7583	Eval_ACC: 0.7021	Eval_PREC: 0.7155	Eval_RECALL: 0.8003	Eval_F1: 0.7555
+
+Global_step 40400	Train_loss: 0.5341
+Train_AUC: 0.8130	Train_ACC: 0.7442	Train_PREC: 0.7477	Train_RECALL: 0.8394	Train_F1: 0.7909
+Eval_AUC: 0.7596	Eval_ACC: 0.7036	Eval_PREC: 0.7162	Eval_RECALL: 0.8030	Eval_F1: 0.7571
+
+Global_step 40500	Train_loss: 0.5338
+Train_AUC: 0.8111	Train_ACC: 0.7388	Train_PREC: 0.7254	Train_RECALL: 0.8800	Train_F1: 0.7952
+Eval_AUC: 0.7564	Eval_ACC: 0.7008	Eval_PREC: 0.6973	Eval_RECALL: 0.8479	Eval_F1: 0.7653
+
+Global_step 40600	Train_loss: 0.5418
+Train_AUC: 0.8132	Train_ACC: 0.7443	Train_PREC: 0.7554	Train_RECALL: 0.8227	Train_F1: 0.7876
+Eval_AUC: 0.7606	Eval_ACC: 0.7034	Eval_PREC: 0.7227	Eval_RECALL: 0.7859	Eval_F1: 0.7530
+
+Global_step 40700	Train_loss: 0.5307
+Train_AUC: 0.8120	Train_ACC: 0.7433	Train_PREC: 0.7498	Train_RECALL: 0.8322	Train_F1: 0.7889
+Eval_AUC: 0.7595	Eval_ACC: 0.7026	Eval_PREC: 0.7175	Eval_RECALL: 0.7967	Eval_F1: 0.7550
+
+Global_step 40800	Train_loss: 0.5280
+Train_AUC: 0.8130	Train_ACC: 0.7441	Train_PREC: 0.7565	Train_RECALL: 0.8197	Train_F1: 0.7869
+Eval_AUC: 0.7614	Eval_ACC: 0.7037	Eval_PREC: 0.7241	Eval_RECALL: 0.7835	Eval_F1: 0.7526
+
+Global_step 40900	Train_loss: 0.5302
+Train_AUC: 0.8123	Train_ACC: 0.7424	Train_PREC: 0.7601	Train_RECALL: 0.8080	Train_F1: 0.7833
+Eval_AUC: 0.7602	Eval_ACC: 0.7026	Eval_PREC: 0.7278	Eval_RECALL: 0.7717	Eval_F1: 0.7491
+
+Global_step 41000	Train_loss: 0.5327
+Train_AUC: 0.8138	Train_ACC: 0.7446	Train_PREC: 0.7554	Train_RECALL: 0.8236	Train_F1: 0.7880
+Eval_AUC: 0.7607	Eval_ACC: 0.7038	Eval_PREC: 0.7229	Eval_RECALL: 0.7868	Eval_F1: 0.7535
+
+Global_step 41100	Train_loss: 0.5390
+Train_AUC: 0.8134	Train_ACC: 0.7445	Train_PREC: 0.7502	Train_RECALL: 0.8346	Train_F1: 0.7902
+Eval_AUC: 0.7614	Eval_ACC: 0.7044	Eval_PREC: 0.7189	Eval_RECALL: 0.7984	Eval_F1: 0.7566
+
+Global_step 41200	Train_loss: 0.5384
+Train_AUC: 0.8133	Train_ACC: 0.7443	Train_PREC: 0.7514	Train_RECALL: 0.8315	Train_F1: 0.7894
+Eval_AUC: 0.7617	Eval_ACC: 0.7041	Eval_PREC: 0.7196	Eval_RECALL: 0.7958	Eval_F1: 0.7558
+
+Global_step 41300	Train_loss: 0.5334
+Train_AUC: 0.8125	Train_ACC: 0.7436	Train_PREC: 0.7462	Train_RECALL: 0.8411	Train_F1: 0.7908
+Eval_AUC: 0.7618	Eval_ACC: 0.7061	Eval_PREC: 0.7172	Eval_RECALL: 0.8075	Eval_F1: 0.7597
+
+Global_step 41400	Train_loss: 0.5374
+Train_AUC: 0.8135	Train_ACC: 0.7446	Train_PREC: 0.7468	Train_RECALL: 0.8425	Train_F1: 0.7917
+Eval_AUC: 0.7603	Eval_ACC: 0.7043	Eval_PREC: 0.7157	Eval_RECALL: 0.8063	Eval_F1: 0.7583
+
+Global_step 41500	Train_loss: 0.5414
+Train_AUC: 0.8143	Train_ACC: 0.7444	Train_PREC: 0.7453	Train_RECALL: 0.8453	Train_F1: 0.7922
+Eval_AUC: 0.7592	Eval_ACC: 0.7036	Eval_PREC: 0.7138	Eval_RECALL: 0.8092	Eval_F1: 0.7585
+
+Global_step 41600	Train_loss: 0.5343
+Train_AUC: 0.8137	Train_ACC: 0.7444	Train_PREC: 0.7547	Train_RECALL: 0.8245	Train_F1: 0.7881
+Eval_AUC: 0.7611	Eval_ACC: 0.7038	Eval_PREC: 0.7220	Eval_RECALL: 0.7887	Eval_F1: 0.7539
+
+Global_step 41700	Train_loss: 0.5405
+Train_AUC: 0.8156	Train_ACC: 0.7452	Train_PREC: 0.7397	Train_RECALL: 0.8607	Train_F1: 0.7956
+Eval_AUC: 0.7612	Eval_ACC: 0.7051	Eval_PREC: 0.7093	Eval_RECALL: 0.8258	Eval_F1: 0.7631
+
+Global_step 41800	Train_loss: 0.5334
+Train_AUC: 0.8148	Train_ACC: 0.7448	Train_PREC: 0.7607	Train_RECALL: 0.8128	Train_F1: 0.7859
+Eval_AUC: 0.7605	Eval_ACC: 0.7033	Eval_PREC: 0.7273	Eval_RECALL: 0.7749	Eval_F1: 0.7503
+
+Global_step 41900	Train_loss: 0.5367
+Train_AUC: 0.8158	Train_ACC: 0.7461	Train_PREC: 0.7456	Train_RECALL: 0.8492	Train_F1: 0.7940
+Eval_AUC: 0.7619	Eval_ACC: 0.7053	Eval_PREC: 0.7139	Eval_RECALL: 0.8140	Eval_F1: 0.7607
+
+Global_step 42000	Train_loss: 0.5354
+Train_AUC: 0.8125	Train_ACC: 0.7432	Train_PREC: 0.7566	Train_RECALL: 0.8173	Train_F1: 0.7858
+Eval_AUC: 0.7597	Eval_ACC: 0.7020	Eval_PREC: 0.7233	Eval_RECALL: 0.7807	Eval_F1: 0.7509
+
+Global_step 42100	Train_loss: 0.5373
+Train_AUC: 0.8145	Train_ACC: 0.7453	Train_PREC: 0.7505	Train_RECALL: 0.8360	Train_F1: 0.7909
+Eval_AUC: 0.7620	Eval_ACC: 0.7056	Eval_PREC: 0.7195	Eval_RECALL: 0.8002	Eval_F1: 0.7577
+
+Global_step 42200	Train_loss: 0.5346
+Train_AUC: 0.8152	Train_ACC: 0.7460	Train_PREC: 0.7497	Train_RECALL: 0.8395	Train_F1: 0.7921
+Eval_AUC: 0.7617	Eval_ACC: 0.7052	Eval_PREC: 0.7178	Eval_RECALL: 0.8033	Eval_F1: 0.7582
+
+Global_step 42300	Train_loss: 0.5376
+Train_AUC: 0.8157	Train_ACC: 0.7455	Train_PREC: 0.7604	Train_RECALL: 0.8154	Train_F1: 0.7869
+Eval_AUC: 0.7620	Eval_ACC: 0.7041	Eval_PREC: 0.7268	Eval_RECALL: 0.7782	Eval_F1: 0.7516
+
+Global_step 42400	Train_loss: 0.5269
+Train_AUC: 0.8147	Train_ACC: 0.7448	Train_PREC: 0.7414	Train_RECALL: 0.8558	Train_F1: 0.7945
+Eval_AUC: 0.7622	Eval_ACC: 0.7061	Eval_PREC: 0.7118	Eval_RECALL: 0.8220	Eval_F1: 0.7629
+
+Global_step 42500	Train_loss: 0.5419
+Train_AUC: 0.8141	Train_ACC: 0.7419	Train_PREC: 0.7291	Train_RECALL: 0.8787	Train_F1: 0.7969
+Eval_AUC: 0.7620	Eval_ACC: 0.7049	Eval_PREC: 0.7019	Eval_RECALL: 0.8468	Eval_F1: 0.7676
+
+Global_step 42600	Train_loss: 0.5343
+Train_AUC: 0.8150	Train_ACC: 0.7458	Train_PREC: 0.7557	Train_RECALL: 0.8261	Train_F1: 0.7893
+Eval_AUC: 0.7621	Eval_ACC: 0.7052	Eval_PREC: 0.7231	Eval_RECALL: 0.7902	Eval_F1: 0.7552
+
+Global_step 42700	Train_loss: 0.5394
+Train_AUC: 0.8166	Train_ACC: 0.7468	Train_PREC: 0.7407	Train_RECALL: 0.8626	Train_F1: 0.7970
+Eval_AUC: 0.7612	Eval_ACC: 0.7052	Eval_PREC: 0.7089	Eval_RECALL: 0.8272	Eval_F1: 0.7635
+
+epoch:7
+Global_step 42800	Train_loss: 0.5101
+Train_AUC: 0.8178	Train_ACC: 0.7485	Train_PREC: 0.7523	Train_RECALL: 0.8402	Train_F1: 0.7938
+Eval_AUC: 0.7574	Eval_ACC: 0.7022	Eval_PREC: 0.7162	Eval_RECALL: 0.7989	Eval_F1: 0.7553
+
+Global_step 42900	Train_loss: 0.5177
+Train_AUC: 0.8178	Train_ACC: 0.7476	Train_PREC: 0.7450	Train_RECALL: 0.8544	Train_F1: 0.7960
+Eval_AUC: 0.7577	Eval_ACC: 0.7023	Eval_PREC: 0.7105	Eval_RECALL: 0.8143	Eval_F1: 0.7589
+
+Global_step 43000	Train_loss: 0.5148
+Train_AUC: 0.8178	Train_ACC: 0.7478	Train_PREC: 0.7628	Train_RECALL: 0.8162	Train_F1: 0.7886
+Eval_AUC: 0.7575	Eval_ACC: 0.7011	Eval_PREC: 0.7252	Eval_RECALL: 0.7736	Eval_F1: 0.7486
+
+Global_step 43100	Train_loss: 0.5173
+Train_AUC: 0.8181	Train_ACC: 0.7482	Train_PREC: 0.7549	Train_RECALL: 0.8338	Train_F1: 0.7924
+Eval_AUC: 0.7571	Eval_ACC: 0.7007	Eval_PREC: 0.7174	Eval_RECALL: 0.7915	Eval_F1: 0.7527
+
+Global_step 43200	Train_loss: 0.5108
+Train_AUC: 0.8184	Train_ACC: 0.7485	Train_PREC: 0.7530	Train_RECALL: 0.8386	Train_F1: 0.7935
+Eval_AUC: 0.7573	Eval_ACC: 0.7020	Eval_PREC: 0.7165	Eval_RECALL: 0.7976	Eval_F1: 0.7549
+
+Global_step 43300	Train_loss: 0.5163
+Train_AUC: 0.8191	Train_ACC: 0.7497	Train_PREC: 0.7513	Train_RECALL: 0.8456	Train_F1: 0.7957
+Eval_AUC: 0.7573	Eval_ACC: 0.7014	Eval_PREC: 0.7136	Eval_RECALL: 0.8034	Eval_F1: 0.7558
+
+Global_step 43400	Train_loss: 0.5083
+Train_AUC: 0.8186	Train_ACC: 0.7483	Train_PREC: 0.7441	Train_RECALL: 0.8585	Train_F1: 0.7972
+Eval_AUC: 0.7562	Eval_ACC: 0.7012	Eval_PREC: 0.7083	Eval_RECALL: 0.8170	Eval_F1: 0.7588
+
+Global_step 43500	Train_loss: 0.5226
+Train_AUC: 0.8158	Train_ACC: 0.7469	Train_PREC: 0.7521	Train_RECALL: 0.8366	Train_F1: 0.7921
+Eval_AUC: 0.7558	Eval_ACC: 0.7003	Eval_PREC: 0.7160	Eval_RECALL: 0.7940	Eval_F1: 0.7530
+
+Global_step 43600	Train_loss: 0.5103
+Train_AUC: 0.8172	Train_ACC: 0.7473	Train_PREC: 0.7423	Train_RECALL: 0.8600	Train_F1: 0.7969
+Eval_AUC: 0.7570	Eval_ACC: 0.7027	Eval_PREC: 0.7087	Eval_RECALL: 0.8204	Eval_F1: 0.7605
+
+Global_step 43700	Train_loss: 0.5209
+Train_AUC: 0.8186	Train_ACC: 0.7472	Train_PREC: 0.7391	Train_RECALL: 0.8676	Train_F1: 0.7982
+Eval_AUC: 0.7569	Eval_ACC: 0.7015	Eval_PREC: 0.7049	Eval_RECALL: 0.8275	Eval_F1: 0.7613
+
+Global_step 43800	Train_loss: 0.5227
+Train_AUC: 0.8178	Train_ACC: 0.7482	Train_PREC: 0.7459	Train_RECALL: 0.8540	Train_F1: 0.7963
+Eval_AUC: 0.7574	Eval_ACC: 0.7021	Eval_PREC: 0.7106	Eval_RECALL: 0.8136	Eval_F1: 0.7586
+
+Global_step 43900	Train_loss: 0.5021
+Train_AUC: 0.8192	Train_ACC: 0.7491	Train_PREC: 0.7458	Train_RECALL: 0.8567	Train_F1: 0.7974
+Eval_AUC: 0.7565	Eval_ACC: 0.7014	Eval_PREC: 0.7094	Eval_RECALL: 0.8149	Eval_F1: 0.7585
+
+Global_step 44000	Train_loss: 0.5106
+Train_AUC: 0.8187	Train_ACC: 0.7488	Train_PREC: 0.7543	Train_RECALL: 0.8365	Train_F1: 0.7933
+Eval_AUC: 0.7579	Eval_ACC: 0.7025	Eval_PREC: 0.7181	Eval_RECALL: 0.7948	Eval_F1: 0.7545
+
+Global_step 44100	Train_loss: 0.5182
+Train_AUC: 0.8196	Train_ACC: 0.7495	Train_PREC: 0.7481	Train_RECALL: 0.8523	Train_F1: 0.7968
+Eval_AUC: 0.7563	Eval_ACC: 0.7021	Eval_PREC: 0.7115	Eval_RECALL: 0.8111	Eval_F1: 0.7580
+
+Global_step 44200	Train_loss: 0.5185
+Train_AUC: 0.8195	Train_ACC: 0.7496	Train_PREC: 0.7620	Train_RECALL: 0.8222	Train_F1: 0.7910
+Eval_AUC: 0.7576	Eval_ACC: 0.7015	Eval_PREC: 0.7237	Eval_RECALL: 0.7782	Eval_F1: 0.7499
+
+Global_step 44300	Train_loss: 0.5129
+Train_AUC: 0.8200	Train_ACC: 0.7505	Train_PREC: 0.7555	Train_RECALL: 0.8382	Train_F1: 0.7947
+Eval_AUC: 0.7573	Eval_ACC: 0.7014	Eval_PREC: 0.7175	Eval_RECALL: 0.7934	Eval_F1: 0.7535
+
+Global_step 44400	Train_loss: 0.5174
+Train_AUC: 0.8207	Train_ACC: 0.7507	Train_PREC: 0.7543	Train_RECALL: 0.8417	Train_F1: 0.7956
+Eval_AUC: 0.7573	Eval_ACC: 0.7026	Eval_PREC: 0.7168	Eval_RECALL: 0.7984	Eval_F1: 0.7554
+
+Global_step 44500	Train_loss: 0.5222
+Train_AUC: 0.8195	Train_ACC: 0.7490	Train_PREC: 0.7429	Train_RECALL: 0.8631	Train_F1: 0.7985
+Eval_AUC: 0.7582	Eval_ACC: 0.7024	Eval_PREC: 0.7079	Eval_RECALL: 0.8220	Eval_F1: 0.7607
+
+Global_step 44600	Train_loss: 0.5140
+Train_AUC: 0.8208	Train_ACC: 0.7502	Train_PREC: 0.7464	Train_RECALL: 0.8583	Train_F1: 0.7984
+Eval_AUC: 0.7563	Eval_ACC: 0.7018	Eval_PREC: 0.7097	Eval_RECALL: 0.8152	Eval_F1: 0.7588
+
+Global_step 44700	Train_loss: 0.5252
+Train_AUC: 0.8205	Train_ACC: 0.7506	Train_PREC: 0.7537	Train_RECALL: 0.8427	Train_F1: 0.7957
+Eval_AUC: 0.7573	Eval_ACC: 0.7020	Eval_PREC: 0.7160	Eval_RECALL: 0.7989	Eval_F1: 0.7552
+
+Global_step 44800	Train_loss: 0.5199
+Train_AUC: 0.8209	Train_ACC: 0.7510	Train_PREC: 0.7544	Train_RECALL: 0.8420	Train_F1: 0.7958
+Eval_AUC: 0.7578	Eval_ACC: 0.7028	Eval_PREC: 0.7170	Eval_RECALL: 0.7986	Eval_F1: 0.7556
+
+Global_step 44900	Train_loss: 0.5223
+Train_AUC: 0.8212	Train_ACC: 0.7494	Train_PREC: 0.7401	Train_RECALL: 0.8711	Train_F1: 0.8003
+Eval_AUC: 0.7562	Eval_ACC: 0.7025	Eval_PREC: 0.7048	Eval_RECALL: 0.8310	Eval_F1: 0.7627
+
+Global_step 45000	Train_loss: 0.5238
+Train_AUC: 0.8215	Train_ACC: 0.7511	Train_PREC: 0.7557	Train_RECALL: 0.8396	Train_F1: 0.7954
+Eval_AUC: 0.7588	Eval_ACC: 0.7035	Eval_PREC: 0.7180	Eval_RECALL: 0.7981	Eval_F1: 0.7559
+
+Global_step 45100	Train_loss: 0.5146
+Train_AUC: 0.8219	Train_ACC: 0.7509	Train_PREC: 0.7646	Train_RECALL: 0.8205	Train_F1: 0.7915
+Eval_AUC: 0.7592	Eval_ACC: 0.7022	Eval_PREC: 0.7252	Eval_RECALL: 0.7765	Eval_F1: 0.7500
+
+Global_step 45200	Train_loss: 0.5173
+Train_AUC: 0.8209	Train_ACC: 0.7509	Train_PREC: 0.7494	Train_RECALL: 0.8529	Train_F1: 0.7978
+Eval_AUC: 0.7575	Eval_ACC: 0.7018	Eval_PREC: 0.7115	Eval_RECALL: 0.8101	Eval_F1: 0.7576
+
+Global_step 45300	Train_loss: 0.5225
+Train_AUC: 0.8223	Train_ACC: 0.7514	Train_PREC: 0.7469	Train_RECALL: 0.8602	Train_F1: 0.7995
+Eval_AUC: 0.7587	Eval_ACC: 0.7035	Eval_PREC: 0.7103	Eval_RECALL: 0.8183	Eval_F1: 0.7605
+
+Global_step 45400	Train_loss: 0.5159
+Train_AUC: 0.8219	Train_ACC: 0.7516	Train_PREC: 0.7488	Train_RECALL: 0.8562	Train_F1: 0.7989
+Eval_AUC: 0.7556	Eval_ACC: 0.7021	Eval_PREC: 0.7109	Eval_RECALL: 0.8126	Eval_F1: 0.7583
+
+Global_step 45500	Train_loss: 0.5098
+Train_AUC: 0.8230	Train_ACC: 0.7521	Train_PREC: 0.7485	Train_RECALL: 0.8584	Train_F1: 0.7997
+Eval_AUC: 0.7576	Eval_ACC: 0.7032	Eval_PREC: 0.7111	Eval_RECALL: 0.8154	Eval_F1: 0.7597
+
+Global_step 45600	Train_loss: 0.5239
+Train_AUC: 0.8226	Train_ACC: 0.7519	Train_PREC: 0.7510	Train_RECALL: 0.8521	Train_F1: 0.7984
+Eval_AUC: 0.7579	Eval_ACC: 0.7021	Eval_PREC: 0.7126	Eval_RECALL: 0.8081	Eval_F1: 0.7573
+
+Global_step 45700	Train_loss: 0.5245
+Train_AUC: 0.8228	Train_ACC: 0.7524	Train_PREC: 0.7610	Train_RECALL: 0.8316	Train_F1: 0.7947
+Eval_AUC: 0.7578	Eval_ACC: 0.7013	Eval_PREC: 0.7202	Eval_RECALL: 0.7863	Eval_F1: 0.7518
+
+Global_step 45800	Train_loss: 0.5152
+Train_AUC: 0.8229	Train_ACC: 0.7523	Train_PREC: 0.7531	Train_RECALL: 0.8483	Train_F1: 0.7979
+Eval_AUC: 0.7585	Eval_ACC: 0.7031	Eval_PREC: 0.7149	Eval_RECALL: 0.8049	Eval_F1: 0.7572
+
+Global_step 45900	Train_loss: 0.5247
+Train_AUC: 0.8219	Train_ACC: 0.7517	Train_PREC: 0.7513	Train_RECALL: 0.8508	Train_F1: 0.7979
+Eval_AUC: 0.7601	Eval_ACC: 0.7036	Eval_PREC: 0.7143	Eval_RECALL: 0.8080	Eval_F1: 0.7583
+
+Global_step 46000	Train_loss: 0.5223
+Train_AUC: 0.8225	Train_ACC: 0.7526	Train_PREC: 0.7525	Train_RECALL: 0.8503	Train_F1: 0.7984
+Eval_AUC: 0.7598	Eval_ACC: 0.7034	Eval_PREC: 0.7147	Eval_RECALL: 0.8064	Eval_F1: 0.7578
+
+Global_step 46100	Train_loss: 0.5254
+Train_AUC: 0.8218	Train_ACC: 0.7497	Train_PREC: 0.7393	Train_RECALL: 0.8738	Train_F1: 0.8010
+Eval_AUC: 0.7570	Eval_ACC: 0.7015	Eval_PREC: 0.7033	Eval_RECALL: 0.8324	Eval_F1: 0.7624
+
+Global_step 46200	Train_loss: 0.5244
+Train_AUC: 0.8233	Train_ACC: 0.7523	Train_PREC: 0.7489	Train_RECALL: 0.8577	Train_F1: 0.7996
+Eval_AUC: 0.7596	Eval_ACC: 0.7043	Eval_PREC: 0.7121	Eval_RECALL: 0.8160	Eval_F1: 0.7605
+
+Global_step 46300	Train_loss: 0.5180
+Train_AUC: 0.8233	Train_ACC: 0.7531	Train_PREC: 0.7606	Train_RECALL: 0.8341	Train_F1: 0.7956
+Eval_AUC: 0.7578	Eval_ACC: 0.7017	Eval_PREC: 0.7198	Eval_RECALL: 0.7884	Eval_F1: 0.7526
+
+Global_step 46400	Train_loss: 0.5222
+Train_AUC: 0.8234	Train_ACC: 0.7513	Train_PREC: 0.7426	Train_RECALL: 0.8700	Train_F1: 0.8013
+Eval_AUC: 0.7586	Eval_ACC: 0.7032	Eval_PREC: 0.7061	Eval_RECALL: 0.8290	Eval_F1: 0.7627
+
+Global_step 46500	Train_loss: 0.5268
+Train_AUC: 0.8246	Train_ACC: 0.7515	Train_PREC: 0.7773	Train_RECALL: 0.7972	Train_F1: 0.7871
+Eval_AUC: 0.7565	Eval_ACC: 0.6974	Eval_PREC: 0.7318	Eval_RECALL: 0.7484	Eval_F1: 0.7400
+
+Global_step 46600	Train_loss: 0.5330
+Train_AUC: 0.8243	Train_ACC: 0.7518	Train_PREC: 0.7415	Train_RECALL: 0.8741	Train_F1: 0.8024
+Eval_AUC: 0.7605	Eval_ACC: 0.7045	Eval_PREC: 0.7060	Eval_RECALL: 0.8336	Eval_F1: 0.7645
+
+Global_step 46700	Train_loss: 0.5273
+Train_AUC: 0.8257	Train_ACC: 0.7530	Train_PREC: 0.7406	Train_RECALL: 0.8794	Train_F1: 0.8040
+Eval_AUC: 0.7584	Eval_ACC: 0.7025	Eval_PREC: 0.7032	Eval_RECALL: 0.8356	Eval_F1: 0.7637
+
+Global_step 46800	Train_loss: 0.5155
+Train_AUC: 0.8249	Train_ACC: 0.7544	Train_PREC: 0.7611	Train_RECALL: 0.8364	Train_F1: 0.7970
+Eval_AUC: 0.7568	Eval_ACC: 0.7009	Eval_PREC: 0.7187	Eval_RECALL: 0.7888	Eval_F1: 0.7521
+
+Global_step 46900	Train_loss: 0.5237
+Train_AUC: 0.8243	Train_ACC: 0.7531	Train_PREC: 0.7526	Train_RECALL: 0.8515	Train_F1: 0.7990
+Eval_AUC: 0.7591	Eval_ACC: 0.7045	Eval_PREC: 0.7150	Eval_RECALL: 0.8088	Eval_F1: 0.7590
+
+Global_step 47000	Train_loss: 0.5240
+Train_AUC: 0.8251	Train_ACC: 0.7530	Train_PREC: 0.7475	Train_RECALL: 0.8629	Train_F1: 0.8010
+Eval_AUC: 0.7582	Eval_ACC: 0.7035	Eval_PREC: 0.7098	Eval_RECALL: 0.8198	Eval_F1: 0.7609
+
+Global_step 47100	Train_loss: 0.5284
+Train_AUC: 0.8241	Train_ACC: 0.7521	Train_PREC: 0.7697	Train_RECALL: 0.8130	Train_F1: 0.7908
+Eval_AUC: 0.7589	Eval_ACC: 0.7006	Eval_PREC: 0.7273	Eval_RECALL: 0.7672	Eval_F1: 0.7467
+
+Global_step 47200	Train_loss: 0.5241
+Train_AUC: 0.8247	Train_ACC: 0.7530	Train_PREC: 0.7698	Train_RECALL: 0.8152	Train_F1: 0.7919
+Eval_AUC: 0.7586	Eval_ACC: 0.7012	Eval_PREC: 0.7274	Eval_RECALL: 0.7685	Eval_F1: 0.7474
+
+Global_step 47300	Train_loss: 0.5209
+Train_AUC: 0.8243	Train_ACC: 0.7517	Train_PREC: 0.7395	Train_RECALL: 0.8787	Train_F1: 0.8031
+Eval_AUC: 0.7578	Eval_ACC: 0.7024	Eval_PREC: 0.7029	Eval_RECALL: 0.8360	Eval_F1: 0.7637
+
+Global_step 47400	Train_loss: 0.5226
+Train_AUC: 0.8264	Train_ACC: 0.7532	Train_PREC: 0.7769	Train_RECALL: 0.8021	Train_F1: 0.7893
+Eval_AUC: 0.7579	Eval_ACC: 0.6987	Eval_PREC: 0.7311	Eval_RECALL: 0.7532	Eval_F1: 0.7420
+
+Global_step 47500	Train_loss: 0.5283
+Train_AUC: 0.8268	Train_ACC: 0.7554	Train_PREC: 0.7529	Train_RECALL: 0.8566	Train_F1: 0.8014
+Eval_AUC: 0.7575	Eval_ACC: 0.7019	Eval_PREC: 0.7119	Eval_RECALL: 0.8095	Eval_F1: 0.7575
+
+Global_step 47600	Train_loss: 0.5233
+Train_AUC: 0.8259	Train_ACC: 0.7538	Train_PREC: 0.7459	Train_RECALL: 0.8687	Train_F1: 0.8026
+Eval_AUC: 0.7598	Eval_ACC: 0.7045	Eval_PREC: 0.7085	Eval_RECALL: 0.8262	Eval_F1: 0.7629
+
+Global_step 47700	Train_loss: 0.5196
+Train_AUC: 0.8265	Train_ACC: 0.7557	Train_PREC: 0.7576	Train_RECALL: 0.8472	Train_F1: 0.7999
+Eval_AUC: 0.7591	Eval_ACC: 0.7029	Eval_PREC: 0.7162	Eval_RECALL: 0.8010	Eval_F1: 0.7562
+
+Global_step 47800	Train_loss: 0.5236
+Train_AUC: 0.8260	Train_ACC: 0.7548	Train_PREC: 0.7555	Train_RECALL: 0.8495	Train_F1: 0.7998
+Eval_AUC: 0.7589	Eval_ACC: 0.7034	Eval_PREC: 0.7156	Eval_RECALL: 0.8041	Eval_F1: 0.7573
+
+Global_step 47900	Train_loss: 0.5285
+Train_AUC: 0.8260	Train_ACC: 0.7553	Train_PREC: 0.7538	Train_RECALL: 0.8544	Train_F1: 0.8010
+Eval_AUC: 0.7594	Eval_ACC: 0.7039	Eval_PREC: 0.7142	Eval_RECALL: 0.8091	Eval_F1: 0.7587
+
+Global_step 48000	Train_loss: 0.5291
+Train_AUC: 0.8272	Train_ACC: 0.7556	Train_PREC: 0.7678	Train_RECALL: 0.8255	Train_F1: 0.7956
+Eval_AUC: 0.7594	Eval_ACC: 0.7021	Eval_PREC: 0.7248	Eval_RECALL: 0.7775	Eval_F1: 0.7502
+
+Global_step 48100	Train_loss: 0.5289
+Train_AUC: 0.8250	Train_ACC: 0.7542	Train_PREC: 0.7564	Train_RECALL: 0.8459	Train_F1: 0.7986
+Eval_AUC: 0.7607	Eval_ACC: 0.7046	Eval_PREC: 0.7180	Eval_RECALL: 0.8011	Eval_F1: 0.7573
+
+Global_step 48200	Train_loss: 0.5273
+Train_AUC: 0.8276	Train_ACC: 0.7552	Train_PREC: 0.7461	Train_RECALL: 0.8718	Train_F1: 0.8041
+Eval_AUC: 0.7581	Eval_ACC: 0.7033	Eval_PREC: 0.7071	Eval_RECALL: 0.8265	Eval_F1: 0.7622
+
+Global_step 48300	Train_loss: 0.5364
+Train_AUC: 0.8272	Train_ACC: 0.7554	Train_PREC: 0.7668	Train_RECALL: 0.8272	Train_F1: 0.7959
+Eval_AUC: 0.7604	Eval_ACC: 0.7032	Eval_PREC: 0.7249	Eval_RECALL: 0.7801	Eval_F1: 0.7515
+
+Global_step 48400	Train_loss: 0.5282
+Train_AUC: 0.8271	Train_ACC: 0.7554	Train_PREC: 0.7680	Train_RECALL: 0.8249	Train_F1: 0.7954
+Eval_AUC: 0.7601	Eval_ACC: 0.7030	Eval_PREC: 0.7258	Eval_RECALL: 0.7775	Eval_F1: 0.7508
+
+Global_step 48500	Train_loss: 0.5228
+Train_AUC: 0.8272	Train_ACC: 0.7561	Train_PREC: 0.7549	Train_RECALL: 0.8542	Train_F1: 0.8014
+Eval_AUC: 0.7582	Eval_ACC: 0.7028	Eval_PREC: 0.7140	Eval_RECALL: 0.8065	Eval_F1: 0.7574
+
+Global_step 48600	Train_loss: 0.5246
+Train_AUC: 0.8267	Train_ACC: 0.7550	Train_PREC: 0.7508	Train_RECALL: 0.8605	Train_F1: 0.8019
+Eval_AUC: 0.7589	Eval_ACC: 0.7037	Eval_PREC: 0.7118	Eval_RECALL: 0.8151	Eval_F1: 0.7599
+
+Global_step 48700	Train_loss: 0.5311
+Train_AUC: 0.8271	Train_ACC: 0.7550	Train_PREC: 0.7477	Train_RECALL: 0.8678	Train_F1: 0.8032
+Eval_AUC: 0.7602	Eval_ACC: 0.7039	Eval_PREC: 0.7091	Eval_RECALL: 0.8229	Eval_F1: 0.7618
+
+Global_step 48800	Train_loss: 0.5300
+Train_AUC: 0.8263	Train_ACC: 0.7547	Train_PREC: 0.7534	Train_RECALL: 0.8540	Train_F1: 0.8005
+Eval_AUC: 0.7600	Eval_ACC: 0.7043	Eval_PREC: 0.7143	Eval_RECALL: 0.8100	Eval_F1: 0.7592
+
+epoch:8
+Global_step 48900	Train_loss: 0.4943
+Train_AUC: 0.8304	Train_ACC: 0.7584	Train_PREC: 0.7630	Train_RECALL: 0.8424	Train_F1: 0.8008
+Eval_AUC: 0.7562	Eval_ACC: 0.7014	Eval_PREC: 0.7181	Eval_RECALL: 0.7918	Eval_F1: 0.7531
+
+Global_step 49000	Train_loss: 0.4907
+Train_AUC: 0.8306	Train_ACC: 0.7587	Train_PREC: 0.7589	Train_RECALL: 0.8519	Train_F1: 0.8027
+Eval_AUC: 0.7533	Eval_ACC: 0.6995	Eval_PREC: 0.7132	Eval_RECALL: 0.7989	Eval_F1: 0.7536
+
+Global_step 49100	Train_loss: 0.4878
+Train_AUC: 0.8309	Train_ACC: 0.7588	Train_PREC: 0.7545	Train_RECALL: 0.8621	Train_F1: 0.8047
+Eval_AUC: 0.7528	Eval_ACC: 0.6998	Eval_PREC: 0.7094	Eval_RECALL: 0.8099	Eval_F1: 0.7563
+
+Global_step 49200	Train_loss: 0.4951
+Train_AUC: 0.8310	Train_ACC: 0.7590	Train_PREC: 0.7631	Train_RECALL: 0.8439	Train_F1: 0.8014
+Eval_AUC: 0.7531	Eval_ACC: 0.6990	Eval_PREC: 0.7158	Eval_RECALL: 0.7907	Eval_F1: 0.7514
+
+Global_step 49300	Train_loss: 0.4938
+Train_AUC: 0.8310	Train_ACC: 0.7587	Train_PREC: 0.7695	Train_RECALL: 0.8298	Train_F1: 0.7985
+Eval_AUC: 0.7517	Eval_ACC: 0.6979	Eval_PREC: 0.7206	Eval_RECALL: 0.7757	Eval_F1: 0.7471
+
+Global_step 49400	Train_loss: 0.5051
+Train_AUC: 0.8316	Train_ACC: 0.7599	Train_PREC: 0.7629	Train_RECALL: 0.8463	Train_F1: 0.8024
+Eval_AUC: 0.7517	Eval_ACC: 0.6978	Eval_PREC: 0.7139	Eval_RECALL: 0.7922	Eval_F1: 0.7510
+
+Global_step 49500	Train_loss: 0.5101
+Train_AUC: 0.8311	Train_ACC: 0.7592	Train_PREC: 0.7652	Train_RECALL: 0.8398	Train_F1: 0.8008
+Eval_AUC: 0.7523	Eval_ACC: 0.6980	Eval_PREC: 0.7172	Eval_RECALL: 0.7841	Eval_F1: 0.7492
+
+Global_step 49600	Train_loss: 0.5040
+Train_AUC: 0.8324	Train_ACC: 0.7597	Train_PREC: 0.7525	Train_RECALL: 0.8687	Train_F1: 0.8064
+Eval_AUC: 0.7542	Eval_ACC: 0.6999	Eval_PREC: 0.7075	Eval_RECALL: 0.8156	Eval_F1: 0.7577
+
+Global_step 49700	Train_loss: 0.5106
+Train_AUC: 0.8325	Train_ACC: 0.7590	Train_PREC: 0.7771	Train_RECALL: 0.8156	Train_F1: 0.7959
+Eval_AUC: 0.7532	Eval_ACC: 0.6972	Eval_PREC: 0.7264	Eval_RECALL: 0.7599	Eval_F1: 0.7428
+
+Global_step 49800	Train_loss: 0.5046
+Train_AUC: 0.8313	Train_ACC: 0.7591	Train_PREC: 0.7678	Train_RECALL: 0.8342	Train_F1: 0.7996
+Eval_AUC: 0.7521	Eval_ACC: 0.6956	Eval_PREC: 0.7171	Eval_RECALL: 0.7776	Eval_F1: 0.7462
+
+Global_step 49900	Train_loss: 0.4994
+Train_AUC: 0.8327	Train_ACC: 0.7606	Train_PREC: 0.7606	Train_RECALL: 0.8532	Train_F1: 0.8043
+Eval_AUC: 0.7542	Eval_ACC: 0.7012	Eval_PREC: 0.7147	Eval_RECALL: 0.8000	Eval_F1: 0.7549
+
+Global_step 50000	Train_loss: 0.5075
+Train_AUC: 0.8331	Train_ACC: 0.7607	Train_PREC: 0.7598	Train_RECALL: 0.8550	Train_F1: 0.8046
+Eval_AUC: 0.7530	Eval_ACC: 0.7004	Eval_PREC: 0.7132	Eval_RECALL: 0.8016	Eval_F1: 0.7548
+
+Global_step 50100	Train_loss: 0.5053
+Train_AUC: 0.8325	Train_ACC: 0.7602	Train_PREC: 0.7626	Train_RECALL: 0.8479	Train_F1: 0.8030
+Eval_AUC: 0.7531	Eval_ACC: 0.7001	Eval_PREC: 0.7157	Eval_RECALL: 0.7940	Eval_F1: 0.7528
+
+Global_step 50200	Train_loss: 0.5049
+Train_AUC: 0.8328	Train_ACC: 0.7605	Train_PREC: 0.7704	Train_RECALL: 0.8324	Train_F1: 0.8002
+Eval_AUC: 0.7544	Eval_ACC: 0.6992	Eval_PREC: 0.7219	Eval_RECALL: 0.7762	Eval_F1: 0.7481
+
+Global_step 50300	Train_loss: 0.5043
+Train_AUC: 0.8320	Train_ACC: 0.7597	Train_PREC: 0.7583	Train_RECALL: 0.8559	Train_F1: 0.8041
+Eval_AUC: 0.7531	Eval_ACC: 0.7000	Eval_PREC: 0.7124	Eval_RECALL: 0.8024	Eval_F1: 0.7547
+
+Global_step 50400	Train_loss: 0.5088
+Train_AUC: 0.8332	Train_ACC: 0.7608	Train_PREC: 0.7596	Train_RECALL: 0.8558	Train_F1: 0.8048
+Eval_AUC: 0.7546	Eval_ACC: 0.7020	Eval_PREC: 0.7144	Eval_RECALL: 0.8031	Eval_F1: 0.7562
+
+Global_step 50500	Train_loss: 0.5014
+Train_AUC: 0.8332	Train_ACC: 0.7610	Train_PREC: 0.7631	Train_RECALL: 0.8489	Train_F1: 0.8037
+Eval_AUC: 0.7540	Eval_ACC: 0.6998	Eval_PREC: 0.7155	Eval_RECALL: 0.7939	Eval_F1: 0.7527
+
+Global_step 50600	Train_loss: 0.5089
+Train_AUC: 0.8317	Train_ACC: 0.7596	Train_PREC: 0.7533	Train_RECALL: 0.8665	Train_F1: 0.8060
+Eval_AUC: 0.7548	Eval_ACC: 0.6997	Eval_PREC: 0.7081	Eval_RECALL: 0.8135	Eval_F1: 0.7571
+
+Global_step 50700	Train_loss: 0.5060
+Train_AUC: 0.8336	Train_ACC: 0.7607	Train_PREC: 0.7521	Train_RECALL: 0.8723	Train_F1: 0.8077
+Eval_AUC: 0.7528	Eval_ACC: 0.6986	Eval_PREC: 0.7052	Eval_RECALL: 0.8179	Eval_F1: 0.7574
+
+Global_step 50800	Train_loss: 0.5103
+Train_AUC: 0.8346	Train_ACC: 0.7621	Train_PREC: 0.7558	Train_RECALL: 0.8676	Train_F1: 0.8079
+Eval_AUC: 0.7528	Eval_ACC: 0.6994	Eval_PREC: 0.7082	Eval_RECALL: 0.8122	Eval_F1: 0.7566
+
+Global_step 50900	Train_loss: 0.5019
+Train_AUC: 0.8341	Train_ACC: 0.7619	Train_PREC: 0.7661	Train_RECALL: 0.8447	Train_F1: 0.8035
+Eval_AUC: 0.7545	Eval_ACC: 0.7001	Eval_PREC: 0.7176	Eval_RECALL: 0.7892	Eval_F1: 0.7517
+
+Global_step 51000	Train_loss: 0.5068
+Train_AUC: 0.8338	Train_ACC: 0.7619	Train_PREC: 0.7630	Train_RECALL: 0.8513	Train_F1: 0.8047
+Eval_AUC: 0.7544	Eval_ACC: 0.7001	Eval_PREC: 0.7151	Eval_RECALL: 0.7956	Eval_F1: 0.7532
+
+Global_step 51100	Train_loss: 0.4993
+Train_AUC: 0.8344	Train_ACC: 0.7615	Train_PREC: 0.7539	Train_RECALL: 0.8701	Train_F1: 0.8079
+Eval_AUC: 0.7535	Eval_ACC: 0.7001	Eval_PREC: 0.7074	Eval_RECALL: 0.8163	Eval_F1: 0.7580
+
+Global_step 51200	Train_loss: 0.5033
+Train_AUC: 0.8339	Train_ACC: 0.7621	Train_PREC: 0.7642	Train_RECALL: 0.8493	Train_F1: 0.8045
+Eval_AUC: 0.7513	Eval_ACC: 0.6985	Eval_PREC: 0.7145	Eval_RECALL: 0.7928	Eval_F1: 0.7516
+
+Global_step 51300	Train_loss: 0.5095
+Train_AUC: 0.8326	Train_ACC: 0.7596	Train_PREC: 0.7524	Train_RECALL: 0.8687	Train_F1: 0.8064
+Eval_AUC: 0.7528	Eval_ACC: 0.6995	Eval_PREC: 0.7067	Eval_RECALL: 0.8163	Eval_F1: 0.7576
+
+Global_step 51400	Train_loss: 0.5143
+Train_AUC: 0.8350	Train_ACC: 0.7624	Train_PREC: 0.7611	Train_RECALL: 0.8565	Train_F1: 0.8060
+Eval_AUC: 0.7549	Eval_ACC: 0.7013	Eval_PREC: 0.7136	Eval_RECALL: 0.8030	Eval_F1: 0.7557
+
+Global_step 51500	Train_loss: 0.5138
+Train_AUC: 0.8349	Train_ACC: 0.7630	Train_PREC: 0.7676	Train_RECALL: 0.8445	Train_F1: 0.8042
+Eval_AUC: 0.7532	Eval_ACC: 0.6998	Eval_PREC: 0.7179	Eval_RECALL: 0.7878	Eval_F1: 0.7512
+
+Global_step 51600	Train_loss: 0.5128
+Train_AUC: 0.8352	Train_ACC: 0.7593	Train_PREC: 0.7420	Train_RECALL: 0.8926	Train_F1: 0.8104
+Eval_AUC: 0.7535	Eval_ACC: 0.6987	Eval_PREC: 0.6974	Eval_RECALL: 0.8411	Eval_F1: 0.7626
+
+Global_step 51700	Train_loss: 0.5050
+Train_AUC: 0.8354	Train_ACC: 0.7626	Train_PREC: 0.7573	Train_RECALL: 0.8652	Train_F1: 0.8077
+Eval_AUC: 0.7532	Eval_ACC: 0.7000	Eval_PREC: 0.7093	Eval_RECALL: 0.8109	Eval_F1: 0.7567
+
+Global_step 51800	Train_loss: 0.5080
+Train_AUC: 0.8367	Train_ACC: 0.7636	Train_PREC: 0.7586	Train_RECALL: 0.8651	Train_F1: 0.8084
+Eval_AUC: 0.7514	Eval_ACC: 0.6986	Eval_PREC: 0.7088	Eval_RECALL: 0.8082	Eval_F1: 0.7552
+
+Global_step 51900	Train_loss: 0.5127
+Train_AUC: 0.8365	Train_ACC: 0.7642	Train_PREC: 0.7641	Train_RECALL: 0.8547	Train_F1: 0.8069
+Eval_AUC: 0.7549	Eval_ACC: 0.7001	Eval_PREC: 0.7142	Eval_RECALL: 0.7980	Eval_F1: 0.7538
+
+Global_step 52000	Train_loss: 0.4990
+Train_AUC: 0.8358	Train_ACC: 0.7629	Train_PREC: 0.7557	Train_RECALL: 0.8697	Train_F1: 0.8087
+Eval_AUC: 0.7537	Eval_ACC: 0.6995	Eval_PREC: 0.7077	Eval_RECALL: 0.8138	Eval_F1: 0.7570
+
+Global_step 52100	Train_loss: 0.5111
+Train_AUC: 0.8370	Train_ACC: 0.7631	Train_PREC: 0.7806	Train_RECALL: 0.8192	Train_F1: 0.7994
+Eval_AUC: 0.7534	Eval_ACC: 0.6964	Eval_PREC: 0.7259	Eval_RECALL: 0.7586	Eval_F1: 0.7419
+
+Global_step 52200	Train_loss: 0.5066
+Train_AUC: 0.8367	Train_ACC: 0.7636	Train_PREC: 0.7630	Train_RECALL: 0.8556	Train_F1: 0.8067
+Eval_AUC: 0.7556	Eval_ACC: 0.7010	Eval_PREC: 0.7144	Eval_RECALL: 0.8001	Eval_F1: 0.7548
+
+Global_step 52300	Train_loss: 0.5154
+Train_AUC: 0.8363	Train_ACC: 0.7612	Train_PREC: 0.7481	Train_RECALL: 0.8829	Train_F1: 0.8099
+Eval_AUC: 0.7544	Eval_ACC: 0.7004	Eval_PREC: 0.7028	Eval_RECALL: 0.8305	Eval_F1: 0.7613
+
+Global_step 52400	Train_loss: 0.5110
+Train_AUC: 0.8362	Train_ACC: 0.7628	Train_PREC: 0.7584	Train_RECALL: 0.8634	Train_F1: 0.8075
+Eval_AUC: 0.7538	Eval_ACC: 0.6993	Eval_PREC: 0.7095	Eval_RECALL: 0.8083	Eval_F1: 0.7557
+
+Global_step 52500	Train_loss: 0.5163
+Train_AUC: 0.8361	Train_ACC: 0.7639	Train_PREC: 0.7669	Train_RECALL: 0.8482	Train_F1: 0.8055
+Eval_AUC: 0.7569	Eval_ACC: 0.7014	Eval_PREC: 0.7181	Eval_RECALL: 0.7917	Eval_F1: 0.7531
+
+Global_step 52600	Train_loss: 0.5144
+Train_AUC: 0.8369	Train_ACC: 0.7641	Train_PREC: 0.7648	Train_RECALL: 0.8528	Train_F1: 0.8064
+Eval_AUC: 0.7555	Eval_ACC: 0.7011	Eval_PREC: 0.7157	Eval_RECALL: 0.7968	Eval_F1: 0.7541
+
+Global_step 52700	Train_loss: 0.5127
+Train_AUC: 0.8387	Train_ACC: 0.7656	Train_PREC: 0.7715	Train_RECALL: 0.8431	Train_F1: 0.8057
+Eval_AUC: 0.7538	Eval_ACC: 0.7000	Eval_PREC: 0.7194	Eval_RECALL: 0.7844	Eval_F1: 0.7505
+
+Global_step 52800	Train_loss: 0.5049
+Train_AUC: 0.8359	Train_ACC: 0.7624	Train_PREC: 0.7548	Train_RECALL: 0.8704	Train_F1: 0.8085
+Eval_AUC: 0.7509	Eval_ACC: 0.6984	Eval_PREC: 0.7059	Eval_RECALL: 0.8153	Eval_F1: 0.7567
+
+Global_step 52900	Train_loss: 0.5080
+Train_AUC: 0.8388	Train_ACC: 0.7656	Train_PREC: 0.7668	Train_RECALL: 0.8526	Train_F1: 0.8074
+Eval_AUC: 0.7551	Eval_ACC: 0.7008	Eval_PREC: 0.7162	Eval_RECALL: 0.7949	Eval_F1: 0.7535
+
+Global_step 53000	Train_loss: 0.5094
+Train_AUC: 0.8375	Train_ACC: 0.7639	Train_PREC: 0.7777	Train_RECALL: 0.8267	Train_F1: 0.8014
+Eval_AUC: 0.7569	Eval_ACC: 0.6996	Eval_PREC: 0.7258	Eval_RECALL: 0.7678	Eval_F1: 0.7462
+
+Global_step 53100	Train_loss: 0.5120
+Train_AUC: 0.8384	Train_ACC: 0.7653	Train_PREC: 0.7664	Train_RECALL: 0.8528	Train_F1: 0.8073
+Eval_AUC: 0.7559	Eval_ACC: 0.7008	Eval_PREC: 0.7159	Eval_RECALL: 0.7958	Eval_F1: 0.7537
+
+Global_step 53200	Train_loss: 0.5029
+Train_AUC: 0.8386	Train_ACC: 0.7644	Train_PREC: 0.7525	Train_RECALL: 0.8808	Train_F1: 0.8116
+Eval_AUC: 0.7556	Eval_ACC: 0.7016	Eval_PREC: 0.7053	Eval_RECALL: 0.8267	Eval_F1: 0.7612
+
+Global_step 53300	Train_loss: 0.5114
+Train_AUC: 0.8383	Train_ACC: 0.7657	Train_PREC: 0.7646	Train_RECALL: 0.8574	Train_F1: 0.8084
+Eval_AUC: 0.7562	Eval_ACC: 0.7016	Eval_PREC: 0.7150	Eval_RECALL: 0.8003	Eval_F1: 0.7552
+
+Global_step 53400	Train_loss: 0.5113
+Train_AUC: 0.8387	Train_ACC: 0.7660	Train_PREC: 0.7669	Train_RECALL: 0.8534	Train_F1: 0.8078
+Eval_AUC: 0.7565	Eval_ACC: 0.7008	Eval_PREC: 0.7159	Eval_RECALL: 0.7957	Eval_F1: 0.7537
+
+Global_step 53500	Train_loss: 0.5136
+Train_AUC: 0.8393	Train_ACC: 0.7662	Train_PREC: 0.7617	Train_RECALL: 0.8648	Train_F1: 0.8100
+Eval_AUC: 0.7560	Eval_ACC: 0.7012	Eval_PREC: 0.7115	Eval_RECALL: 0.8082	Eval_F1: 0.7568
+
+Global_step 53600	Train_loss: 0.5102
+Train_AUC: 0.8398	Train_ACC: 0.7662	Train_PREC: 0.7583	Train_RECALL: 0.8724	Train_F1: 0.8114
+Eval_AUC: 0.7560	Eval_ACC: 0.7007	Eval_PREC: 0.7084	Eval_RECALL: 0.8153	Eval_F1: 0.7581
+
+Global_step 53700	Train_loss: 0.5142
+Train_AUC: 0.8384	Train_ACC: 0.7647	Train_PREC: 0.7796	Train_RECALL: 0.8250	Train_F1: 0.8016
+Eval_AUC: 0.7577	Eval_ACC: 0.7003	Eval_PREC: 0.7270	Eval_RECALL: 0.7671	Eval_F1: 0.7465
+
+Global_step 53800	Train_loss: 0.5164
+Train_AUC: 0.8403	Train_ACC: 0.7669	Train_PREC: 0.7683	Train_RECALL: 0.8527	Train_F1: 0.8083
+Eval_AUC: 0.7550	Eval_ACC: 0.7001	Eval_PREC: 0.7157	Eval_RECALL: 0.7941	Eval_F1: 0.7529
+
+Global_step 53900	Train_loss: 0.5172
+Train_AUC: 0.8384	Train_ACC: 0.7657	Train_PREC: 0.7712	Train_RECALL: 0.8437	Train_F1: 0.8058
+Eval_AUC: 0.7568	Eval_ACC: 0.7010	Eval_PREC: 0.7200	Eval_RECALL: 0.7859	Eval_F1: 0.7515
+
+Global_step 54000	Train_loss: 0.5056
+Train_AUC: 0.8403	Train_ACC: 0.7672	Train_PREC: 0.7755	Train_RECALL: 0.8387	Train_F1: 0.8059
+Eval_AUC: 0.7528	Eval_ACC: 0.6973	Eval_PREC: 0.7193	Eval_RECALL: 0.7771	Eval_F1: 0.7471
+
+Global_step 54100	Train_loss: 0.5085
+Train_AUC: 0.8408	Train_ACC: 0.7673	Train_PREC: 0.7671	Train_RECALL: 0.8560	Train_F1: 0.8091
+Eval_AUC: 0.7520	Eval_ACC: 0.6979	Eval_PREC: 0.7130	Eval_RECALL: 0.7947	Eval_F1: 0.7516
+
+Global_step 54200	Train_loss: 0.5156
+Train_AUC: 0.8381	Train_ACC: 0.7645	Train_PREC: 0.7594	Train_RECALL: 0.8655	Train_F1: 0.8090
+Eval_AUC: 0.7572	Eval_ACC: 0.7016	Eval_PREC: 0.7110	Eval_RECALL: 0.8110	Eval_F1: 0.7577
+
+Global_step 54300	Train_loss: 0.5047
+Train_AUC: 0.8405	Train_ACC: 0.7672	Train_PREC: 0.7649	Train_RECALL: 0.8605	Train_F1: 0.8099
+Eval_AUC: 0.7554	Eval_ACC: 0.7004	Eval_PREC: 0.7130	Eval_RECALL: 0.8019	Eval_F1: 0.7549
+
+Global_step 54400	Train_loss: 0.5053
+Train_AUC: 0.8401	Train_ACC: 0.7672	Train_PREC: 0.7737	Train_RECALL: 0.8425	Train_F1: 0.8066
+Eval_AUC: 0.7564	Eval_ACC: 0.7004	Eval_PREC: 0.7205	Eval_RECALL: 0.7829	Eval_F1: 0.7504
+
+Global_step 54500	Train_loss: 0.5200
+Train_AUC: 0.8402	Train_ACC: 0.7666	Train_PREC: 0.7619	Train_RECALL: 0.8655	Train_F1: 0.8104
+Eval_AUC: 0.7553	Eval_ACC: 0.7010	Eval_PREC: 0.7110	Eval_RECALL: 0.8092	Eval_F1: 0.7569
+
+Global_step 54600	Train_loss: 0.5069
+Train_AUC: 0.8416	Train_ACC: 0.7680	Train_PREC: 0.7741	Train_RECALL: 0.8437	Train_F1: 0.8074
+Eval_AUC: 0.7559	Eval_ACC: 0.6997	Eval_PREC: 0.7198	Eval_RECALL: 0.7828	Eval_F1: 0.7500
+
+Global_step 54700	Train_loss: 0.5104
+Train_AUC: 0.8416	Train_ACC: 0.7672	Train_PREC: 0.7575	Train_RECALL: 0.8767	Train_F1: 0.8128
+Eval_AUC: 0.7560	Eval_ACC: 0.7013	Eval_PREC: 0.7076	Eval_RECALL: 0.8193	Eval_F1: 0.7594
+
+Global_step 54800	Train_loss: 0.5165
+Train_AUC: 0.8421	Train_ACC: 0.7673	Train_PREC: 0.7567	Train_RECALL: 0.8789	Train_F1: 0.8132
+Eval_AUC: 0.7543	Eval_ACC: 0.7002	Eval_PREC: 0.7060	Eval_RECALL: 0.8206	Eval_F1: 0.7590
+
+Global_step 54900	Train_loss: 0.5177
+Train_AUC: 0.8413	Train_ACC: 0.7672	Train_PREC: 0.7598	Train_RECALL: 0.8716	Train_F1: 0.8119
+Eval_AUC: 0.7578	Eval_ACC: 0.7025	Eval_PREC: 0.7103	Eval_RECALL: 0.8152	Eval_F1: 0.7592
+
+epoch:9
+Global_step 55000	Train_loss: 0.4747
+Train_AUC: 0.8445	Train_ACC: 0.7709	Train_PREC: 0.7694	Train_RECALL: 0.8602	Train_F1: 0.8123
+Eval_AUC: 0.7514	Eval_ACC: 0.6978	Eval_PREC: 0.7121	Eval_RECALL: 0.7970	Eval_F1: 0.7522
+
+Global_step 55100	Train_loss: 0.4755
+Train_AUC: 0.8447	Train_ACC: 0.7706	Train_PREC: 0.7650	Train_RECALL: 0.8688	Train_F1: 0.8136
+Eval_AUC: 0.7508	Eval_ACC: 0.6968	Eval_PREC: 0.7079	Eval_RECALL: 0.8050	Eval_F1: 0.7534
+
+Global_step 55200	Train_loss: 0.4740
+Train_AUC: 0.8449	Train_ACC: 0.7709	Train_PREC: 0.7659	Train_RECALL: 0.8675	Train_F1: 0.8136
+Eval_AUC: 0.7502	Eval_ACC: 0.6967	Eval_PREC: 0.7085	Eval_RECALL: 0.8033	Eval_F1: 0.7529
+
+Global_step 55300	Train_loss: 0.4817
+Train_AUC: 0.8443	Train_ACC: 0.7702	Train_PREC: 0.7667	Train_RECALL: 0.8642	Train_F1: 0.8125
+Eval_AUC: 0.7495	Eval_ACC: 0.6952	Eval_PREC: 0.7084	Eval_RECALL: 0.7991	Eval_F1: 0.7510
+
+Global_step 55400	Train_loss: 0.4804
+Train_AUC: 0.8431	Train_ACC: 0.7693	Train_PREC: 0.7659	Train_RECALL: 0.8636	Train_F1: 0.8118
+Eval_AUC: 0.7473	Eval_ACC: 0.6945	Eval_PREC: 0.7079	Eval_RECALL: 0.7984	Eval_F1: 0.7505
+
+Global_step 55500	Train_loss: 0.4925
+Train_AUC: 0.8446	Train_ACC: 0.7708	Train_PREC: 0.7751	Train_RECALL: 0.8486	Train_F1: 0.8102
+Eval_AUC: 0.7467	Eval_ACC: 0.6936	Eval_PREC: 0.7137	Eval_RECALL: 0.7805	Eval_F1: 0.7456
+
+Global_step 55600	Train_loss: 0.4863
+Train_AUC: 0.8449	Train_ACC: 0.7706	Train_PREC: 0.7619	Train_RECALL: 0.8756	Train_F1: 0.8148
+Eval_AUC: 0.7477	Eval_ACC: 0.6953	Eval_PREC: 0.7045	Eval_RECALL: 0.8102	Eval_F1: 0.7537
+
+Global_step 55700	Train_loss: 0.4810
+Train_AUC: 0.8454	Train_ACC: 0.7718	Train_PREC: 0.7763	Train_RECALL: 0.8487	Train_F1: 0.8109
+Eval_AUC: 0.7488	Eval_ACC: 0.6960	Eval_PREC: 0.7163	Eval_RECALL: 0.7808	Eval_F1: 0.7472
+
+Global_step 55800	Train_loss: 0.4830
+Train_AUC: 0.8446	Train_ACC: 0.7697	Train_PREC: 0.7857	Train_RECALL: 0.8256	Train_F1: 0.8052
+Eval_AUC: 0.7477	Eval_ACC: 0.6940	Eval_PREC: 0.7229	Eval_RECALL: 0.7589	Eval_F1: 0.7405
+
+Global_step 55900	Train_loss: 0.4778
+Train_AUC: 0.8430	Train_ACC: 0.7652	Train_PREC: 0.7464	Train_RECALL: 0.8974	Train_F1: 0.8150
+Eval_AUC: 0.7414	Eval_ACC: 0.6932	Eval_PREC: 0.6931	Eval_RECALL: 0.8373	Eval_F1: 0.7584
+
+Global_step 56000	Train_loss: 0.4852
+Train_AUC: 0.8454	Train_ACC: 0.7715	Train_PREC: 0.7699	Train_RECALL: 0.8608	Train_F1: 0.8128
+Eval_AUC: 0.7474	Eval_ACC: 0.6956	Eval_PREC: 0.7106	Eval_RECALL: 0.7944	Eval_F1: 0.7502
+
+Global_step 56100	Train_loss: 0.4881
+Train_AUC: 0.8456	Train_ACC: 0.7714	Train_PREC: 0.7763	Train_RECALL: 0.8475	Train_F1: 0.8104
+Eval_AUC: 0.7473	Eval_ACC: 0.6945	Eval_PREC: 0.7150	Eval_RECALL: 0.7800	Eval_F1: 0.7461
+
+Global_step 56200	Train_loss: 0.4908
+Train_AUC: 0.8446	Train_ACC: 0.7707	Train_PREC: 0.7811	Train_RECALL: 0.8366	Train_F1: 0.8079
+Eval_AUC: 0.7471	Eval_ACC: 0.6932	Eval_PREC: 0.7183	Eval_RECALL: 0.7678	Eval_F1: 0.7422
+
+Global_step 56300	Train_loss: 0.4945
+Train_AUC: 0.8463	Train_ACC: 0.7722	Train_PREC: 0.7695	Train_RECALL: 0.8633	Train_F1: 0.8137
+Eval_AUC: 0.7503	Eval_ACC: 0.6977	Eval_PREC: 0.7116	Eval_RECALL: 0.7978	Eval_F1: 0.7522
+
+Global_step 56400	Train_loss: 0.4781
+Train_AUC: 0.8470	Train_ACC: 0.7731	Train_PREC: 0.7790	Train_RECALL: 0.8466	Train_F1: 0.8114
+Eval_AUC: 0.7492	Eval_ACC: 0.6946	Eval_PREC: 0.7164	Eval_RECALL: 0.7765	Eval_F1: 0.7453
+
+Global_step 56500	Train_loss: 0.4854
+Train_AUC: 0.8469	Train_ACC: 0.7723	Train_PREC: 0.7824	Train_RECALL: 0.8380	Train_F1: 0.8092
+Eval_AUC: 0.7469	Eval_ACC: 0.6923	Eval_PREC: 0.7175	Eval_RECALL: 0.7673	Eval_F1: 0.7416
+
+Global_step 56600	Train_loss: 0.4917
+Train_AUC: 0.8478	Train_ACC: 0.7735	Train_PREC: 0.7717	Train_RECALL: 0.8618	Train_F1: 0.8143
+Eval_AUC: 0.7476	Eval_ACC: 0.6950	Eval_PREC: 0.7104	Eval_RECALL: 0.7932	Eval_F1: 0.7495
+
+Global_step 56700	Train_loss: 0.4864
+Train_AUC: 0.8475	Train_ACC: 0.7731	Train_PREC: 0.7672	Train_RECALL: 0.8703	Train_F1: 0.8155
+Eval_AUC: 0.7468	Eval_ACC: 0.6947	Eval_PREC: 0.7067	Eval_RECALL: 0.8024	Eval_F1: 0.7515
+
+Global_step 56800	Train_loss: 0.4896
+Train_AUC: 0.8479	Train_ACC: 0.7724	Train_PREC: 0.7619	Train_RECALL: 0.8803	Train_F1: 0.8168
+Eval_AUC: 0.7477	Eval_ACC: 0.6960	Eval_PREC: 0.7037	Eval_RECALL: 0.8145	Eval_F1: 0.7551
+
+Global_step 56900	Train_loss: 0.4961
+Train_AUC: 0.8481	Train_ACC: 0.7738	Train_PREC: 0.7708	Train_RECALL: 0.8646	Train_F1: 0.8150
+Eval_AUC: 0.7504	Eval_ACC: 0.6974	Eval_PREC: 0.7115	Eval_RECALL: 0.7974	Eval_F1: 0.7520
+
+Global_step 57000	Train_loss: 0.4860
+Train_AUC: 0.8486	Train_ACC: 0.7743	Train_PREC: 0.7703	Train_RECALL: 0.8669	Train_F1: 0.8157
+Eval_AUC: 0.7474	Eval_ACC: 0.6956	Eval_PREC: 0.7093	Eval_RECALL: 0.7978	Eval_F1: 0.7509
+
+Global_step 57100	Train_loss: 0.4841
+Train_AUC: 0.8483	Train_ACC: 0.7729	Train_PREC: 0.7627	Train_RECALL: 0.8797	Train_F1: 0.8170
+Eval_AUC: 0.7482	Eval_ACC: 0.6963	Eval_PREC: 0.7043	Eval_RECALL: 0.8138	Eval_F1: 0.7551
+
+Global_step 57200	Train_loss: 0.4895
+Train_AUC: 0.8487	Train_ACC: 0.7738	Train_PREC: 0.7665	Train_RECALL: 0.8735	Train_F1: 0.8165
+Eval_AUC: 0.7478	Eval_ACC: 0.6957	Eval_PREC: 0.7063	Eval_RECALL: 0.8065	Eval_F1: 0.7531
+
+Global_step 57300	Train_loss: 0.4871
+Train_AUC: 0.8488	Train_ACC: 0.7746	Train_PREC: 0.7727	Train_RECALL: 0.8627	Train_F1: 0.8152
+Eval_AUC: 0.7481	Eval_ACC: 0.6952	Eval_PREC: 0.7103	Eval_RECALL: 0.7941	Eval_F1: 0.7499
+
+Global_step 57400	Train_loss: 0.4819
+Train_AUC: 0.8483	Train_ACC: 0.7739	Train_PREC: 0.7762	Train_RECALL: 0.8539	Train_F1: 0.8132
+Eval_AUC: 0.7515	Eval_ACC: 0.6974	Eval_PREC: 0.7157	Eval_RECALL: 0.7864	Eval_F1: 0.7494
+
+Global_step 57500	Train_loss: 0.4923
+Train_AUC: 0.8505	Train_ACC: 0.7763	Train_PREC: 0.7745	Train_RECALL: 0.8631	Train_F1: 0.8164
+Eval_AUC: 0.7474	Eval_ACC: 0.6945	Eval_PREC: 0.7107	Eval_RECALL: 0.7910	Eval_F1: 0.7487
+
+Global_step 57600	Train_loss: 0.4878
+Train_AUC: 0.8487	Train_ACC: 0.7747	Train_PREC: 0.7690	Train_RECALL: 0.8705	Train_F1: 0.8166
+Eval_AUC: 0.7467	Eval_ACC: 0.6954	Eval_PREC: 0.7076	Eval_RECALL: 0.8019	Eval_F1: 0.7518
+
+Global_step 57700	Train_loss: 0.4836
+Train_AUC: 0.8501	Train_ACC: 0.7762	Train_PREC: 0.7715	Train_RECALL: 0.8692	Train_F1: 0.8174
+Eval_AUC: 0.7479	Eval_ACC: 0.6958	Eval_PREC: 0.7088	Eval_RECALL: 0.7999	Eval_F1: 0.7516
+
+Global_step 57800	Train_loss: 0.4839
+Train_AUC: 0.8503	Train_ACC: 0.7764	Train_PREC: 0.7711	Train_RECALL: 0.8703	Train_F1: 0.8177
+Eval_AUC: 0.7505	Eval_ACC: 0.6982	Eval_PREC: 0.7107	Eval_RECALL: 0.8016	Eval_F1: 0.7534
+
+Global_step 57900	Train_loss: 0.4969
+Train_AUC: 0.8493	Train_ACC: 0.7754	Train_PREC: 0.7798	Train_RECALL: 0.8503	Train_F1: 0.8135
+Eval_AUC: 0.7486	Eval_ACC: 0.6948	Eval_PREC: 0.7153	Eval_RECALL: 0.7799	Eval_F1: 0.7462
+
+Global_step 58000	Train_loss: 0.4926
+Train_AUC: 0.8502	Train_ACC: 0.7760	Train_PREC: 0.7727	Train_RECALL: 0.8662	Train_F1: 0.8168
+Eval_AUC: 0.7503	Eval_ACC: 0.6977	Eval_PREC: 0.7116	Eval_RECALL: 0.7979	Eval_F1: 0.7523
+
+Global_step 58100	Train_loss: 0.4859
+Train_AUC: 0.8496	Train_ACC: 0.7750	Train_PREC: 0.7658	Train_RECALL: 0.8783	Train_F1: 0.8182
+Eval_AUC: 0.7479	Eval_ACC: 0.6960	Eval_PREC: 0.7055	Eval_RECALL: 0.8095	Eval_F1: 0.7539
+
+Global_step 58200	Train_loss: 0.4964
+Train_AUC: 0.8501	Train_ACC: 0.7751	Train_PREC: 0.7673	Train_RECALL: 0.8751	Train_F1: 0.8177
+Eval_AUC: 0.7462	Eval_ACC: 0.6954	Eval_PREC: 0.7055	Eval_RECALL: 0.8077	Eval_F1: 0.7531
+
+Global_step 58300	Train_loss: 0.4936
+Train_AUC: 0.8494	Train_ACC: 0.7756	Train_PREC: 0.7822	Train_RECALL: 0.8462	Train_F1: 0.8129
+Eval_AUC: 0.7494	Eval_ACC: 0.6955	Eval_PREC: 0.7180	Eval_RECALL: 0.7751	Eval_F1: 0.7455
+
+Global_step 58400	Train_loss: 0.4926
+Train_AUC: 0.8500	Train_ACC: 0.7749	Train_PREC: 0.7658	Train_RECALL: 0.8779	Train_F1: 0.8180
+Eval_AUC: 0.7495	Eval_ACC: 0.6975	Eval_PREC: 0.7069	Eval_RECALL: 0.8102	Eval_F1: 0.7550
+
+Global_step 58500	Train_loss: 0.4946
+Train_AUC: 0.8515	Train_ACC: 0.7764	Train_PREC: 0.7673	Train_RECALL: 0.8783	Train_F1: 0.8191
+Eval_AUC: 0.7473	Eval_ACC: 0.6964	Eval_PREC: 0.7061	Eval_RECALL: 0.8090	Eval_F1: 0.7540
+
+Global_step 58600	Train_loss: 0.4949
+Train_AUC: 0.8516	Train_ACC: 0.7772	Train_PREC: 0.7757	Train_RECALL: 0.8629	Train_F1: 0.8170
+Eval_AUC: 0.7488	Eval_ACC: 0.6964	Eval_PREC: 0.7126	Eval_RECALL: 0.7915	Eval_F1: 0.7500
+
+Global_step 58700	Train_loss: 0.4977
+Train_AUC: 0.8502	Train_ACC: 0.7758	Train_PREC: 0.7738	Train_RECALL: 0.8634	Train_F1: 0.8161
+Eval_AUC: 0.7477	Eval_ACC: 0.6959	Eval_PREC: 0.7114	Eval_RECALL: 0.7932	Eval_F1: 0.7501
+
