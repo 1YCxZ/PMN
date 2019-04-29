@@ -15,7 +15,7 @@ train set length:780710\
 train_pos:449930, train_neg:330780\
 test set length:195339\
 test_pos:112376, test_neg:82963\
-![](./movielens-1m.png)
+![](./movielens.png)
 - 数据集: IPTV\
 train set length:905406\
 train_pos:472553, train_neg:432853\
